@@ -1,0 +1,664 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     29255,        656]
+NotebookOptionsPosition[     28061,        614]
+NotebookOutlinePosition[     28405,        629]
+CellTagsIndexPosition[     28362,        626]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"InstallCoDEx", "::", "notcomp"}], "=", 
+   "\"\<Your Mathematica version is older than 8. Installation \
+aborted!\>\""}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.7268874003290663`*^9, 3.7268874115197225`*^9}, {
+   3.726887472805643*^9, 3.726887482077526*^9}, 3.7268875365722466`*^9, {
+   3.726994775968709*^9, 3.7269947826863356`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"InstallCoDEx", "::", "failed"}], "=", 
+   "\"\<Download of `1` failed. Installation aborted!\>\""}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.7268874003290663`*^9, 3.7268874115197225`*^9}, {
+  3.726887472805643*^9, 3.7268875045445223`*^9}, {3.7268875421832824`*^9, 
+  3.726887593407154*^9}, {3.7268876398237333`*^9, 3.726887814151495*^9}, {
+  3.7268878480835176`*^9, 3.726887848695607*^9}, {3.7268878889453216`*^9, 
+  3.726887941672617*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"InstallCoDExQuiet", "::", "usage"}], "=", 
+   "\"\<InstallCoDExQuiet is the silent mode of installing CoDEx, where the \
+installer does not ask you any questions but silently overwrites any existing \
+CoDEx installation and modifies Mathematica's options accordingly. The main \
+purpose of this mode is to facilitate the installation of CoDEx on \
+Mathematica Online.\>\""}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.7268874003290663`*^9, 3.7268874115197225`*^9}, {
+  3.726887472805643*^9, 3.7268875045445223`*^9}, {3.7268875421832824`*^9, 
+  3.726887593407154*^9}, {3.7268876398237333`*^9, 3.726887814151495*^9}, {
+  3.7268878480835176`*^9, 3.726887848695607*^9}, {3.7268878889453216`*^9, 
+  3.7268879489964867`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"AutoOverwriteCoDExDirectory", "::", "usage"}], "=", 
+   "\"\<AutoOverwriteCoDExDirectory is an option of InstallCoDEx. If set to \
+True, the existing CoDEx directory will be deleted without any further \
+notice. The default\nvalue None means that the user will be asked by a \
+dialog. False means that the directory will be overwritten.\>\""}], 
+  ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.7268874003290663`*^9, 3.7268874115197225`*^9}, {
+  3.726887472805643*^9, 3.7268875045445223`*^9}, {3.7268875421832824`*^9, 
+  3.726887593407154*^9}, {3.7268876398237333`*^9, 3.726887814151495*^9}, {
+  3.7268878480835176`*^9, 3.726887848695607*^9}, {3.7268878889453216`*^9, 
+  3.7268879532316704`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"AutoDisableInsufficientVersionWarning", "::", "usage"}], "=", 
+   "\"\<AutoDisableInsufficientVersionWarning is an option of InstallCoDEx. \
+If set to True, warning messages for notebooks that were created with a newer \
+Mathematica version will be silently disabled. This is needed to use CoDEx \
+documentation in Mathematica 8 and 9, since otherwise the warning message \
+will appear every time one opens a help page for a CoDEx function. The \
+default value None means that the user will be asked by a dialog. False means \
+that the warning will not be disabled.\>\""}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.7268874003290663`*^9, 3.7268874115197225`*^9}, {
+   3.726887472805643*^9, 3.7268875045445223`*^9}, {3.7268875421832824`*^9, 
+   3.726887593407154*^9}, {3.7268876398237333`*^9, 3.726887814151495*^9}, {
+   3.7268878480835176`*^9, 3.726887848695607*^9}, {3.7268878889453216`*^9, 
+   3.7268879555603604`*^9}, 3.7268926874813023`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"CoDExDevelopmentVersionLink", "::", "usage"}], "=", 
+   "\"\<CoDExDevelopmentVersionLink is an option of InstallCoDEx. It \
+specifies the url to the main repository of CoDEx. This repository is used to \
+install the development version of CoDEx.\>\""}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.7268874003290663`*^9, 3.7268874115197225`*^9}, {
+  3.726887472805643*^9, 3.7268875045445223`*^9}, {3.7268875421832824`*^9, 
+  3.726887593407154*^9}, {3.7268876398237333`*^9, 3.726887814151495*^9}, {
+  3.7268878480835176`*^9, 3.726887848695607*^9}, {3.7268878889453216`*^9, 
+  3.7268879581277175`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"CoDExStableVersionLink", "::", "usage"}], "=", 
+   "\"\<CoDExStableVersionLink is an option of InstallCoDEx. It specifies the \
+url to the latest stable release of CoDEx.\>\""}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.7268874003290663`*^9, 3.7268874115197225`*^9}, {
+  3.726887472805643*^9, 3.7268875045445223`*^9}, {3.7268875421832824`*^9, 
+  3.726887593407154*^9}, {3.7268876398237333`*^9, 3.726887814151495*^9}, {
+  3.7268878480835176`*^9, 3.726887848695607*^9}, {3.7268878889453216`*^9, 
+  3.726887965203416*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"InstallCoDExDevelopmentVersion", "::", "usage"}], "=", 
+   "\"\<InstallCoDExDevelopmentVersion is an option of InstallCoDEx. If set \
+to True, the installer will download the latest development version of CoDEx \
+from the git repository. Otherwise it will install the latest stable version.\
+\>\""}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.7268874003290663`*^9, 3.7268874115197225`*^9}, {
+  3.726887472805643*^9, 3.7268875045445223`*^9}, {3.7268875421832824`*^9, 
+  3.726887593407154*^9}, {3.7268876398237333`*^9, 3.726887814151495*^9}, {
+  3.7268878480835176`*^9, 3.726887848695607*^9}, {3.7268878889453216`*^9, 
+  3.7268879672434387`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"InstallCoDExTo", "::", "usage"}], "=", 
+   "\"\<InstallCoDExTo is an option of InstallCoDEx. It specifies, the full \
+path to the directory where CoDEx will be installed.\>\""}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.7268874003290663`*^9, 3.7268874115197225`*^9}, {
+  3.726887472805643*^9, 3.7268875045445223`*^9}, {3.7268875421832824`*^9, 
+  3.726887593407154*^9}, {3.7268876398237333`*^9, 3.726887814151495*^9}, {
+  3.7268878480835176`*^9, 3.726887848695607*^9}, {3.7268878889453216`*^9, 
+  3.726887969453616*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"$PathToCDArc", "::", "usage"}], "=", 
+  "\"\<$PathToCDArc specifies where the installer should look for the zipped \
+CoDEx version. If the value is not empty, the installer will use the \
+specified file instead of downloading it from the official website.\>\""}], "\
+\n", 
+ RowBox[{
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"!", 
+     RowBox[{"ValueQ", "[", "$PathToCDArc", "]"}]}], ",", 
+    RowBox[{"$PathToCDArc", "=", "\"\<\>\""}]}], "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.7268874003290663`*^9, 3.7268874115197225`*^9}, {
+  3.726887472805643*^9, 3.7268875045445223`*^9}, {3.7268875421832824`*^9, 
+  3.726887593407154*^9}, {3.7268876398237333`*^9, 3.726887814151495*^9}, {
+  3.7268878480835176`*^9, 3.726887848695607*^9}, {3.7268878889453216`*^9, 
+  3.7268879894067583`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"$VersionNumber", "\[Equal]", "8"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"(*", 
+     RowBox[{
+     "To", " ", "use", " ", "FetchURL", " ", "in", " ", "MMA8", " ", "we", 
+      " ", "need", " ", "to", " ", "load", " ", "URLTools", " ", "first"}], 
+     "*)"}], "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Needs", "[", "\"\<Utilities`URLTools`\>\"", "]"}], ";"}]}], 
+   "]"}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.7268874003290663`*^9, 3.7268874115197225`*^9}, {
+   3.726887472805643*^9, 3.7268875045445223`*^9}, {3.7268875421832824`*^9, 
+   3.726887593407154*^9}, {3.7268876398237333`*^9, 3.726887814151495*^9}, {
+   3.7268878480835176`*^9, 3.726887848695607*^9}, {3.7268878889453216`*^9, 
+   3.7268879823398495`*^9}, 3.7268881279386034`*^9, {3.732455994535023*^9, 
+   3.732455998146388*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Options", "[", "InstallCoDEx", "]"}], "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"AutoDisableInsufficientVersionWarning", "\[Rule]", "None"}], 
+     ",", 
+     RowBox[{"AutoOverwriteCoDExDirectory", "\[Rule]", "None"}], ",", 
+     RowBox[{
+     "CoDExDevelopmentVersionLink", "\[Rule]", 
+      "\"\<https://github.com/sunandopatra/CoDEx-0.0/raw/master/CoDEx.zip\>\"\
+"}], ",", 
+     RowBox[{
+     "CoDExStableVersionLink", "\[Rule]", 
+      "\"\<https://github.com/sunandopatra/CoDEx-0.0/raw/master/CoDEx.zip\>\"\
+"}], ",", 
+     RowBox[{"InstallCoDExDevelopmentVersion", "\[Rule]", "False"}], ",", 
+     RowBox[{"InstallCoDExTo", "\[Rule]", 
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{
+        "$UserBaseDirectory", ",", "\"\<Applications\>\"", ",", 
+         "\"\<CoDEx\>\""}], "}"}], "]"}]}]}], "}"}]}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.7268874003290663`*^9, 3.7268874115197225`*^9}, {
+   3.726887472805643*^9, 3.7268875045445223`*^9}, {3.7268875421832824`*^9, 
+   3.726887593407154*^9}, {3.7268876398237333`*^9, 3.726887814151495*^9}, {
+   3.7268878480835176`*^9, 3.726887848695607*^9}, {3.7268878889453216`*^9, 
+   3.7268879823398495`*^9}, {3.7268881279386034`*^9, 3.7268881792906713`*^9}, 
+   3.726889050147537*^9, {3.7268890877193284`*^9, 3.7268891208677588`*^9}, {
+   3.7268891723541727`*^9, 3.7268891869964724`*^9}, 3.7268894229283695`*^9, {
+   3.7268968845520396`*^9, 3.7268968931018853`*^9}, {3.726897462553877*^9, 
+   3.7268974658948326`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Options", "[", "InstallCoDExQuiet", "]"}], "=", 
+   RowBox[{"Options", "[", "InstallCoDEx", "]"}]}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.7268874003290663`*^9, 3.7268874115197225`*^9}, {
+   3.726887472805643*^9, 3.7268875045445223`*^9}, {3.7268875421832824`*^9, 
+   3.726887593407154*^9}, {3.7268876398237333`*^9, 3.726887814151495*^9}, {
+   3.7268878480835176`*^9, 3.726887848695607*^9}, {3.7268878889453216`*^9, 
+   3.7268879823398495`*^9}, {3.7268881279386034`*^9, 3.7268881792906713`*^9}, 
+   3.726889050147537*^9, {3.7268890877193284`*^9, 3.7268891208677588`*^9}, {
+   3.7268891723541727`*^9, 3.726889193435489*^9}, {3.7268892412234554`*^9, 
+   3.72688924478371*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"InstallCoDExQuiet", "[", "]"}], ":=", 
+   RowBox[{"InstallCoDEx", "[", 
+    RowBox[{
+     RowBox[{"AutoDisableInsufficientVersionWarning", "\[Rule]", "True"}], 
+     ",", 
+     RowBox[{"AutoOverwriteCoDExDirectory", "\[Rule]", "True"}]}], "]"}]}], 
+  ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.7268874003290663`*^9, 3.7268874115197225`*^9}, {
+   3.726887472805643*^9, 3.7268875045445223`*^9}, {3.7268875421832824`*^9, 
+   3.726887593407154*^9}, {3.7268876398237333`*^9, 3.726887814151495*^9}, {
+   3.7268878480835176`*^9, 3.726887848695607*^9}, {3.7268878889453216`*^9, 
+   3.7268879823398495`*^9}, {3.7268881279386034`*^9, 3.7268881792906713`*^9}, 
+   3.726889050147537*^9, {3.7268890877193284`*^9, 3.7268891208677588`*^9}, {
+   3.7268891723541727`*^9, 3.726889193435489*^9}, {3.7268892582301545`*^9, 
+   3.7268893136646*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"InstallCoDEx", "[", 
+    RowBox[{"OptionsPattern", "[", "]"}], "]"}], ":=", "\[IndentingNewLine]", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "unzipDir", ",", "tmpzip", ",", "gitzip", ",", "packageName", ",", 
+       "packageDir", ",", "fullPath", ",", "strDisableWarning", ",", 
+       "CDGetUrl", ",", "configFileProlog", ",", "strOverwriteCDdit", ",", 
+       "zipDir"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"OptionValue", "[", "InstallCoDExDevelopmentVersion", "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"gitzip", "=", 
+         RowBox[{"OptionValue", "[", "CoDExDevelopmentVersionLink", "]"}]}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"gitzip", "=", 
+         RowBox[{"OptionValue", "[", "CoDExStableVersionLink", "]"}]}]}], 
+       "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"packageName", "=", "\"\<CoDEx\>\""}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"packageDir", "=", 
+       RowBox[{"OptionValue", "[", "InstallCoDExTo", "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+      "strDisableWarning", "=", 
+       "\"\<To make the documentation work, we need to disable the warning \
+that appears when you open a notebook that was created with a newer \
+Mathematica version. Otherwise this warning will pop up every time you use \
+the Documentation Center to read info on CoDEx functions in Mathematica 8 and \
+9. This setting is harmless and can be always undone via \
+\\\"SetOptions[$FrontEnd, MessageOptions -> {\\\"InsufficientVersionWarning\\\
+\" -> True}]\\\". Should we do this now?\>\""}], ";", "\[IndentingNewLine]", 
+      RowBox[{"strOverwriteCDdit", "=", 
+       RowBox[{
+       "\"\<Looks like CoDEx is already installed. Do you want to replace the \
+content of \>\"", "<>", "packageDir", "<>", 
+        "\"\< with the downloaded version of CoDEx? If you are using any \
+custom configuration files or add-ons that are located in that directory, \
+please backup them in advance.\>\""}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+      "configFileProlog", "=", 
+       "\"\<(*Here you can put some commands and settings to be evaluated on \
+every start of CoDEx. \\n This allows you to customize your CoDEx \
+installation to fit your needs best.*)\>\""}], ";", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"$VersionNumber", "<", "8"}], ",", 
+        RowBox[{
+         RowBox[{"Message", "[", 
+          RowBox[{"InstallCoDEx", "::", "notcomp"}], "]"}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Abort", "[", "]"}]}]}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"$VersionNumber", "\[Equal]", "8"}], ",", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{
+         "To", " ", "use", " ", "FetchURL", " ", "in", " ", "MMA8", " ", "we",
+           " ", "need", " ", "to", " ", "load", " ", "URLTools", " ", 
+          "first"}], "*)"}], "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"CDGetUrl", "[", "x_", "]"}], ":=", 
+         RowBox[{"Utilities`URLTools`FetchURL", "[", "x", "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"CDGetUrl", "[", "x_", "]"}], ":=", 
+         RowBox[{"URLSave", "[", 
+          RowBox[{"x", ",", 
+           RowBox[{"CreateTemporary", "[", "]"}]}], "]"}]}]}], "]"}], ";", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{
+        RowBox[{
+        "If", " ", "the", " ", "package", " ", "directory", " ", "already", 
+         " ", "exists"}], ",", 
+        RowBox[{
+        "ask", " ", "the", " ", "user", " ", "about", " ", "overwriting"}]}], 
+       "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"DirectoryQ", "[", "packageDir", "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"OptionValue", "[", "AutoOverwriteCoDExDirectory", "]"}], 
+          ",", "\[IndentingNewLine]", 
+          RowBox[{"Quiet", "@", 
+           RowBox[{"DeleteDirectory", "[", 
+            RowBox[{"packageDir", ",", 
+             RowBox[{"DeleteContents", "\[Rule]", "True"}]}], "]"}]}], ",", 
+          "\[IndentingNewLine]", "Null", ",", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{"ChoiceDialog", "[", 
+             RowBox[{"strOverwriteCDdit", ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{
+                 "\"\<Yes, overwrite the \>\"", "<>", "packageName", "<>", 
+                  "\"\< directory\>\""}], "\[Rule]", "True"}], ",", 
+                RowBox[{
+                "\"\<No, I need to do a backup first. Abort \
+installation.\>\"", "\[Rule]", "False"}]}], "}"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"WindowFloating", "\[Rule]", "True"}], ",", 
+              RowBox[{
+              "WindowTitle", "\[Rule]", 
+               "\"\<Existing CoDEx Installation detected\>\""}]}], "]"}], ",",
+             "\[IndentingNewLine]", 
+            RowBox[{"Quiet", "@", 
+             RowBox[{"DeleteDirectory", "[", 
+              RowBox[{"packageDir", ",", 
+               RowBox[{"DeleteContents", "\[Rule]", "True"}]}], "]"}]}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"Abort", "[", "]"}]}], "]"}]}], "\[IndentingNewLine]", 
+         "]"}]}], "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"Download", " ", "CoDEx", " ", "tarball"}], "*)"}], 
+      "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"$PathToCDArc", "=!=", "\"\<\>\""}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"tmpzip", "=", "$PathToCDArc"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"WriteString", "[", 
+          RowBox[{
+          "\"\<stdout\>\"", ",", "\"\<Installing CoDEx from \>\"", ",", 
+           "tmpzip", ",", "\"\< ...\>\""}], "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"WriteString", "[", 
+          RowBox[{
+          "\"\<stdout\>\"", ",", "\"\<Downloading CoDEx from \>\"", ",", 
+           "gitzip", ",", "\"\< ...\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"tmpzip", "=", 
+          RowBox[{"CDGetUrl", "[", "gitzip", "]"}]}], ";"}]}], "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"tmpzip", "===", "$Failed"}], ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"WriteString", "[", 
+          RowBox[{
+          "\"\<stdout\>\"", ",", 
+           "\"\<\\nFailed to download CoDEx. Please check your interent \
+connection.\\nInstallation aborted!\>\""}], "]"}], ";", 
+         RowBox[{"Abort", "[", "]"}]}], ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"unzipDir", "=", 
+          RowBox[{"tmpzip", "<>", "\"\<.dir\>\""}]}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"WriteString", "[", 
+          RowBox[{"\"\<stdout\>\"", ",", "\"\<done! \\n\>\""}], "]"}], 
+         ";"}]}], "]"}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"Extract", " ", "to", " ", "the", " ", "content"}], "*)"}], 
+      "\[IndentingNewLine]", 
+      RowBox[{"WriteString", "[", 
+       RowBox[{
+       "\"\<stdout\>\"", ",", "\"\<CoDEx zip file was saved to \>\"", ",", 
+        "tmpzip", ",", "\"\<.\\n\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"WriteString", "[", 
+       RowBox[{
+       "\"\<stdout\>\"", ",", "\"\<Extracting CoDEx zip file to \>\"", ",", 
+        "unzipDir", ",", "\"\< ...\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"ExtractArchive", "[", 
+          RowBox[{"tmpzip", ",", "unzipDir"}], "]"}], "===", "$Failed"}], ",",
+         "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"WriteString", "[", 
+          RowBox[{
+          "\"\<stdout\>\"", ",", 
+           "\"\<\\nFailed to extract the CoDEx zip. The file might be \
+corrupted.\\nInstallation aborted!\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"Abort", "[", "]"}]}], ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"WriteString", "[", 
+          RowBox[{"\"\<stdout\>\"", ",", "\"\<done! \\n\>\""}], "]"}], ";", 
+         "\[IndentingNewLine]", "\[IndentingNewLine]", 
+         RowBox[{"(*", 
+          RowBox[{"Delete", " ", "the", " ", "downloaded", " ", "file"}], 
+          "*)"}], "\[IndentingNewLine]", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"$PathToCDArc", "===", "\"\<\>\""}], ",", 
+           RowBox[{
+            RowBox[{"Quiet", "@", 
+             RowBox[{"DeleteFile", "[", "tmpzip", "]"}]}], ";"}]}], "]"}]}]}],
+        "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"WriteString", "[", 
+       RowBox[{
+       "\"\<stdout\>\"", ",", 
+        "\"\<Recognizing the directory structure...\>\""}], "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"zipDir", "=", 
+       RowBox[{"FileNames", "[", 
+        RowBox[{"\"\<CoDEx.m\>\"", ",", 
+         RowBox[{"FileNameJoin", "[", 
+          RowBox[{"{", 
+           RowBox[{"unzipDir", ",", "\"\<CoDEx\>\""}], "}"}], "]"}], ",", 
+         "Infinity"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Length", "[", "zipDir", "]"}], "===", "1"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"fullPath", "=", 
+          RowBox[{"DirectoryName", "[", 
+           RowBox[{"zipDir", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "]"}]}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"zipDir", "=", 
+          RowBox[{"Last", "[", 
+           RowBox[{"FileNameSplit", "[", 
+            RowBox[{"DirectoryName", "[", 
+             RowBox[{"zipDir", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], "]"}], "]"}], "]"}]}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"WriteString", "[", 
+          RowBox[{"\"\<stdout\>\"", ",", "\"\<done! \\n\>\""}], "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"WriteString", "[", 
+          RowBox[{
+          "\"\<stdout\>\"", ",", 
+           "\"\<\\nFailed to recognize the directory structure of the \
+downloaded zip file. \\nInstallation aborted!\>\""}], "]"}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Abort", "[", "]"}]}]}], "\[IndentingNewLine]", "]"}], ";", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{
+       "Move", " ", "the", " ", "files", " ", "to", " ", "the", " ", "final", 
+        " ", "destination"}], "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"WriteString", "[", 
+       RowBox[{"\"\<stdout\>\"", ",", 
+        RowBox[{
+        "\"\<Copying \>\"", "<>", "packageName", "<>", "\"\< to \>\""}], ",", 
+        "packageDir", ",", "\"\< ...\>\""}], "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"CopyDirectory", "[", 
+          RowBox[{"fullPath", ",", "packageDir"}], "]"}], "===", "$Failed"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"WriteString", "[", 
+          RowBox[{"\"\<stdout\>\"", ",", 
+           RowBox[{
+           "\"\<\\nFailed to copy \>\"", "<>", "fullPath", "<>", 
+            "\"\< to \>\""}], ",", 
+           RowBox[{
+           "packageDir", "<>", "\"\<. \\nInstallation aborted!\>\""}]}], 
+          "]"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"Abort", "[", "]"}]}], ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"WriteString", "[", 
+          RowBox[{"\"\<stdout\>\"", ",", "\"\<done! \\n\>\""}], "]"}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"(*", 
+          RowBox[{"Delete", " ", "the", " ", "extracted", " ", "archive"}], 
+          "*)"}], "\[IndentingNewLine]", 
+         RowBox[{"Quiet", "@", 
+          RowBox[{"DeleteDirectory", "[", 
+           RowBox[{"unzipDir", ",", 
+            RowBox[{"DeleteContents", "\[Rule]", "True"}]}], "]"}]}], ";"}]}],
+        "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+        "OptionValue", "[", "AutoDisableInsufficientVersionWarning", "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"SetOptions", "[", 
+         RowBox[{"$FrontEnd", ",", 
+          RowBox[{"MessageOptions", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{
+            "\"\<InsufficientVersionWarning\>\"", "\[Rule]", "False"}], 
+            "}"}]}]}], "]"}], ",", "\[IndentingNewLine]", "Null", ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"ChoiceDialog", "[", 
+           RowBox[{"strDisableWarning", ",", 
+            RowBox[{"WindowFloating", "\[Rule]", "True"}], ",", 
+            RowBox[{
+            "WindowTitle", "\[Rule]", "\"\<Documentation system\>\""}]}], 
+           "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"SetOptions", "[", 
+           RowBox[{"$FrontEnd", ",", 
+            RowBox[{"MessageOptions", "\[Rule]", 
+             RowBox[{"{", 
+              RowBox[{
+              "\"\<InsufficientVersionWarning\>\"", "\[Rule]", "False"}], 
+              "}"}]}]}], "]"}]}], "\[IndentingNewLine]", "]"}]}], 
+       "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"WriteString", "[", 
+       RowBox[{"\"\<stdout\>\"", ",", "\"\<done! \\n\>\""}], "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{
+        RowBox[{"RebuildPacletData", "[", "]"}], ";"}], "*)"}], 
+      "\[IndentingNewLine]", 
+      RowBox[{"WriteString", "[", 
+       RowBox[{
+       "\"\<stdout\>\"", ",", 
+        "\"\<\\nInstallation complete! Loading CoDEx ... \\n\>\""}], "]"}], 
+      ";", "\[IndentingNewLine]", 
+      RowBox[{"Get", "[", "\"\<CoDEx`\>\"", "]"}], ";"}]}], "]"}]}], 
+  ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.7268874003290663`*^9, 3.7268874115197225`*^9}, {
+   3.726887472805643*^9, 3.7268875045445223`*^9}, {3.7268875421832824`*^9, 
+   3.726887593407154*^9}, {3.7268876398237333`*^9, 3.726887814151495*^9}, {
+   3.7268878480835176`*^9, 3.726887848695607*^9}, {3.7268878889453216`*^9, 
+   3.7268879823398495`*^9}, {3.7268881279386034`*^9, 3.7268881792906713`*^9}, 
+   3.726889050147537*^9, {3.7268890877193284`*^9, 3.7268891208677588`*^9}, {
+   3.7268891723541727`*^9, 3.726889193435489*^9}, {3.7268892582301545`*^9, 
+   3.726889322281562*^9}, {3.7268893761354647`*^9, 3.726889517279437*^9}, {
+   3.726889587035757*^9, 3.7268896151520395`*^9}, {3.726889656345951*^9, 
+   3.7268897577639093`*^9}, {3.7268898105015335`*^9, 3.726889833949746*^9}, {
+   3.7268898823342967`*^9, 3.7268899051210585`*^9}, {3.726889960498951*^9, 
+   3.726890036203988*^9}, 3.7268902777318115`*^9, 3.7268918423930993`*^9, {
+   3.726892059373267*^9, 3.7268921008812513`*^9}, {3.7268921583929925`*^9, 
+   3.7268921906067653`*^9}, {3.7268924629522533`*^9, 
+   3.7268924631360397`*^9}, {3.7268925884190445`*^9, 3.726892599884905*^9}, {
+   3.726892630791046*^9, 3.726892631233227*^9}, {3.7268926673500795`*^9, 
+   3.7268927141166763`*^9}, {3.726892848156096*^9, 3.726892848741589*^9}, {
+   3.726897427522165*^9, 3.7268974277365503`*^9}, {3.726898061126449*^9, 
+   3.726898061655712*^9}, {3.7268987417790728`*^9, 3.7268987518655653`*^9}, {
+   3.7268987967769766`*^9, 3.7268987982797227`*^9}, {3.7268989841805906`*^9, 
+   3.7268989865885787`*^9}, 3.726902918831231*^9, {3.727527282866679*^9, 
+   3.727527304918169*^9}, {3.727527378169228*^9, 3.727527379755685*^9}, {
+   3.7275275721454105`*^9, 3.7275275747621593`*^9}, {3.7324547695734096`*^9, 
+   3.7324551030541716`*^9}, {3.73245547220746*^9, 3.732455500904005*^9}, {
+   3.732455749947054*^9, 3.7324557745866756`*^9}, {3.7324561534395623`*^9, 
+   3.7324561697678237`*^9}, {3.732456407321666*^9, 3.7324564184882717`*^9}, {
+   3.7324598325272427`*^9, 3.732459834039719*^9}, {3.7324604021391125`*^9, 
+   3.7324604467150784`*^9}, {3.7324604863654823`*^9, 3.732460516636875*^9}, {
+   3.7329646366025934`*^9, 3.7329646378227773`*^9}}]
+},
+WindowSize->{1920, 1037},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 408, 9, 46, "Input",
+ InitializationCell->True],
+Cell[969, 31, 513, 10, 46, "Input",
+ InitializationCell->True],
+Cell[1485, 43, 790, 14, 85, "Input",
+ InitializationCell->True],
+Cell[2278, 59, 762, 14, 66, "Input",
+ InitializationCell->True],
+Cell[3043, 75, 1016, 16, 104, "Input",
+ InitializationCell->True],
+Cell[4062, 93, 668, 12, 46, "Input",
+ InitializationCell->True],
+Cell[4733, 107, 591, 11, 46, "Input",
+ InitializationCell->True],
+Cell[5327, 120, 715, 13, 66, "Input",
+ InitializationCell->True],
+Cell[6045, 135, 591, 11, 46, "Input",
+ InitializationCell->True],
+Cell[6639, 148, 854, 18, 66, "Input",
+ InitializationCell->True],
+Cell[7496, 168, 902, 19, 85, "Input",
+ InitializationCell->True],
+Cell[8401, 189, 1571, 33, 66, "Input",
+ InitializationCell->True],
+Cell[9975, 224, 748, 13, 46, "Input",
+ InitializationCell->True],
+Cell[10726, 239, 897, 18, 46, "Input",
+ InitializationCell->True],
+Cell[11626, 259, 16431, 353, 1662, "Input",
+ InitializationCell->True]
+}
+]
+*)
+
