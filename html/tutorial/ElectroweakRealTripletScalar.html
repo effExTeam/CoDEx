@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+
+<title>ElectroweakRealTripletScalar&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000" />
+<meta name="historydata" content="{0.0, , , }" />
+<meta name="keywords" content="ElectroweakRealTripletScalar" />
+
+<meta name="description" content="This notebook contains tutorial for computation of Wilson Coefficients for Electroweak Real Triplet Scalar model. Special Functions: This model has a real ( hypercharge, Y =0) isospin triplet scalar field. For initialization of the model in hand, we have to provide this information in a file named &amp;quot;UserDefined.m&amp;quot;. For that we load the package first following way:" />
+<script language="JavaScript" type="text/javascript">baselang='ElectroweakRealTripletScalar';</script>
+<script language="JavaScript" type="text/javascript">packagename='CoDEx';</script>
+<!--#include virtual="/common/includes/gl-head-includes.html"-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--[if IE]>
+<style type="text/css">
+/* doctype problem overrides */
+#menu .searchboxsub, #menu .searchboxsub-on { padding-bottom: 0; }
+#menu .headerSearchSubmit { margin-bottom: 4px; }
+
+/*
+.WRIdropMenu .WRImenuContents { margin-top: -2px; margin-left: -2px; }
+.WRIdropMenu .WRImenuContents .WRImenuContents { margin: 0; }
+*/
+</style>
+<![endif]-->
+<link rel="stylesheet" href="/webMathematica/Resources/Documentation/English/css/reference.css" />
+
+<script src="/webMathematica/Resources/Documentation/English/javascript/reference.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/documentation-search.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/faster-page-load.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/hyperlink-filter.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/brokenlinks.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/clipboard.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/image-swap.js"></script>
+
+</head>
+<body id="tutorial">
+<a name="top"></a>
+ 
+<div class="main-wrapper">
+<div class="outer-wrapper">
+
+<div class="wrapper mainOuter">
+    <div class="mainContent">
+ <div class="topContentWrap">
+  <div class="ribbonWrap">
+   <span class="ribbonOuter"><span class="ribbonInner">CO D EX TUTORIAL</span></span>
+  </div>
+  <ul class="dropdown">
+   <li>
+    <a href="#">Tutorials</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/tutorial/2HDM.html"><span class="dropdownPad">2HDM</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/guide/UserDefined.html"><span class="dropdownPad">UserDefined</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/guide/BuildLagrangian.html"><span class="dropdownPad">BuildLagrangian</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#">Functions</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/ref/flow.html"><span class="dropdownPad">flow</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/hfvecs.html"><span class="dropdownPad">hfvecs</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/lpOut.html"><span class="dropdownPad">lOutput</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/trOut.html"><span class="dropdownPad">trOut</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <div class="clear"><!-- --></div>
+ </div>
+ <h1 class="Title"><a name="509267359"></a>ElectroweakRealTripletScalar</h1>
+ <p class="Text"><a name="1534169418"></a>This notebook contains tutorial for computation of Wilson Coefficients for Electroweak Real Triplet Scalar model.</p>
+ <p class="Text"><a name="2064400461"></a>Special Functions:</p>
+ <div class="MathTable DefinitionBox">
+  <a name="2096742444"></a>
+  <table class="nogridboxdividers">
+   <col width="40%" />
+   <col width="60%" />
+   <tr class="lineAbove" style=""><td><a href="../ref/hfvecs.html">hfvecs</a></td><td><span class="TT"><span class="IF"><a class="package-symbol" href="../ref/trOut.html">trOut</a></span></span></td></tr>
+   <tr class="" style=""><td><a href="../ref/lpOut.html">lOutput</a></td><td><span class="TT"><a href="../ref/flow.html">flow</a></span></td></tr>
+  </table>
+ </div>
+ <p class="Caption"><a name="1891092685"></a>This model has a real ( hypercharge, Y =0) isospin triplet scalar field. For initialization of the model in hand, we have to provide this information in a file named &quot;UserDefined.m&quot;. For that we load the package first following way:</p>
+ <p class="Text"><a name="1991316541"></a> </p>
+ <p class="Text"><a name="147239351"></a>Open a Mathematica notebook file and &quot;save&quot; it in any directory you wish. Saving the notebook file is crucial. Then next step is to load the package.</p>
+ <p class="Text"><a name="867992898"></a>Loading the package:</p>
+ <table class="InCell">
+  <tr><td class="lab" /><td class="Input"><div>
+     <a name="2058623809"></a>
+     <img src="Files/ElectroweakRealTripletScalar/I_2.png"
+         height="16"
+         width="93"
+         alt="Click for copyable input" />
+    </div><div id="i_1_out" class="IFL"></div></td></tr>
+ </table>
+ <p class="Text"><a name="626064294"></a>    CoDEx-0.0</p>
+ <p class="Text"><a name="1740202605"></a>Supratim Das Bakshi, Joydeep Chakrabortty, Sunando K. Patra<br /> IIT Kanpur, India</p>
+ <div class="MCap"><a name="836781195"></a>If the package is not installed in your machine, use the following (url installation - Importing the package from github repository) :</div>
+ <div class="MathTable DefinitionBox">
+  <a name="857108645"></a>
+  <span class="specialcharacters">Import<span class="openbracket">[</span>&quot;https://github.com/sunandopatra/CoDEx-0.0/raw/master/install.m&quot;<span class="closebracket">]</span>
+InstallCoDEx<span class="openbracket">[</span><span class="closebracket">]</span></span>
+ </div>
+ <p class="Text"><a name="134280056"></a>If you use this command, you don't need to do Needs[&quot;CoDEx`&quot;] for loading. But from next kernel session, we may use Needs[&quot;CoDEx`&quot;] for loading the package. Next job is to provide the model specification in &quot;UserDefined.nb&quot; file. Details provided below.</p>
+ <p class="Text"><a name="2136691664"></a> </p>
+ <p class="Text"><a name="1863731307"></a></p>
+ <p class="Text"><a name="336694983"></a>Inputs for loading model:</p>
+ <p class="Text"><a name="2081865831"></a>After loading the package (using needs or direct url installation), this mini-window will appear on the screen:</p>
+ <table class="InCell">
+  <tr><td class="lab" /><td class="Input"><div>
+     <a name="1901701285"></a>
+     <img src="Files/ElectroweakRealTripletScalar/I_4.png"
+         height="227"
+         width="343"
+         alt="Click for copyable input" />
+    </div><div id="i_3_out" class="IFL"></div></td></tr>
+ </table>
+ <p class="Text"><a name="2113111790"></a>Clicking on :</p>
+ <p class="Text"><a name="1031682784"></a>the first option - Creates a &quot;UserDefined.nb&quot; file in the NotebookDirectory[] (directory where your created notebook is saved) , and you are expected to edit it according to the procedure mentioned in &quot;<a href="../guide/UserDefined.html">UserDefined</a>&quot; guide. Search Mathematica documentation center for &quot;<a href="../guide/UserDefined.html">UserDefined</a>&quot; guide.</p>
+ <p class="Text"><a name="408874396"></a>the second option - Expects that you already have a prepared &quot;UserDefined.m&quot; file saved in some directory and the package will import the &quot;UserDefined.m&quot; file from the directory that you will indicate.</p>
+ <p class="Text"><a name="803133495"></a>the third option - Expects that you already have a prepared &quot;UserDefined.m&quot; file saved in the NotebookDirectory[] (directory where your created notebook is saved) directory and the package will import the &quot;UserDefined.m&quot; file from NotebookDirectory[].</p>
+ <p class="Text"><a name="284754340"></a>Now, we write the Lagrangian.</p>
+ <p class="Text"><a name="1048704196"></a> </p>
+ <p class="Text"><a name="1140383034"></a></p>
+ <p class="Text"><a name="126102963"></a>Subsequently, another mini-window will appear on the screen:</p>
+ <table class="InCell">
+  <tr><td class="lab" /><td class="Input"><div>
+     <a name="314753019"></a>
+     <img src="Files/ElectroweakRealTripletScalar/I_6.png"
+         height="183"
+         width="345"
+         alt="Click for copyable input" />
+    </div><div id="i_5_out" class="IFL"></div></td></tr>
+ </table>
+ <p class="Text"><a name="868552625"></a>Clicking on :</p>
+ <p class="Text"><a name="1317619716"></a>the first option - Expects that you will write the Lagrangian of your model with the use of definition of <span class="IF"><a class="package-symbol" href="../ref/hfvecs.html">hfvecs</a></span>. The package definition of heavy field will be shown in the name of variable, <span class="IF"><a class="package-symbol" href="../tutorial/hfvecs.html">hfvecs</a></span>. Like this :</p>
+ <p class="Text"><a name="935038129"></a>Your heavy fields are now defined. They are listed under the name 'hfvecs'. They are:<br />{{{hf[1, 1], hf[1, 2], hf[1, 3]}}}</p>
+ <p class="Text"><a name="2047989004"></a>Heavy field 'hf' <span class="special-character Rule">&#62754;</span> Color Singlet.  Please remember to provide the Isospin Symmetry Generator Matrix for loop Wilson Coefficients.<br /></p>
+ <p class="Text"><a name="2071619187"></a>And using this definition of <span class="IF"><a class="package-symbol" href="../ref/hfvecs.html">hfvecs</a></span>, the Lagrangian should be constructed.</p>
+ <p class="Text"><a name="1510761256"></a></p>
+ <p class="Text"><a name="383198948"></a>the second option - Expects that you already have a prepared the model Lagrangian in some .m file saved in some directory and the package will import the Lagrangian from the indicated directory.</p>
+ <p class="Text"><a name="865955863"></a></p>
+ <p class="Text"><a name="121261683"></a>the third option - Prints a demo Lagrangian. For this choice, you are expected to build the Lagrangian in the notebook file.  See &quot;<a href="../guide/BuildLagrangian.html">BuildLagrangian</a>&quot; for details.</p>
+ <div class="MCap"><a name="616349810"></a>Consider the following toy Lagrangian for this model:</div>
+ <div class="IO">
+  <table class="InCell">
+   <tr><td class="lab">In[1]:=</td><td class="Input"><div>
+      <a name="1240598877"></a>
+      <img src=""
+          data-src="Files/ElectroweakRealTripletScalar/I_8.png"
+          data-big="506 75"
+          data-small="396 92"
+          alt="Click for copyable input" />
+     </div><div id="i_7_out" class="IFL"></div></td></tr>
+  </table>
+  <table class="OCell">
+   <tr><td class="lab">Out[1]=</td><td class="Output"><div class="output-image">
+      <img src="Files/ElectroweakRealTripletScalar/O_1.png"
+          height="138"
+          width="527"
+          alt="" />
+     </div></td></tr>
+  </table>
+ </div>
+ <p class="Text"><a name="972631873"></a> </p>
+ <div class="MCap"><a name="2090133544"></a>For tree level Wilson Coefficients, use trOut[]:</div>
+ <table class="InCell">
+  <tr><td class="lab">In[2]:=</td><td class="Input"><div>
+     <a name="336976382"></a>
+     <img src="Files/ElectroweakRealTripletScalar/I_10.png"
+         height="16"
+         width="73"
+         alt="Click for copyable input" />
+    </div><div id="i_9_out" class="IFL"></div></td></tr>
+ </table>
+ <table class="InCell">
+  <tr><td class="lab">In[3]:=</td><td class="Input"><div>
+     <a name="278142065"></a>
+     <img src="Files/ElectroweakRealTripletScalar/I_12.png"
+         height="40"
+         width="365"
+         alt="Click for copyable input" />
+    </div><div id="i_11_out" class="IFL"></div></td></tr>
+ </table>
+ <div class="MCap"><a name="638115026"></a>Loop level Wilson Coefficients, use lpOut[]:</div>
+ <table class="InCell">
+  <tr><td class="lab">In[4]:=</td><td class="Input"><div>
+     <a name="265908864"></a>
+     <img src="Files/ElectroweakRealTripletScalar/I_14.png"
+         height="16"
+         width="86"
+         alt="Click for copyable input" />
+    </div><div id="i_13_out" class="IFL"></div></td></tr>
+ </table>
+ <table class="InCell">
+  <tr><td class="lab">In[5]:=</td><td class="Input"><div>
+     <a name="314139979"></a>
+     <img src=""
+         data-src="Files/ElectroweakRealTripletScalar/I_16.png"
+         data-big="544 82"
+         data-small="377 124"
+         alt="Click for copyable input" />
+    </div><div id="i_15_out" class="IFL"></div></td></tr>
+ </table>
+ <p class="Text"><a name="483572101"></a> </p>
+ <div class="MCap"><a name="1387238861"></a>For constructing low scale Wilson Coefficients, one may use the <a href="../ref/flow.html">flow</a> function. The Renormalization Group <a href="../ref/flow.html">flow</a> function:</div>
+ <div class="IO">
+  <table class="InCell">
+   <tr><td class="lab">In[6]:=</td><td class="Input"><div>
+      <a name="93581348"></a>
+      <img src=""
+          data-src="Files/ElectroweakRealTripletScalar/I_18.png"
+          data-big="485 40"
+          data-small="396 62"
+          alt="Click for copyable input" />
+     </div><div id="i_17_out" class="IFL"></div></td></tr>
+  </table>
+  <table class="OCell">
+   <tr><td class="lab">Out[6]=</td><td class="Output"><div class="output-image">
+      <img src="Files/ElectroweakRealTripletScalar/O_2.png"
+          height="1192"
+          width="942"
+          alt="" />
+     </div></td></tr>
+  </table>
+ </div>
+ <div class="expandWrap"
+     id="RelatedGuides">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Related Guides</a><a class="collapse" title="hide" href="#">Related Guides</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li>
+      <a name="319587263"></a>
+      <a href="../guide/UserDefined.html">UserDefined</a>
+     </li>
+     <li>
+      <a name="1549155283"></a>
+      <a href="../guide/BuildLagrangian.html">BuildLagrangian</a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="RelatedTutorials">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Related Tutorials</a><a class="collapse" title="hide" href="#">Related Tutorials</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li>
+      <a name="814797961"></a>
+      <a href="../tutorial/2HDM.html">2HDM</a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>
+</div><!-- /wrapper -->
+
+
+	
+</div>
+
+
+</body></html>

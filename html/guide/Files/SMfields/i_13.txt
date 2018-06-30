@@ -1,0 +1,3 @@
+<pre name='i_13_in' id='i_13_in' class='IFT'>dR[p, c] where p = 1, 2, 3 &amp; c = 1, 2, 3.
+ p is the generation index. c is the color index. So, 
+dR[2, 1] is the right handed strange  quark.</pre><div class='IFU'>http://wolfram.com/xid/0gb3f1k6xnoun7m5cyflkb</div>

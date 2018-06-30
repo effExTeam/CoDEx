@@ -1,0 +1,22 @@
+<pre name='i_11_in' id='i_11_in' class='IFT'>flow[{{&quot;qH&quot;, (4 kapa^2)/m^2}}, \[Mu]]
+{&quot;qG&quot; -&gt; 0, &quot;qGtil&quot; -&gt; 0, &quot;qW&quot; -&gt; 0, &quot;qWtil&quot; -&gt; 0, 
+ &quot;qH&quot; -&gt; (4 kapa^2)/m^2 - (9 g1^2 kapa^2 Log[\[Mu]/m])/(
+   8 m^2 \[Pi]^2) - (27 g2^2 kapa^2 Log[\[Mu]/m])/(8 m^2 \[Pi]^2), 
+ &quot;qHbox&quot; -&gt; 0, &quot;qHD&quot; -&gt; 0, &quot;qHG&quot; -&gt; 0, &quot;qHGtil&quot; -&gt; 0, &quot;qHW&quot; -&gt; 0, 
+ &quot;qHWtil&quot; -&gt; 0, &quot;qHB&quot; -&gt; 0, &quot;qHBtil&quot; -&gt; 0, &quot;qHWB&quot; -&gt; 0, 
+ &quot;qHWtilB&quot; -&gt; 0, &quot;qeH[1,1]&quot; -&gt; 0, &quot;quH[1,1]&quot; -&gt; 0, &quot;qdH[1,1]&quot; -&gt; 0, 
+ &quot;qeW[1,1]&quot; -&gt; 0, &quot;qeB[1,1]&quot; -&gt; 0, &quot;quG[1,1]&quot; -&gt; 0, &quot;quW[1,1]&quot; -&gt; 0, 
+ &quot;quB[1,1]&quot; -&gt; 0, &quot;qdG[1,1]&quot; -&gt; 0, &quot;qdW[1,1]&quot; -&gt; 0, &quot;qdB[1,1]&quot; -&gt; 0, 
+ &quot;q1Hl[1,1]&quot; -&gt; 0, &quot;q3Hl[1,1]&quot; -&gt; 0, &quot;qHe[1,1]&quot; -&gt; 0, 
+ &quot;q1Hq[1,1]&quot; -&gt; 0, &quot;q3Hq[1,1]&quot; -&gt; 0, &quot;qHu[1,1]&quot; -&gt; 0, &quot;qHd[1,1]&quot; -&gt; 0,
+  &quot;qHud[1,1]&quot; -&gt; 0, &quot;qll[1,1,1,1]&quot; -&gt; 0, &quot;q1qq[1,1,1,1]&quot; -&gt; 0, 
+ &quot;q3qq[1,1,1,1]&quot; -&gt; 0, &quot;q1lq[1,1,1,1]&quot; -&gt; 0, &quot;q3lq[1,1,1,1]&quot; -&gt; 0, 
+ &quot;qee[1,1,1,1]&quot; -&gt; 0, &quot;quu[1,1,1,1]&quot; -&gt; 0, &quot;qdd[1,1,1,1]&quot; -&gt; 0, 
+ &quot;qeu[1,1,1,1]&quot; -&gt; 0, &quot;qed[1,1,1,1]&quot; -&gt; 0, &quot;q1ud[1,1,1,1]&quot; -&gt; 0, 
+ &quot;q8ud[1,1,1,1]&quot; -&gt; 0, &quot;qle[1,1,1,1]&quot; -&gt; 0, &quot;qlu[1,1,1,1]&quot; -&gt; 0, 
+ &quot;qld[1,1,1,1]&quot; -&gt; 0, &quot;qqe[1,1,1,1]&quot; -&gt; 0, &quot;q1qu[1,1,1,1]&quot; -&gt; 0, 
+ &quot;q8qu[1,1,1,1]&quot; -&gt; 0, &quot;q1qd[1,1,1,1]&quot; -&gt; 0, &quot;q8qd[1,1,1,1]&quot; -&gt; 0, 
+ &quot;qledq[1,1,1,1]&quot; -&gt; 0, &quot;q1quqd[1,1,1,1]&quot; -&gt; 0, 
+ &quot;q8quqd[1,1,1,1]&quot; -&gt; 0, &quot;q1lequ[1,1,1,1]&quot; -&gt; 0, 
+ &quot;q3lequ[1,1,1,1]&quot; -&gt; 0, &quot;qHudhc[1,1]&quot; -&gt; 0}
+</pre><div class='IFU'><a name='439998580'></a>http://wolfram.com/xid/0yhixbhwvrv9yqw5ff5c3m-hj8zc2</div>

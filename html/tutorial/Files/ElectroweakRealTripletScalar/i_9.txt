@@ -1,0 +1,5 @@
+<pre name='i_9_in' id='i_9_in' class='IFT'>\!\(
+ButtonBox[
+RowBox[{&quot;trOut&quot;, &quot;[&quot;, &quot;Lpoten&quot;, &quot;]&quot;}],
+BaseStyle-&gt;&quot;Link&quot;,
+ButtonData-&gt;&quot;paclet:CoDEx/ref/&quot;]\)</pre><div class='IFU'><a name='336976382'></a>http://wolfram.com/xid/0f59sc57b33wn4dkudflqry08n1zyspy06-fuwuxc</div>

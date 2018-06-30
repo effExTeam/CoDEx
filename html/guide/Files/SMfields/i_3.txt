@@ -1,0 +1,3 @@
+<pre name='i_3_in' id='i_3_in' class='IFT'>nuL[p] where p = 1, 2, 3 .
+   p is the generation index. So, 
+nuL[3] is the left handed tau neutrino.</pre><div class='IFU'>http://wolfram.com/xid/0gb3f1k6xnoun7m5cyflkb</div>

@@ -1,0 +1,2 @@
+<pre name='i_11_in' id='i_11_in' class='IFT'>{{&quot;qH&quot;, (eta kappa^2)/m^4}, {&quot;qHbox&quot;, (2 kappa^2)/
+  m^4}, {&quot;qHD&quot;, -((4 kappa^2)/m^4)}}</pre><div class='IFU'><a name='278142065'></a>http://wolfram.com/xid/0f59sc57b33wn4dkudflqry08n1zyspy06-evvt2r</div>
