@@ -1,6 +1,0 @@
-<pre name='i_15_in' id='i_15_in' class='IFT'>{{&quot;qW&quot;, -(gW^3/(
-   1440 m^2 \[Pi]^2))}, {&quot;qH&quot;, -((3 eta kappa^2 lambdaphi)/(
-    4 m^4 \[Pi]^2)) + eta^3/(6 m^2 \[Pi]^2)}, {&quot;qHbox&quot;, -((
-   kappa^2 lambdaphi)/(m^4 \[Pi]^2))}, {&quot;qHD&quot;, (3 kappa^2 lambdaphi)/(
-   2 m^4 \[Pi]^2) + eta^2/(6 m^2 \[Pi]^2)}, {&quot;qHW&quot;, -((eta gW^2)/(
-   96 m^2 \[Pi]^2))}}</pre><div class='IFU'><a name='314139979'></a>http://wolfram.com/xid/0f59sc57b33wn4dkudflqry08n1zyspy06-fhbd8t</div>

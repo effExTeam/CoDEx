@@ -1,5 +1,0 @@
-<pre name='i_7_in' id='i_7_in' class='IFT'>Lpotenewrts = 
-  Expand[2 kappa Sum[(dag[H]. tau[i].H) (hfvecsewrts[[1, 1]][[
-         i]]), {i, Length@hfvecsewrts[[1, 1]]}] - 
-    eta abs[H]^2 (hfvecsewrts[[1, 1]].hfvecsewrts[[1, 1]]) -
-    1/4 lambdaphi (hfvecsewrts[[1, 1]].hfvecsewrts[[1, 1]])^2];</pre><div class='IFU'><a name='189544689'></a>http://wolfram.com/xid/0gb3f1k6xnojk8w2mivmty-de4vwj</div>

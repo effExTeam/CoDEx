@@ -1,4 +1,0 @@
-<pre name='i_5_in' id='i_5_in' class='IFT'>Lpoten = Expand[-kapa {H[[1]]^3, Sqrt[3] H[[1]]^2 H[[2]], 
-      Sqrt[3] H[[1]] H[[2]]^2, H[[2]]^3}.hfvecs[[1, 1]] - 
-   cc[kapa {H[[1]]^3, Sqrt[3] H[[1]]^2 H[[2]], 
-       Sqrt[3] H[[1]] H[[2]]^2, H[[2]]^3}.hfvecs[[1, 1]]]]</pre><div class='IFU'><a name='343353037'></a>http://wolfram.com/xid/0yhixbhwvrv9yqw5ff5c3m-fypi6n</div>

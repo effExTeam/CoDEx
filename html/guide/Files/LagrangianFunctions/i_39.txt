@@ -1,1 +1,0 @@
-<pre name='i_39_in' id='i_39_in' class='IFT'>x = I/2 (gamma[1].gamma[2] - gamma[2].gamma[1])</pre><div class='IFU'><a name='1936990214'></a>http://wolfram.com/xid/0bypxf2uqkkuihuck2v6xc6avmb-6biph0</div>

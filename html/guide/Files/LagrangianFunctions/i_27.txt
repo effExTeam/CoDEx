@@ -1,1 +1,0 @@
-<pre name='i_27_in' id='i_27_in' class='IFT'>hermitianConjugate[x[1] + I y[1]]</pre><div class='IFU'><a name='41301808'></a>http://wolfram.com/xid/0bypxf2uqkkuihuck2v6xc6avmb-yviyq</div>

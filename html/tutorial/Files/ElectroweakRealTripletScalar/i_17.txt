@@ -1,2 +1,0 @@
-<pre name='i_17_in' id='i_17_in' class='IFT'>flow[{{&quot;qH&quot;, (eta kappa^2)/m^4}, {&quot;qHbox&quot;, (2 kappa^2)/
-    m^4}, {&quot;qHD&quot;, -((4 kappa^2)/m^4)}}, \[Mu]] // MatrixForm</pre><div class='IFU'><a name='93581348'></a>http://wolfram.com/xid/0f59sc57b33wn4dkudflqry08n1zyspy06-btz136</div>
