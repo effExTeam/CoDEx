@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+
+<title>defineHeavyFields&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000" />
+<meta name="historydata" content="{1.0, , , }" />
+<meta name="keywords" content="defineHeavyFields" />
+
+<meta name="description" content="defineHeavyFields[List] creates representation of heavy fields. Use output of &amp;apos;defineHeavyFields&amp;apos; to construct the BSM Lagrangian." />
+<script language="JavaScript" type="text/javascript">baselang='defineHeavyFields';</script>
+<!--#include virtual="/common/includes/gl-head-includes.html"-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--[if IE]>
+<style type="text/css">
+/* doctype problem overrides */
+#menu .searchboxsub, #menu .searchboxsub-on { padding-bottom: 0; }
+#menu .headerSearchSubmit { margin-bottom: 4px; }
+
+/*
+.WRIdropMenu .WRImenuContents { margin-top: -2px; margin-left: -2px; }
+.WRIdropMenu .WRImenuContents .WRImenuContents { margin: 0; }
+*/
+</style>
+<![endif]-->
+<link rel="stylesheet" href="/webMathematica/Resources/Documentation/English/css/reference.css" />
+
+<script src="/webMathematica/Resources/Documentation/English/javascript/reference.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/documentation-search.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/faster-page-load.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/hyperlink-filter.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/brokenlinks.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/clipboard.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/image-swap.js"></script>
+
+<script language="JavaScript" type="text/javascript" src="/2013/javascript/toggle-highlight.js"></script>
+</head>
+<body id="ref" class="function">
+<a name="top"></a>
+ 
+<div class="main-wrapper">
+<div class="outer-wrapper">
+
+<div class="wrapper mainOuter">
+    <div class="mainContent">
+ <div class="topContentWrap">
+  <div class="ribbonWrap">
+   <span class="ribbonOuter"><span class="ribbonInner">CO D EX SYMBOL</span></span>
+  </div>
+  <ul class="dropdown">
+   <li>
+    <a href="#">Tutorials</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/tutorial/BuildLagrangian.html"><span class="dropdownPad">BuildLagrangian</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <div class="clear"><!-- --></div>
+ </div>
+ <h1>defineHeavyFields</h1>
+ <div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p><span class="IF"><span class="specialcharacters">defineHeavyFields<span class="openbracket">[</span>List<span class="closebracket">]</span></span></span> <br />creates representation of heavy fields. Use output of 'defineHeavyFields' to construct the BSM Lagrangian.</p>
+  </div>
+ </div>
+ <div class="expandWrap closed"
+     id="DetailsAndOptions">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Details</a><a class="collapse" title="hide" href="#">Details</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li><a name="1067943069"></a>'defineHeavyFields' function lists all the field components (color, isospin and Lorentz) for the given heavy field multiplet.</li>
+     <li><a name="999426095"></a>InputList (argument) : {heavy multiplet name, total number of field components (count each spin 0 , spin 1/2 and spin 1 field), <span class="IF">SU<span class="openparenthesis">(</span>3<span class="closeparenthesis">)</span><sub>C</sub></span> quantum number, <span class="IF">SU<span class="openparenthesis">(</span>2<span class="closeparenthesis">)</span><sub>L</sub></span> quantum number, <span class="IF">U<span class="openparenthesis">(</span>1<span class="closeparenthesis">)</span><sub>Y</sub> </span> charge, spin of heavy multiplet, mass of heavy multiplet}</li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="Examples">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Examples</a><a class="collapse" title="hide" href="#">Examples</a><a class="all opener" title="open all" href="#"><span>open all</span></a><a class="all closer hide" title="close all" href="#"><span>close all</span></a></h2>
+   <div class="expanded">
+    <div class="expandSubWrap">
+     <div class="expandSubOuter">
+      <h3 class="expandSubInner"><a class="expand hide" href="#" title="show">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a><a class="collapse" href="#" title="hide">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a></h3>
+      <div class="expanded">
+       <table class="InCell">
+        <tr><td class="lab">In[1]:=</td><td class="Input"><div>
+           <a name="1196114049"></a>
+           <img src="Files/defineHeavyFields/I_2.png"
+               height="16"
+               width="93"
+               alt="Click for copyable input" />
+          </div><div id="i_1_out" class="IFL"></div></td></tr>
+       </table>
+       <div class="Text"><a name="1988483766"></a>    CoDEx-1.0.0</div>
+       <div class="Text"><a name="1306140548"></a>Supratim Das Bakshi, Joydeep Chakrabortty, Sunando K. Patra
+ IIT Kanpur, India</div>
+       <div class="Text"><a name="726350602"></a>If you are using CoDEx for the first time, try running ' <strong>tuteMode[]</strong> '.</div>
+       <div class="MCap"><a name="1789893194"></a>Defining InputList</div>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[2]:=</td><td class="Input"><div>
+            <a name="1171563007"></a>
+            <img src="Files/defineHeavyFields/I_4.png"
+                height="16"
+                width="232"
+                alt="Click for copyable input" />
+           </div><div id="i_3_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab">Out[2]=</td><td class="Output"><div class="output-image">
+            <img src="Files/defineHeavyFields/O_1.png"
+                height="29"
+                width="174"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+       <div class="MCap"><a name="532443627"></a>Using 'defineHeavyFields'</div>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[3]:=</td><td class="Input"><div>
+            <a name="1286937963"></a>
+            <img src="Files/defineHeavyFields/I_6.png"
+                height="16"
+                width="200"
+                alt="Click for copyable input" />
+           </div><div id="i_5_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab">Out[3]=</td><td class="Output"><div class="output-image">
+            <img src="Files/defineHeavyFields/O_2.png"
+                height="16"
+                width="304"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[4]:=</td><td class="Input"><div>
+            <a name="195248477"></a>
+            <img src="Files/defineHeavyFields/I_8.png"
+                height="16"
+                width="89"
+                alt="Click for copyable input" />
+           </div><div id="i_7_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab">Out[4]=</td><td class="Output"><div class="output-image">
+            <img src="Files/defineHeavyFields/O_3.png"
+                height="16"
+                width="290"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+       <div class="MCap"><a name="1365931270"></a>A term in BSM Lagrangian</div>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[5]:=</td><td class="Input"><div>
+            <a name="606668460"></a>
+            <img src="Files/defineHeavyFields/I_10.png"
+                height="16"
+                width="255"
+                alt="Click for copyable input" />
+           </div><div id="i_9_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab">Out[5]=</td><td class="Output"><div class="output-image">
+            <img src="Files/defineHeavyFields/O_4.png"
+                height="16"
+                width="296"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+       <div class="TR" id="1719013532"><a name="1719013532"></a>This term is equivalent to <span class="IF"><span class="openparenthesis">(</span><span class="special-character CapitalPhi">&#934;</span><sup><span class="special-character Dagger">&#8224;</span></sup><span class="special-character CapitalPhi">&#934;</span><span class="closeparenthesis">)</span></span>, where heavyfirst[[1,1]] <span class="special-character Equivalent">&#10726;</span> <span class="special-character CapitalPhi">&#934;</span> here.</div>
+      </div>
+     </div>
+    </div>
+    <div class="toplink">
+     <a href="#top">Top</a>
+    </div>
+    <div class="clear"><!-- --></div>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="Tutorials">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Tutorials</a><a class="collapse" title="hide" href="#">Tutorials</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li>
+      <a name="621088882"></a>
+      <a class="package-symbol" href="../tutorial/BuildLagrangian.html">BuildLagrangian</a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>
+</div><!-- /wrapper -->
+
+	
+</div>
+
+
+</body></html>

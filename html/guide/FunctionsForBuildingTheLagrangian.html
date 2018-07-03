@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+
+<title>Functions for building the Lagrangian&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000" />
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="FunctionsForBuildingTheLagrangian" />
+
+<meta name="description" content="The user provides the Beyond Standard Model (BSM) Lagrangian for CoDEx to use. This is made up of the heavy multiplets and the Standard Model fields (See: SMFields). Other than these multiplets and fields, user may, and is asked to use the following functions while defining the BSM Lagrangian." />
+<script language="JavaScript" type="text/javascript">baselang='FunctionsForBuildingTheLagrangian';</script>
+<!--#include virtual="/common/includes/gl-head-includes.html"-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--[if IE]>
+<style type="text/css">
+/* doctype problem overrides */
+#menu .searchboxsub, #menu .searchboxsub-on { padding-bottom: 0; }
+#menu .headerSearchSubmit { margin-bottom: 4px; }
+
+/*
+.WRIdropMenu .WRImenuContents { margin-top: -2px; margin-left: -2px; }
+.WRIdropMenu .WRImenuContents .WRImenuContents { margin: 0; }
+*/
+</style>
+<![endif]-->
+<link rel="stylesheet" href="/webMathematica/Resources/Documentation/English/css/reference.css" />
+
+<script src="/webMathematica/Resources/Documentation/English/javascript/reference.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/documentation-search.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/faster-page-load.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/hyperlink-filter.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/brokenlinks.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/clipboard.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/image-swap.js"></script>
+
+<!--#include virtual="/2013/includes/carousel-head.html"--> 
+</head>
+<body id="guide">
+<a name="top"></a>
+ 
+<div class="main-wrapper">
+<div class="outer-wrapper">
+
+<div class="wrapper mainOuter">
+    <div class="mainContent">
+ <div class="topContentWrap">
+  <div class="ribbonWrap">
+   <span class="ribbonOuter"><span class="ribbonInner">CO D EX PACKAGE GUIDE</span></span>
+  </div>
+  <ul class="dropdown">
+   <li>
+    <a href="#">Functions</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/ref/PauliMatrix.html"><span class="dropdownPad">PauliMatrix</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/https://effexteam.github.io/CoDEx/.html"><span class="dropdownPad">WebSite</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#">Tutorials</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/tutorial/BuildLagrangian.html"><span class="dropdownPad">BuildLagrangian</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/tutorial/CoDExTutorial.html"><span class="dropdownPad">CoDExTutorial</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <div class="clear"><!-- --></div>
+ </div>
+ <h1><a name="942062912"></a>Functions for building the Lagrangian</h1>
+ <p class="intro"><a name="2001916300"></a>The user provides the Beyond Standard Model (BSM) Lagrangian for CoDEx to use. This is made up of the heavy multiplets and the Standard Model fields (See: <a href="http://reference.wolfram.com/language/CoDEx/guide/SMFields.html">SMFields</a>). Other than these multiplets and fields, user may, and is asked to use the following functions while defining the BSM Lagrangian.</p>
+ <p class="intro"><a name="221643090"></a>We do not provide separate help pages for these functions. This is why this guide displays a set of working examples in the last section.</p>
+ <div class="expandWrap">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#"><img src="Files/FunctionsForBuildingTheLagrangian/1.gif" height="17" width="6" alt="" />Functions</a><a class="collapse" title="hide" href="#"><img src="Files/FunctionsForBuildingTheLagrangian/1.gif" height="17" width="6" alt="" />Functions</a></h2>
+   <div class="expanded">
+    <div class="GuideDelimiterTop"><!-- --></div>
+    <p class="singleFunction"><a name="203374175"></a><span class="IFSans">re</span> <span class="dash">&mdash;</span> <span class="IF">re<span class="openbracket">[</span><em>expression</em><span class="closebracket">]</span></span> gives only the real part of <span class="IFSans">expression</span>.</p>
+    <p class="singleFunction"><a name="1463276848"></a><span class="IFSans">im</span> <span class="dash">&mdash;</span> <span class="IF">im<span class="openbracket">[</span><em>expression</em><span class="closebracket">]</span></span> gives only the imaginary part of <span class="IFSans">expression</span>.</p>
+    <p class="singleFunction"><a name="80214447"></a><span class="IFSans">abs</span> <span class="dash">&mdash;</span> Provides the norm of a vector. <span class="IF">abs<span class="openbracket">[</span><em>A</em><span class="closebracket">]</span>= Sqrt<span class="openbracket">[</span>A.dag<span class="openbracket">[</span>A<span class="closebracket">]</span><span class="closebracket">]</span></span> </p>
+    <p class="singleFunction"><a name="317077265"></a><span class="IFSans">dag</span> <span class="dash">&mdash;</span> Stands for the Dagger operation on some expression. </p>
+    <p class="singleFunction">
+     <a name="69244117"></a>
+     <span class="IF">dag<span class="openbracket">[</span><em>a</em><span class="closebracket">]</span>=<span class="openparenthesis">(</span>ComplexExpand//@<span class="openparenthesis">(</span>If<span class="openbracket">[</span>VectorQ<span class="openbracket">[</span>a<span class="closebracket">]</span><span class="special-character Equal">&#62513;</span>True<span class="comma">,</span>Conjugate<span class="openbracket">[</span>a<span class="closebracket">]</span><span class="comma">,</span>ConjugateTranspose<span class="openbracket">[</span>ExpandAll//@a<span class="closebracket">]</span><span class="closebracket">]</span><span class="closeparenthesis">)</span><span class="closeparenthesis">)</span></span>
+    </p>
+    <p class="singleFunction"><a name="157879953"></a><span class="IFSans">commutator</span> <span class="dash">&mdash;</span> <span class="IF">commutator<span class="openbracket">[</span><em>a</em><span class="comma">,</span><em>b</em><span class="closebracket">]</span>=a.b - b.a</span>  (a and b should be matrices)</p>
+    <p class="singleFunction"><a name="182243753"></a><span class="IFSans">antiCommutator</span> <span class="dash">&mdash;</span>  <span class="IF">anticommutator<span class="openbracket">[</span><em>a</em><span class="comma">,</span><em>b</em><span class="closebracket">]</span>=a.b + b.a</span>  (a and b should be matrices)</p>
+    <p class="singleFunction"><a name="322201201"></a><span class="IFSans">pau</span> <span class="dash">&mdash;</span> Slightly modified version of <a href="http://reference.wolfram.com/language/ref/PauliMatrix.html">PauliMatrix</a>. <span class="IF">pau<span class="openbracket">[</span>4<span class="closebracket">]</span>=<span class="special-character ImaginaryI">&#63310;</span>*PauliMatrix<span class="openbracket">[</span>4<span class="closebracket">]</span></span>. Otherwise <span class="IF">pau<span class="openbracket">[</span><em>i</em><span class="closebracket">]</span> = PauliMatrix<span class="openbracket">[</span>i<span class="closebracket">]</span></span>.</p>
+    <p class="singleFunction"><a name="412393276"></a><span class="IFSans">tau</span> <span class="dash">&mdash;</span> <span class="IF">tau<span class="openbracket">[</span><em>a</em><span class="closebracket">]</span> = <span class="openparenthesis">(</span>1/2<span class="closeparenthesis">)</span> * pau<span class="openbracket">[</span>a<span class="closebracket">]</span></span></p>
+    <p class="singleFunction"><a name="892358252"></a><span class="IFSans">del</span> <span class="dash">&mdash;</span> del is a variation of a partial derivative operator. In <span class="IF">del<span class="openbracket">[</span><em>a</em><span class="comma">,</span>expression<span class="closebracket">]</span></span>, <span class="IFSans">a</span> is the Lorentz index, and runs from 0 to 3.</p>
+    <p class="singleFunction"><a name="16615322"></a><span class="IFSans">hermitianConjugate</span> <span class="dash">&mdash;</span> <span class="IF">hermitianConjugate<span class="openbracket">[</span><em>a</em><span class="closebracket">]</span>=ComplexExpand<span class="openbracket">[</span>Conjugate<span class="openbracket">[</span>a<span class="closebracket">]</span><span class="closebracket">]</span></span></p>
+    <p class="singleFunction"><a name="65049877"></a><span class="IFSans">gamma</span> <span class="dash">&mdash;</span> It is a user-defined matrix.</p>
+    <p class="singleFunction"><a name="99072141"></a><span class="IFSans">sigma</span> <span class="dash">&mdash;</span> It is a user-defined matrix.</p>
+    <p class="singleFunction"><a name="221053352"></a><span class="IFSans">su3fijk</span> <span class="dash">&mdash;</span> These are the <em>SU(3)</em> structure constants.</p>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="RelatedGuides">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Related Guides</a><a class="collapse" title="hide" href="#">Related Guides</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li>
+      <a name="102923558"></a>
+      <a href="https://effexteam.github.io/CoDEx/">WebSite</a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>
+</div><!-- /wrapper -->
+
+	
+</div>
+
+
+</body></html>

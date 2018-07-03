@@ -1,0 +1,1 @@
+<pre name='i_9_in' id='i_9_in' class='IFT'>Expand[dag[heavyfirst[[1, 1]]].heavyfirst[[1, 1]]]</pre><div class='IFU'><a name='606668460'></a>http://wolfram.com/xid/0nprfkmtwkl8y8jr18thzaq9l9v-kbhany</div>

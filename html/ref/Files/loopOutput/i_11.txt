@@ -1,0 +1,1 @@
+<pre name='i_11_in' id='i_11_in' class='IFT'>isoewrss[i_, a_] := 0; colewrss[i_, a_] := 0</pre><div class='IFU'><a name='1782115177'></a>http://wolfram.com/xid/0bsqkp30f4mul0vcn17l2a-3ra65n</div>

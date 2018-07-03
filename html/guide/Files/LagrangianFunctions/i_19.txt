@@ -1,0 +1,1 @@
+<pre name='i_19_in' id='i_19_in' class='IFT'>Table[pau[i], {i, 4}]</pre><div class='IFU'><a name='1547902805'></a>http://wolfram.com/xid/0dm5klve6uvf3ypu87l3fh4uf0j-zvu7qf</div>

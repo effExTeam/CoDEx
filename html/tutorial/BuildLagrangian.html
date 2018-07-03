@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+
+<title>BuildLagrangian&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000" />
+<meta name="historydata" content="{0.0, , , }" />
+<meta name="keywords" content="BuildLagrangian" />
+
+<meta name="description" content="Construction of the model Lagrangian. EXAMPLE I Consider the Lagrangian:" />
+<script language="JavaScript" type="text/javascript">baselang='BuildLagrangian';</script>
+<script language="JavaScript" type="text/javascript">packagename='CoDEx';</script>
+<!--#include virtual="/common/includes/gl-head-includes.html"-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--[if IE]>
+<style type="text/css">
+/* doctype problem overrides */
+#menu .searchboxsub, #menu .searchboxsub-on { padding-bottom: 0; }
+#menu .headerSearchSubmit { margin-bottom: 4px; }
+
+/*
+.WRIdropMenu .WRImenuContents { margin-top: -2px; margin-left: -2px; }
+.WRIdropMenu .WRImenuContents .WRImenuContents { margin: 0; }
+*/
+</style>
+<![endif]-->
+<link rel="stylesheet" href="/webMathematica/Resources/Documentation/English/css/reference.css" />
+
+<script src="/webMathematica/Resources/Documentation/English/javascript/reference.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/documentation-search.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/faster-page-load.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/hyperlink-filter.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/brokenlinks.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/clipboard.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/image-swap.js"></script>
+
+</head>
+<body id="tutorial">
+<a name="top"></a>
+ 
+<div class="main-wrapper">
+<div class="outer-wrapper">
+
+<div class="wrapper mainOuter">
+    <div class="mainContent">
+ <div class="topContentWrap">
+  <div class="ribbonWrap">
+   <span class="ribbonOuter"><span class="ribbonInner">CO D EX TUTORIAL</span></span>
+  </div>
+  
+  <div class="clear"><!-- --></div>
+ </div>
+ <h1 class="Title"><a name="509267359"></a>BuildLagrangian</h1>
+ <p class="Text"><a name="1534169418"></a>Construction of the model Lagrangian.</p>
+ <p class="Text"><a name="2048636693"></a>EXAMPLE I</p>
+ <p class="Text"><a name="263532119"></a>Consider the Lagrangian:</p>
+ <p class="Text">
+  <a name="599301425"></a>
+  <span class="IM"><img style="vertical-align:middle;" title="L(Phi,H)=1/2 ( D_muPhi^a)^2-1/2 m^2 Phi^a Phi^a-eta Phi^a Phi^a TemplateBox[{H}, Abs]^2+2  kappa  H^| tau^a H  Phi^a -1/4lambda_Phi (Phi^a Phi^a)^2 " src="Files/BuildLagrangian/Image_1.png" width="494" height="25" alt="L(Phi,H)=1/2 ( D_muPhi^a)^2-1/2 m^2 Phi^a Phi^a-eta Phi^a Phi^a TemplateBox[{H}, Abs]^2+2  kappa  H^| tau^a H  Phi^a -1/4lambda_Phi (Phi^a Phi^a)^2 " /></span>
+ </p>
+ <p class="Text"><a name="603227476"></a><span class="IM"><img src="Files/BuildLagrangian/2.png" height="15" width="8" alt="" /></span> is real isospin triplet scalar. H is the Standard Model Higgs. <span class="IM"><img src="Files/BuildLagrangian/3.png" height="15" width="9" alt="" /></span> is the mass of <span class="IM"><img src="Files/BuildLagrangian/4.png" height="15" width="8" alt="" /></span>. <img style="vertical-align:middle;" title="D_mu" src="Files/BuildLagrangian/Image_5.png" width="16" height="18" alt="D_mu" /> is the covariant derivative. <span class="IM"><img src="Files/BuildLagrangian/6.png" height="15" width="23" alt="" /></span> and <span class="IM"><img src="Files/BuildLagrangian/7.png" height="15" width="14" alt="" /></span> are the couplings. (Using the SM Higgs, H for creating BSM Lagrangian - see <a href="../guide/SMfields.html">SMfields.</a>)</p>
+ <p class="Text"><a name="559224488"></a>We want to adapt this BSM Lagrangian in notebook file:<br />For any heavy field in Lagrangian, we do not need to write the respective kinetic terms. We only write the remaining terms such as self interacting, SM - heavy field interacting, heavy- heavy (different multiplet) terms in the Lagrangian which we henceforth refer LBSM. So, now the reduced structure is </p>
+ <p class="Text">
+  <a name="413187173"></a>
+  <span class="IM"><img style="vertical-align:middle;" title="L(Phi,H)  superset  -eta Phi^a Phi^a TemplateBox[{H}, Abs]^2+2  kappa  H^| tau^a H  Phi^a -1/4lambda_Phi (Phi^a Phi^a)^2 " src="Files/BuildLagrangian/Image_8.png" width="345" height="25" alt="L(Phi,H)  superset  -eta Phi^a Phi^a TemplateBox[{H}, Abs]^2+2  kappa  H^| tau^a H  Phi^a -1/4lambda_Phi (Phi^a Phi^a)^2 " /></span>
+ </p>
+ <p class="Text"><a name="1706650930"></a>First term: <span class="IM"><img style="vertical-align:middle;" title="L(Phi,H)  superset  -eta  Phi^a Phi^a TemplateBox[{H}, Abs]^2 " src="Files/BuildLagrangian/Image_9.png" width="148" height="15" alt="L(Phi,H)  superset  -eta  Phi^a Phi^a TemplateBox[{H}, Abs]^2 " /></span>. The term will appear as follows:</p>
+ <p class="Text">
+  <a name="197412194"></a>
+  <span class="IF"> - <span class="special-character Eta">&#951;</span> hfvecs<span class="openbracket">[</span><span class="openbracket">[</span>1<span class="comma">,</span>1<span class="closebracket">]</span><span class="closebracket">]</span>. hfvecs<span class="openbracket">[</span><span class="openbracket">[</span>1<span class="comma">,</span>1<span class="closebracket">]</span><span class="closebracket">]</span> * abs<span class="openbracket">[</span>H<span class="closebracket">]</span><sup>2</sup></span>
+ </p>
+ <p class="Text"><a name="1354133722"></a>Here, <span class="IF"><span class="specialcharacters">hfvecs<span class="openbracket">[</span><span class="openbracket">[</span>1<span class="comma">,</span>1<span class="closebracket">]</span><span class="closebracket">]</span></span></span> is the list of <span class="IF"><span class="special-character CapitalPhi">&#934;</span><sup>a</sup></span>'s. Refer to <a href="../tutorial/ElectroweakRealTripletScalar.html">ElectroweakRealTripletScalar</a> model for details.</p>
+ <p class="Text"><a name="1820242787"></a>Second term: <span class="IM"><img src="Files/BuildLagrangian/10.png" height="15" width="157" alt="" /></span>. The term will appear as follows:</p>
+ <p class="Text">
+  <a name="1915969594"></a>
+  <span class="IF"> 2 <span class="special-character Kappa">&#954;</span> Sum<span class="openbracket">[</span><span class="openparenthesis">(</span>dag<span class="openbracket">[</span>H<span class="closebracket">]</span>.tau<span class="openbracket">[</span>a<span class="closebracket">]</span>.H<span class="closeparenthesis">)</span>* hfvecs<span class="openbracket">[</span><span class="openbracket">[</span>1<span class="comma">,</span>1<span class="comma">,</span>a<span class="closebracket">]</span><span class="closebracket">]</span><span class="comma">,</span><span class="openbrace">{</span>a<span class="comma">,</span>3<span class="closebrace">}</span><span class="closebracket">]</span></span>
+ </p>
+ <p class="Text"><a name="1838139517"></a>Third term: <span class="IM"><img src="Files/BuildLagrangian/11.png" height="25" width="145" alt="" /></span>. The term will appear as follows:</p>
+ <p class="Text">
+  <a name="2058600124"></a>
+  <span class="IF"> <img src="Files/BuildLagrangian/12.png" height="25" width="9" style="vertical-align:middle;" alt="" title="" /><span class="special-character Lambda">&#955;</span><sub><span class="special-character Phi">&#981;</span></sub><span class="openparenthesis">(</span>hfvecs<span class="openbracket">[</span><span class="openbracket">[</span>1<span class="comma">,</span>1<span class="closebracket">]</span><span class="closebracket">]</span>.hfvecs<span class="openbracket">[</span><span class="openbracket">[</span>1<span class="comma">,</span>1<span class="closebracket">]</span><span class="closebracket">]</span><span class="closeparenthesis">)</span><sup>2</sup></span>
+ </p>
+ <p class="Text"><a name="1057140669"></a>Summing up, we finally write:</p>
+ <p class="Text">
+  <a name="152506489"></a>
+  <span class="IF">LBSM=- <span class="special-character Eta">&#951;</span> hfvecs<span class="openbracket">[</span><span class="openbracket">[</span>1<span class="comma">,</span>1<span class="closebracket">]</span><span class="closebracket">]</span>. hfvecs<span class="openbracket">[</span><span class="openbracket">[</span>1<span class="comma">,</span>1<span class="closebracket">]</span><span class="closebracket">]</span> * abs<span class="openbracket">[</span>H<span class="closebracket">]</span><sup>2</sup>+ 2 <span class="special-character Kappa">&#954;</span> Sum<span class="openbracket">[</span><span class="openparenthesis">(</span>dag<span class="openbracket">[</span>H<span class="closebracket">]</span>.tau<span class="openbracket">[</span>a<span class="closebracket">]</span>.H<span class="closeparenthesis">)</span>* hfvecs<span class="openbracket">[</span><span class="openbracket">[</span>1<span class="comma">,</span>1<span class="comma">,</span>a<span class="closebracket">]</span><span class="closebracket">]</span><span class="comma">,</span><span class="openbrace">{</span>a<span class="comma">,</span>3<span class="closebrace">}</span><span class="closebracket">]</span>- <img src="Files/BuildLagrangian/13.png" height="25" width="9" style="vertical-align:middle;" alt="" title="" /><span class="special-character Lambda">&#955;</span><sub><span class="special-character Phi">&#981;</span></sub><span class="openparenthesis">(</span>hfvecs<span class="openbracket">[</span><span class="openbracket">[</span>1<span class="comma">,</span>1<span class="closebracket">]</span><span class="closebracket">]</span>.hfvecs<span class="openbracket">[</span><span class="openbracket">[</span>1<span class="comma">,</span>1<span class="closebracket">]</span><span class="closebracket">]</span><span class="closeparenthesis">)</span><sup>2</sup> </span>
+ </p>
+ <p class="Text"><a name="2137296912"></a>LBSM can now be used as argument in trOut or lOutput function.  </p>
+</div>
+</div><!-- /wrapper -->
+
+
+	
+</div>
+
+
+</body></html>

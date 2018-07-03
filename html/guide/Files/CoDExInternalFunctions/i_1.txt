@@ -1,0 +1,4 @@
+<pre name='i_1_in' id='i_1_in' class='IFT'>\!\(
+ButtonBox[&quot;initAbort&quot;,
+BaseStyle-&gt;&quot;Link&quot;,
+ButtonData-&gt;&quot;paclet:CoDEx/ref/initAbort&quot;]\)</pre><div class='IFU'>http://wolfram.com/xid/0bypxf2uqkku63wa97vju0ryq2r</div>

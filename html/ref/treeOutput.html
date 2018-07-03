@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+
+<title>treeOutput&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000" />
+<meta name="historydata" content="{1.0, , , }" />
+<meta name="keywords" content="treeOutput" />
+
+<meta name="description" content="treeOutput[LBSM, fieldList] calculates Wilson Coefficients generated from tree level processes." />
+<script language="JavaScript" type="text/javascript">baselang='treeOutput';</script>
+<!--#include virtual="/common/includes/gl-head-includes.html"-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--[if IE]>
+<style type="text/css">
+/* doctype problem overrides */
+#menu .searchboxsub, #menu .searchboxsub-on { padding-bottom: 0; }
+#menu .headerSearchSubmit { margin-bottom: 4px; }
+
+/*
+.WRIdropMenu .WRImenuContents { margin-top: -2px; margin-left: -2px; }
+.WRIdropMenu .WRImenuContents .WRImenuContents { margin: 0; }
+*/
+</style>
+<![endif]-->
+<link rel="stylesheet" href="/webMathematica/Resources/Documentation/English/css/reference.css" />
+
+<script src="/webMathematica/Resources/Documentation/English/javascript/reference.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/documentation-search.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/faster-page-load.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/hyperlink-filter.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/brokenlinks.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/clipboard.js"></script>
+<script src="/webMathematica/Resources/Documentation/English/javascript/image-swap.js"></script>
+
+<script language="JavaScript" type="text/javascript" src="/2013/javascript/toggle-highlight.js"></script>
+</head>
+<body id="ref" class="function">
+<a name="top"></a>
+ 
+<div class="main-wrapper">
+<div class="outer-wrapper">
+
+<div class="wrapper mainOuter">
+    <div class="mainContent">
+ <div class="topContentWrap">
+  <div class="ribbonWrap">
+   <span class="ribbonOuter"><span class="ribbonInner">CO D EX SYMBOL</span></span>
+  </div>
+  
+  <div class="clear"><!-- --></div>
+ </div>
+ <h1>treeOutput</h1>
+ <div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p><span class="IF">treeOutput<span class="openbracket">[</span><em>LBSM</em><span class="comma">,</span><em>fieldList</em><span class="closebracket">]</span></span> <br />calculates Wilson Coefficients generated from tree level processes.</p>
+  </div>
+ </div>
+ <div class="expandWrap closed"
+     id="DetailsAndOptions">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Details</a><a class="collapse" title="hide" href="#">Details</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li><a name="1131473392"></a>Put BSM Lagrangian as the first argument.</li>
+     <li><a name="1299163246"></a>fieldlist (second argument) : It is a list which has information about the heavy multiplet. The generic structure of the fieldList is :<br />{heavy multiplet name, total number of field components (count each spin 0 , spin 1/2 and spin 1 field), <span class="IF">SU<span class="openparenthesis">(</span>3<span class="closeparenthesis">)</span><sub>C</sub></span> quantum number, <span class="IF">SU<span class="openparenthesis">(</span>2<span class="closeparenthesis">)</span><sub>L</sub></span> quantum number, <span class="IF">U<span class="openparenthesis">(</span>1<span class="closeparenthesis">)</span><sub>Y</sub> </span> charge, spin of heavy multiplet, mass of heavy multiplet}</li>
+     <li><a name="1816773422"></a>Default dimension six operator basis of 'treeOutput' function is &quot;Warsaw&quot;.</li>
+     <li><a name="1343721350"></a>CoDEx provides dimension six operators in &quot;SILH&quot; basis. See Examples.</li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="Examples">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Examples</a><a class="collapse" title="hide" href="#">Examples</a><a class="all opener" title="open all" href="#"><span>open all</span></a><a class="all closer hide" title="close all" href="#"><span>close all</span></a></h2>
+   <div class="expanded">
+    <div class="expandSubWrap">
+     <div class="expandSubOuter">
+      <h3 class="expandSubInner"><a class="expand hide" href="#" title="show">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a><a class="collapse" href="#" title="hide">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a></h3>
+      <div class="expanded">
+       <table class="InCell">
+        <tr><td class="lab">In[1]:=</td><td class="Input"><div>
+           <a name="312767630"></a>
+           <img src="Files/treeOutput/I_2.png"
+               height="16"
+               width="93"
+               alt="Click for copyable input" />
+          </div><div id="i_1_out" class="IFL"></div></td></tr>
+       </table>
+       <table class="InCell">
+        <tr><td class="lab">In[2]:=</td><td class="Input"><div>
+           <a name="949613639"></a>
+           <img src="Files/treeOutput/I_4.png"
+               height="67"
+               width="135"
+               alt="Click for copyable input" />
+          </div><div id="i_3_out" class="IFL"></div></td></tr>
+       </table>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[3]:=</td><td class="Input"><div>
+            <a name="57966169"></a>
+            <img src="Files/treeOutput/I_6.png"
+                height="16"
+                width="239"
+                alt="Click for copyable input" />
+           </div><div id="i_5_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab">Out[3]=</td><td class="Output"><div class="output-image">
+            <img src="Files/treeOutput/O_1.png"
+                height="16"
+                width="56"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+       <table class="InCell">
+        <tr><td class="lab">In[4]:=</td><td class="Input"><div>
+           <a name="1411740654"></a>
+           <img src=""
+               data-src="Files/treeOutput/I_8.png"
+               data-big="512 73"
+               data-small="385 95"
+               alt="Click for copyable input" />
+          </div><div id="i_7_out" class="IFL"></div></td></tr>
+       </table>
+       <div class="MCap"><a name="1984617238"></a>Warsaw basis is set as default dimension six basis for Wilson Coefficients.</div>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[5]:=</td><td class="Input"><div>
+            <a name="1725839722"></a>
+            <img src="Files/treeOutput/I_10.png"
+                height="16"
+                width="197"
+                alt="Click for copyable input" />
+           </div><div id="i_9_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab">Out[5]=</td><td class="Output"><div class="output-image">
+            <img src="Files/treeOutput/O_2.png"
+                height="33"
+                width="222"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+       <div class="MCap"><a name="344771146"></a>Setting &quot;SILH&quot; basis for dimension six operators.</div>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[6]:=</td><td class="Input"><div>
+            <a name="1242902962"></a>
+            <img src="Files/treeOutput/I_12.png"
+                height="16"
+                width="308"
+                alt="Click for copyable input" />
+           </div><div id="i_11_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab">Out[6]=</td><td class="Output"><div class="output-image">
+            <img src="Files/treeOutput/O_3.png"
+                height="33"
+                width="197"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="toplink">
+     <a href="#top">Top</a>
+    </div>
+    <div class="clear"><!-- --></div>
+   </div>
+  </div>
+ </div>
+</div>
+</div><!-- /wrapper -->
+
+	
+</div>
+
+
+</body></html>

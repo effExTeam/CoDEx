@@ -1,0 +1,4 @@
+<pre name='i_3_in' id='i_3_in' class='IFT'>fieldewrss =
+  {
+   {hf, 1, 1, 1, 0, 0, m}
+   };</pre><div class='IFU'><a name='1329186647'></a>http://wolfram.com/xid/0bsqkp30f4mul0vcn17l2a-v9nc9l</div>

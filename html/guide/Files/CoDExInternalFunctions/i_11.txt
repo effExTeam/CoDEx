@@ -1,0 +1,4 @@
+<pre name='i_11_in' id='i_11_in' class='IFT'>\!\(
+ButtonBox[&quot;delCov&quot;,
+BaseStyle-&gt;&quot;Link&quot;,
+ButtonData-&gt;&quot;paclet:CoDEx/ref/delCov&quot;]\)</pre><div class='IFU'>http://wolfram.com/xid/0bypxf2uqkku63wa97vju0ryq2r</div>

@@ -1,0 +1,2 @@
+<pre name='i_9_in' id='i_9_in' class='IFT'>abs[{ fldreal[1] + I fldimg[1], fldreal[2] + I fldimg[2], 
+  fldreal[3] + I fldimg[3]}]</pre><div class='IFU'><a name='974046647'></a>http://wolfram.com/xid/0dm5klve6uvf3ypu87l3fh4uf0j-qd7hhl</div>

@@ -1,0 +1,2 @@
+<pre name='i_5_in' id='i_5_in' class='IFT'>eR[p] where p = 1, 2, 3 .
+   p is the generation index. So, eR[3] is the right handed taon.</pre><div class='IFU'>http://wolfram.com/xid/0gb3f1k6xnoun7m5cyflkb</div>
