@@ -2371,13 +2371,13 @@ body {
 .cid-qZULRbeXL5 {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #ffffff;
+  background-image: url("../../../assets/images/titleback-1210x777.png");
 }
 .cid-qZULRbeXL5 .title {
   margin-bottom: 2rem;
 }
 .cid-qZULRbeXL5 .mbr-section-subtitle {
-  color: #767676;
+  color: #ffffff;
 }
 .cid-qZULRbeXL5 a:not([href]):not([tabindex]) {
   color: #fff;
@@ -2394,6 +2394,12 @@ body {
 .cid-qZULRbeXL5 .input-group-btn {
   display: block;
   text-align: center;
+}
+.cid-qZULRbeXL5 H2 {
+  color: #ffffff;
+}
+.cid-qZULRbeXL5 LABEL {
+  color: #ffffff;
 }
 .cid-qWkFOq7D5d .navbar {
   padding: .5rem 0;
