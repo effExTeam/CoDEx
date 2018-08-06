@@ -1,2 +1,0 @@
-<pre name='i_1_in' id='i_1_in' class='IFT'>eL[p] where p = 1, 2, 3 .
-   p is the generation index. So, eL[3] is the left handed taon.</pre><div class='IFU'>http://wolfram.com/xid/0gb3f1k6xnoun7m5cyflkb</div>

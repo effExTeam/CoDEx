@@ -1,4 +1,0 @@
-<pre name='i_21_in' id='i_21_in' class='IFT'>\!\(
-ButtonBox[&quot;fieldChoice2&quot;,
-BaseStyle-&gt;&quot;Link&quot;,
-ButtonData-&gt;&quot;paclet:CoDEx/ref/fieldChoice2&quot;]\)</pre><div class='IFU'>http://wolfram.com/xid/0bypxf2uqkku63wa97vju0ryq2r</div>

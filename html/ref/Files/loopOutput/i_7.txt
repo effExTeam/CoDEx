@@ -2,4 +2,4 @@
   Expand[-cA abs[H]^2 hfvecsewrss[[1, 1, 1]] - 
     1/2 kap abs[H]^2 hfvecsewrss[[1, 1, 1]]^2 - 
     1/3! mu hfvecsewrss[[1, 1, 1]]^3 - 
-    1/4! lambdaphi hfvecsewrss[[1, 1, 1]]^4];</pre><div class='IFU'><a name='1425437143'></a>http://wolfram.com/xid/0bsqkp30f4mul0vcn17l2a-xuycmh</div>
+    1/4! lambdaphi hfvecsewrss[[1, 1, 1]]^4];</pre><div class='IFU'><a name='1411740654'></a>http://wolfram.com/xid/0bsqkp30f4mul0vcn17l2a-xmsscg</div>

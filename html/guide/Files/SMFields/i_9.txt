@@ -1,3 +1,0 @@
-<pre name='i_9_in' id='i_9_in' class='IFT'>dL[p, c] where p = 1, 2, 3 .
-    p is the generation index. c is the color index. So, 
-dL[2, 1] is the left handed strange  quark.</pre><div class='IFU'>http://wolfram.com/xid/0gb3f1k6xnoun7m5cyflkb</div>

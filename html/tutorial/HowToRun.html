@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+
+<title>How To Run CoDEx&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000" />
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="HowToRun" />
+
+<meta name="description" content="In this tutorial, we present the available functions for calculating Wilson Coefficients (WCs) for a given BSM Lagrangian and describe the necessary workflow to do that. Following functions are mainly used for the bulk of this job: Let us demonstrate this with a toy example where the Lagrangian is given in its traditional form: &amp;#8466;(&amp;Phi;,H)&amp;#63449; ( 1 ) / ( 2 ) ( D_&amp;mu;&amp;Phi;^a)^2- ( 1 ) / ( 2 ) m^2 &amp;Phi;^a &amp;Phi;^a-&amp;eta; &amp;Phi;^a &amp;Phi;^a TemplateBox[{H}, Abs]^2+2 &amp;kappa; H^&amp;dagger; &amp;tau;^a H &amp;Phi;^a - ( 1 ) / ( 4 ) &amp;lambda;_&amp;Phi; (&amp;Phi;^a &amp;Phi;^a)^2 " />
+<script language="JavaScript" type="text/javascript">baselang='HowToRun';</script>
+<script language="JavaScript" type="text/javascript">packagename='CoDEx Package';</script>
+<!--#include virtual="/common/includes/gl-head-includes.html"-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--[if IE]>
+<style type="text/css">
+/* doctype problem overrides */
+#menu .searchboxsub, #menu .searchboxsub-on { padding-bottom: 0; }
+#menu .headerSearchSubmit { margin-bottom: 4px; }
+
+/*
+.WRIdropMenu .WRImenuContents { margin-top: -2px; margin-left: -2px; }
+.WRIdropMenu .WRImenuContents .WRImenuContents { margin: 0; }
+*/
+</style>
+<![endif]-->
+<link rel="stylesheet" href="../css/reference.css" />
+
+
+            <link rel="stylesheet" href="../css/clipboard.css" />
+            <script src="../javascript/jquery/core/1.7.2/jquery.min.js"></script>
+            <script src="../javascript/reference.js"></script>
+        
+<script src="../javascript/documentation-search.js"></script>
+<script src="../javascript/faster-page-load.js"></script>
+<script src="../javascript/hyperlink-filter.js"></script>
+<script src="../javascript/brokenlinks.js"></script>
+<script src="../javascript/clipboard.js"></script>
+<script src="../javascript/image-swap.js"></script>
+
+</head>
+<body id="tutorial">
+<a name="top"></a>
+ 
+<div class="main-wrapper">
+<div class="outer-wrapper">
+
+<div class="wrapper mainOuter">
+    <div class="mainContent">
+ <div class="topContentWrap">
+  <div class="ribbonWrap">
+   <span class="ribbonOuter"><span class="ribbonInner">CO D EX PACKAGE TUTORIAL</span></span>
+  </div>
+  <ul class="dropdown">
+   <li>
+    <a href="#">Tutorials</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/tutorial/BuildLagrangian.html"><span class="dropdownPad">BuildLagrangian</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/ref/treeOutput.html"><span class="dropdownPad">treeOutput</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/loopOutput.html"><span class="dropdownPad">loopOutput</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/initializeLoop.html"><span class="dropdownPad">initializeLoop</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/codexOutput.html"><span class="dropdownPad">codexOutput</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/formPick.html"><span class="dropdownPad">formPick</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/texTable.html"><span class="dropdownPad">texTable</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/RGFlow.html"><span class="dropdownPad">RGFlow</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#">Functions</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/ref/codexOutput.html"><span class="dropdownPad">codexOutput</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/loopOutput.html"><span class="dropdownPad">loopOutput</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/treeOutput.html"><span class="dropdownPad">treeOutput</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <div class="clear"><!-- --></div>
+ </div>
+ <h1 class="Title"><a name="509267359"></a>How To Run CoDEx</h1>
+ <div class="TutorialJumpBox">
+  <table class="nogridboxdividers">
+   <col />
+   <col />
+   <tr class="lineAbove" style=""><td><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/tutorial/HowToRun.html#80532280">Building the Lagrangian</a></td><td><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/tutorial/HowToRun.html#6608685">Wilson Coefficients in SMEFT</a></td></tr>
+  </table>
+ </div>
+ <p class="Text"><a name="1534169418"></a>In this tutorial, we present the available functions for calculating Wilson Coefficients (WCs) for a given BSM Lagrangian and describe the necessary workflow to do that. Following functions are mainly used for the bulk of this job:</p>
+ <div class="MathTable DefinitionBox">
+  <a name="678275578"></a>
+  <table class="nogridboxdividers">
+   <col width="40%" />
+   <col width="60%" />
+   <tr class="lineAbove" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/treeOutput.html">treeOutput</a></td><td><span class="TT">Calculates tree level Wilson Coefficients.</span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/loopOutput.html">loopOutput</a></td><td><span class="TT">Calculates 1 loop level Wilson Coefficients.</span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/codexOutput.html">codexOutput</a></td><td><span class="TT">Generic function for WCs calculation upto 1 loop.</span></td></tr>
+  </table>
+ </div>
+ <h2 class="Section"><a name="80532280"></a>Building the Lagrangian</h2>
+ <h3 class="Subsection"><a name="41316574"></a>The Example Model: <a href="http://reference.wolfram.com/language/ref/ElectroWeak Real Triplet Scalar.html">ElectroWeak Real Triplet Scalar</a></h3>
+ <p class="Text"><a name="291669580"></a>Let us demonstrate this with a toy example where the Lagrangian is given in its traditional form:</p>
+ <p class="Text">
+  <a name="599301425"></a>
+  <span class="IM"><img style="vertical-align:middle;" title="L(Phi,H)=1/2 ( D_muPhi^a)^2-1/2 m^2 Phi^a Phi^a-eta Phi^a Phi^a TemplateBox[{H}, Abs]^2+2  kappa  H^| tau^a H  Phi^a -1/4lambda_Phi (Phi^a Phi^a)^2 " src="Files/HowToRun/Image_1.png" width="496" height="25" alt="L(Phi,H)=1/2 ( D_muPhi^a)^2-1/2 m^2 Phi^a Phi^a-eta Phi^a Phi^a TemplateBox[{H}, Abs]^2+2  kappa  H^| tau^a H  Phi^a -1/4lambda_Phi (Phi^a Phi^a)^2 " /></span>
+ </p>
+ <p class="Text"><a name="603227476"></a><span class="IM"><img src="Files/HowToRun/2.png" height="15" width="8" alt="" /></span> is the heavy field which is going to be integrated out. <span class="IM"><img src="Files/HowToRun/3.png" height="15" width="12" alt="" /></span> is the Standard Model (SM) Higgs. <span class="IM"><img src="Files/HowToRun/4.png" height="15" width="9" alt="" /></span> is the mass of <span class="IM"><img src="Files/HowToRun/5.png" height="15" width="8" alt="" /></span>. <img style="vertical-align:middle;" title="D_mu" src="Files/HowToRun/Image_6.png" width="16" height="18" alt="D_mu" /> is the covariant derivative. <span class="IM"><img src="Files/HowToRun/7.png" height="15" width="23" alt="" /></span> and <span class="IM"><img src="Files/HowToRun/8.png" height="15" width="14" alt="" /></span> are the couplings. (<span class="IM"><img src="Files/HowToRun/9.png" height="15" width="12" alt="" /></span> is internally defined in CoDEx)</p>
+ <p class="Text"><a name="83147463"></a>To write the effective Lagrangian for <span class="IM"><img src="Files/HowToRun/10.png" height="15" width="45" alt="" /></span>, we do not need the kinetic terms. We only need the interaction terms e.g. self interaction terms for SM, SM-heavy field interaction, heavy-heavy (different multiplet) interaction terms in the Lagrangian, which we will henceforth refer as '<span class="InlineCode">LBSM</span>'. So, now the reduced structure is </p>
+ <p class="Text">
+  <a name="413474343"></a>
+  <span class="IM"><img style="vertical-align:middle;" title="L(Phi,H)  superset  -eta Phi^a Phi^a TemplateBox[{H}, Abs]^2+2  kappa  H^| tau^a H  Phi^a -1/4lambda_Phi (Phi^a Phi^a)^2 " src="Files/HowToRun/Image_11.png" width="347" height="25" alt="L(Phi,H)  superset  -eta Phi^a Phi^a TemplateBox[{H}, Abs]^2+2  kappa  H^| tau^a H  Phi^a -1/4lambda_Phi (Phi^a Phi^a)^2 " /></span>
+ </p>
+ <p class="Text"><a name="559224488"></a>We want to adapt this BSM Lagrangian in our notebook file.</p>
+ <h3 class="Subsection"><a name="651444184"></a>Defining the Heavy Fields</h3>
+ <div class="MCap"><a name="305040678"></a>This loads the package:</div>
+ <table class="InCell">
+  <tr><td class="lab" /><td class="Input"><div>
+     <a name="79443359"></a>
+     <img src="Files/HowToRun/I_2.png"
+         height="16"
+         width="93"
+         alt="Click for copyable input" />
+    </div><div id="i_1_out" class="IFL"></div></td></tr>
+ </table>
+ <p class="Text"><a name="415055367"></a>CoDEx takes the user-provided information about the heavy fields in a specific format. User needs to create a <span class="InlineCode">List</span>, each element of which is again a <span class="InlineCode">List</span> representing one heavy field. These sub-lists are each 7 entries long, each of which denote one property of the heavy field.</p>
+ <p class="Text"><a name="693841624"></a>We explain below: </p>
+ <div class="MCap"><a name="692898296"></a>Generic form a list of heavy fields:</div>
+ <div class="Code">
+  <pre>fieldList = { field1, field2, <span class="special-character CenterEllipsis">&#8943;</span> };</pre>
+ </div>
+ <div class="MCap"><a name="245550991"></a>Generic form of individual fields:</div>
+ <div class="Code">
+  <pre>field = { fieldName, components, colorDim, isoDim, hyperCharge, spin, mass }</pre>
+ </div>
+ <p class="Text"><a name="628187695"></a>where,</p>
+ <div class="MathTable DefinitionBox">
+  <a name="879367481"></a>
+  <table class="nogridboxdividers">
+   <col width="40%" />
+   <col width="60%" />
+   <tr class="lineAbove" style=""><td>fieldName</td><td><span class="TT"><span class="specialcharacters">name of the heavy field<span class="comma">,</span> used as the head of the Array representing the field.</span></span></td></tr>
+   <tr class="" style=""><td>components</td><td><span class="TT">number of components in the heavy field.</span></td></tr>
+   <tr class="" style=""><td>colorDim</td><td><span class="TT">dimensionality of the heavy field under <span class="IF"><span class="TI">SU<span class="specialcharacters"><span class="openparenthesis"><span class="openparenthesis">(</span></span></span>3<span class="specialcharacters"><span class="closeparenthesis"><span class="closeparenthesis">)</span></span></span><sub>C</sub></span></span></span></td></tr>
+   <tr class="" style=""><td>isoDim</td><td><span class="TT">dimensionality of the heavy field under <span class="IF"><span class="TI">SU<span class="specialcharacters"><span class="openparenthesis"><span class="openparenthesis">(</span></span></span>2<span class="specialcharacters"><span class="closeparenthesis"><span class="closeparenthesis">)</span></span></span><sub>L</sub></span></span></span></td></tr>
+   <tr class="" style=""><td>hyperCharge</td><td><span class="TT">hyper-charge of the heavy field under <span class="IF"><span class="TI">U<span class="specialcharacters"><span class="openparenthesis"><span class="openparenthesis">(</span></span></span>1<span class="specialcharacters"><span class="closeparenthesis"><span class="closeparenthesis">)</span></span></span><sub>Y</sub></span></span>.</span></td></tr>
+   <tr class="" style=""><td>spin</td><td><span class="TT">spin quantum number of the heavy field.</span></td></tr>
+   <tr class="" style=""><td>mass</td><td><span class="TT">variable name representing the mass of the heavy field</span></td></tr>
+  </table>
+ </div>
+ <p class="Caption"><a name="661037022"></a>Description of the entries for each field while constructing the field list.</p>
+ <p class="Text"><a name="42842704"></a>Thus, the whole field list looks like this:</p>
+ <div class="Code">
+  <pre>fieldList = <br />{ <br />{ fieldName1, components1, colorDim1, isoDim1, hyperCharge1, spin1, mass1},<br />{ fieldName2, components2, colorDim2, isoDim2, hyperCharge2, spin2, mass2},<br /><span class="special-character VerticalEllipsis">&#8942;</span><br /><span class="special-character VerticalEllipsis">&#8942;</span><br /> };</pre>
+ </div>
+ <p class="Text"><a name="865263225"></a>In the case of our example model, we have only one heavy field, a real triplet scalar (i.e. no. of components <span class="special-character Rule">&#62754;</span> 3, dimensionality under <span class="IF"><span class="TI">SU<span class="openparenthesis">(</span>3<span class="closeparenthesis">)</span><sub>C</sub></span></span> <span class="special-character Rule">&#62754;</span> 1, dimensionality under <span class="IF"><span class="TI">SU<span class="openparenthesis">(</span>2<span class="closeparenthesis">)</span><sub>L</sub></span></span> <span class="special-character Rule">&#62754;</span> 3, hyper-charge <span class="special-character Rule">&#62754;</span> 0, spin <span class="special-character Rule">&#62754;</span> 0). Let us denote the name of the field as '<span class="IF">ph</span>' and its mass as '<span class="IF">m</span>'.</p>
+ <div class="MCap"><a name="300926051"></a>This represents the field content of our model in the correct way.</div>
+ <table class="InCell">
+  <tr><td class="lab" /><td class="Input"><div>
+     <a name="682857193"></a>
+     <img src="Files/HowToRun/I_4.png"
+         height="67"
+         width="138"
+         alt="Click for copyable input" />
+    </div><div id="i_3_out" class="IFL"></div></td></tr>
+ </table>
+ <h3 class="Subsection"><a name="815626120"></a>Writing the Lagrangian</h3>
+ <p class="Text"><a name="749728319"></a>Now that our field definitions are ready, it's time to write the Lagrangian in a form that our code understands. For that, first we have to create the representations of these fields in their component form. This is done by a function called '<span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/defineHeavyFields.html">defineHeavyFields</a></span>'. Please go to <a href="http://reference.wolfram.com/language/CoDEx/ref/defineHeavyFields.html">this page</a> for details on how it works.</p>
+ <div class="MCap"><a name="10288008"></a>Creating field representations:</div>
+ <div class="IO">
+  <table class="InCell">
+   <tr><td class="lab" /><td class="Input"><div>
+      <a name="314367603"></a>
+      <img src="Files/HowToRun/I_6.png"
+          height="16"
+          width="182"
+          alt="Click for copyable input" />
+     </div><div id="i_5_out" class="IFL"></div></td></tr>
+  </table>
+  <table class="OCell">
+   <tr><td class="lab" /><td class="Output"><div class="output-image">
+      <img src="Files/HowToRun/O_1.png"
+          height="16"
+          width="144"
+          alt="" />
+     </div></td></tr>
+  </table>
+ </div>
+ <div class="MCap"><a name="506873330"></a>Let us define the vector form our field <span class="IM"><img src="Files/HowToRun/12.png" height="15" width="8" alt="" /></span>:</div>
+ <div class="IO">
+  <table class="InCell">
+   <tr><td class="lab" /><td class="Input"><div>
+      <a name="430780713"></a>
+      <img src="Files/HowToRun/I_8.png"
+          height="16"
+          width="89"
+          alt="Click for copyable input" />
+     </div><div id="i_7_out" class="IFL"></div></td></tr>
+  </table>
+  <table class="OCell">
+   <tr><td class="lab" /><td class="Output"><div class="output-image">
+      <img src="Files/HowToRun/O_2.png"
+          height="16"
+          width="130"
+          alt="" />
+     </div></td></tr>
+  </table>
+ </div>
+ <p class="Text"><a name="808889525"></a>Now this is our Lagrangian:</p>
+ <p class="Text">
+  <a name="459726773"></a>
+  <span class="IM"><img style="vertical-align:middle;" title="L(Phi,H)  superset  -eta Phi^a Phi^a TemplateBox[{H}, Abs]^2+2  kappa  H^| tau^a H  Phi^a -1/4lambda_Phi (Phi^a Phi^a)^2 " src="Files/HowToRun/Image_13.png" width="347" height="25" alt="L(Phi,H)  superset  -eta Phi^a Phi^a TemplateBox[{H}, Abs]^2+2  kappa  H^| tau^a H  Phi^a -1/4lambda_Phi (Phi^a Phi^a)^2 " /></span>
+ </p>
+ <p class="Text"><a name="101649537"></a>The first term is <span class="IM"><img style="vertical-align:middle;" title="-eta Phi^a Phi^a TemplateBox[{H}, Abs]^2" src="Files/HowToRun/Image_14.png" width="79" height="15" alt="-eta Phi^a Phi^a TemplateBox[{H}, Abs]^2" /></span>.</p>
+ <p class="Text"><a name="17725232"></a>This can be now written as: <span class="IF">- <span class="special-character Eta">&#951;</span> abs<span class="openbracket">[</span>H<span class="closebracket">]</span><sup>2</sup>*<span class="special-character CapitalPhi">&#934;</span>.<span class="special-character CapitalPhi">&#934;</span></span>, or <span class="IF">- <span class="special-character Eta">&#951;</span> abs<span class="openbracket">[</span>H<span class="closebracket">]</span><sup>2</sup>*abs<span class="openbracket">[</span><span class="special-character CapitalPhi">&#934;</span><span class="closebracket">]</span><sup>2</sup></span>.</p>
+ <p class="Text"><a name="396792426"></a>Similarly, the second term can be written as: <span class="IF">2 <span class="special-character Kappa">&#954;</span>*Table<span class="openbracket">[</span><span class="openparenthesis">(</span>dag<span class="openbracket">[</span>H<span class="closebracket">]</span>.tau<span class="openbracket">[</span>a<span class="closebracket">]</span>.H<span class="closeparenthesis">)</span><span class="comma">,</span> <span class="openbrace">{</span>a<span class="comma">,</span> 3<span class="closebrace">}</span><span class="closebracket">]</span>.<span class="special-character CapitalPhi">&#934;</span></span>.</p>
+ <p class="Text"><a name="594570001"></a>And, the third term: <span class="IF">-<span class="openparenthesis">(</span>1/4<span class="closeparenthesis">)</span> <span class="special-character Lambda">&#955;</span> <span class="openparenthesis">(</span><span class="special-character CapitalPhi">&#934;</span>.<span class="special-character CapitalPhi">&#934;</span><span class="closeparenthesis">)</span>^2</span>.</p>
+ <div class="MCap"><a name="524148227"></a>Thus, the Lagrangian is:</div>
+ <table class="InCell">
+  <tr><td class="lab" /><td class="Input"><div>
+     <a name="49203408"></a>
+     <img src="Files/HowToRun/I_10.png"
+         height="36"
+         width="397"
+         alt="Click for copyable input" />
+    </div><div id="i_9_out" class="IFL"></div></td></tr>
+ </table>
+ <p class="Text"><a name="2137296912"></a><span class="IF">LBSM</span> can now be used to find the Wilson Coefficients.  </p>
+ <h2 class="Section"><a name="6608685"></a>Wilson Coefficients in SMEFT</h2>
+ <h3 class="Subsection"><a name="31695166"></a>At tree level</h3>
+ <p class="Text"><a name="349526574"></a>This function calculates the tree level Wilson Coefficients for the given Lagrangian in a given operator basis:</p>
+ <div class="IO">
+  <table class="InCell">
+   <tr><td class="lab" /><td class="Input"><div>
+      <a name="39505858"></a>
+      <img src="Files/HowToRun/I_12.png"
+          height="16"
+          width="132"
+          alt="Click for copyable input" />
+     </div><div id="i_11_out" class="IFL"></div></td></tr>
+  </table>
+  <table class="OCell">
+   <tr><td class="lab" /><td class="Output"><div class="output-image">
+      <img src="Files/HowToRun/O_3.png"
+          height="33"
+          width="225"
+          alt="" />
+     </div></td></tr>
+  </table>
+ </div>
+ <div class="MathTable DefinitionBox3Col">
+  <a name="56326593"></a>
+  <table class="nogridboxdividers">
+   <col width="35%" />
+   <col width="20%" />
+   <col width="45%" />
+   <tr class="lineAbove" style=""><td><span class="TI">Option Name</span></td><td><span class="TI">Default Value</span></td><td><span class="TT"><span class="TI">Details</span></span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/monitor.html">monitor</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">Shows an animation while computing</span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/appearence.html">appearance</a></td><td>&quot;Percolate&quot;
+<span class="openparenthesis">(</span>for Version <span class="special-character GreaterEqual">&#8805;</span>11.0<span class="closeparenthesis">)</span></td><td><span class="TT">Appearence of the animation.</span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/operBasis.html">operBasis</a></td><td>&quot;Warsaw&quot;</td><td><span class="TT">Choice of basis of the  Dim.-6 operators </span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/format.html">format</a></td><td>&quot;List&quot;</td><td><span class="TT">The output format.</span></td></tr>
+  </table>
+ </div>
+ <p class="Caption"><a name="21462984"></a>Options for <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/treeOutput.html">treeOutput</a></span>.</p>
+ <p class="Text"><a name="909726728"></a>The <a href="http://reference.wolfram.com/language/ref/OptionValue.html">OptionValue</a> selecting the basis of dimension six operators (Option: <span class="InlineCode">operBasis</span>) has its default value set to <span class="InlineCode">&quot;Warsaw&quot;</span>. We can also choose the <span class="InlineCode">&quot;SILH&quot;</span> operator basis. Details of these bases are listed in the guide &quot;<a href="http://reference.wolfram.com/language/CoDEx/guide/CoDExParafernalia.html#113489491">Operator Bases</a>&quot;.</p>
+ <div class="MCap"><a name="1187888845"></a>Tree level WCs calculation in SILH basis:</div>
+ <div class="IO">
+  <table class="InCell">
+   <tr><td class="lab" /><td class="Input"><div>
+      <a name="212619883"></a>
+      <img src="Files/HowToRun/I_14.png"
+          height="16"
+          width="242"
+          alt="Click for copyable input" />
+     </div><div id="i_13_out" class="IFL"></div></td></tr>
+  </table>
+  <table class="OCell">
+   <tr><td class="lab" /><td class="Output"><div class="output-image">
+      <img src="Files/HowToRun/O_4.png"
+          height="33"
+          width="187"
+          alt="" />
+     </div></td></tr>
+  </table>
+ </div>
+ <h3 class="Subsection"><a name="448550140"></a>Initializing the model for calculation up to 1 loop</h3>
+ <p class="Text"><a name="60192737"></a>Unlike the tree level case, to calculate 1 loop level WCs, we need the transformation property of the heavy fields under the given gauge symmetry. More precisely, we must know the structure of Isospin and Color symmetry generators determined by the dimensionality of the heavy field<span class="special-character CloseCurlyQuote">&#8217;</span>s representations. These are defined by running the function <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/initializeLoop.html">initializeLoop</a></span> (click on the function name for options and further details).</p>
+ <p class="Text"><a name="539434543"></a>In the first argument, you provide a name of the model as a string. This will be used to uniquely define the symmetry generators. (here: <span class="InlineCode">&quot;ewrts&quot;</span>) </p>
+ <p class="Text"><a name="25831215"></a>In the second argument, you provide list of heavy field definitions ('<span class="IF">fields</span>', in this case). The symmetry generators are defined using the information about the Isospin and Color charges for each heavy field from the list of field definitions.</p>
+ <p class="Text"><a name="108086126"></a>We have provided their structure of representations up to fundamental and quadruplet for <span class="IF">SU<span class="openparenthesis">(</span>3<span class="closeparenthesis">)</span><sub>c</sub></span> and <span class="IF">SU<span class="openparenthesis">(</span>2<span class="closeparenthesis">)</span><sub>L</sub></span> gauge groups respectively. For more exotic BSM particle we have kept provision for one to define it. In that case, you have to define them yourself (you will be prompted to do so in such a case).</p>
+ <p class="Text"><a name="93960941"></a>For the unlikely case of  heavy fields with color dimensionality 6 or more than that, you have to define them yourself (you will be prompted to do so in such a case).</p>
+ <div class="MCap"><a name="175072963"></a>Initializing the model:</div>
+ <table class="InCell">
+  <tr><td class="lab" /><td class="Input"><div>
+     <a name="3152013"></a>
+     <img src="Files/HowToRun/I_16.png"
+         height="16"
+         width="160"
+         alt="Click for copyable input" />
+    </div><div id="i_15_out" class="IFL"></div></td></tr>
+ </table>
+ <p class="Text"><a name="164090385"></a>Check the documentation page <a href="http://reference.wolfram.com/language/CoDEx/guide/CoDExParafernalia.html">CoDExParafernalia</a> for details.</p>
+ <table class="OCell">
+  <tr><td class="lab" /><td class="Echo"><div class="output-image">
+     <img src="Files/HowToRun/O_5.png"
+         height="16"
+         width="378"
+         alt="" />
+    </div></td></tr>
+ </table>
+ <table class="OCell">
+  <tr><td class="lab" /><td class="Echo"><div class="output-image">
+     <img src="Files/HowToRun/O_6.png"
+         height="16"
+         width="333"
+         alt="" />
+    </div></td></tr>
+ </table>
+ <div class="MCap"><a name="3658969"></a>Now that the generators are defined, you can call, use, and print them.</div>
+ <div class="IO">
+  <table class="InCell">
+   <tr><td class="lab" /><td class="Input"><div>
+      <a name="79454804"></a>
+      <img src="Files/HowToRun/I_18.png"
+          height="50"
+          width="73"
+          alt="Click for copyable input" />
+     </div><div id="i_17_out" class="IFL"></div></td></tr>
+  </table>
+  <table class="OCell">
+   <tr><td class="lab" /><td class="Output"><div class="output-image">
+      <img src="Files/HowToRun/O_7.png"
+          height="16"
+          width="133"
+          alt="" />
+     </div></td></tr>
+  </table>
+  <table class="OCell">
+   <tr><td class="lab" /><td class="Output"><div class="output-image">
+      <img src="Files/HowToRun/O_8.png"
+          height="16"
+          width="133"
+          alt="" />
+     </div></td></tr>
+  </table>
+  <table class="OCell">
+   <tr><td class="lab" /><td class="Output"><div class="output-image">
+      <img src="Files/HowToRun/O_9.png"
+          height="16"
+          width="133"
+          alt="" />
+     </div></td></tr>
+  </table>
+ </div>
+ <p class="Text"><a name="702454558"></a>All symmetry generators provided by CoDEx are listed in the section 'Symmetry Generators' of the guide '<a href="http://reference.wolfram.com/language/CoDEx/guide/CoDExParafernalia.html">CoDExParafernalia</a>'.</p>
+ <h3 class="Subsection"><a name="686478122"></a>Wilson Coefficients at 1 loop level</h3>
+ <div class="MathTable DefinitionBox3Col">
+  <a name="473501821"></a>
+  <table class="nogridboxdividers">
+   <col width="35%" />
+   <col width="20%" />
+   <col width="45%" />
+   <tr class="lineAbove" style=""><td><span class="TI">Option Name</span></td><td><span class="TI">Default Value</span></td><td><span class="TT"><span class="TI">Details</span></span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/monitor.html">monitor</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">Shows an animation while computing</span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/appearence.html">appearance</a></td><td>&quot;Percolate&quot;
+<span class="openparenthesis">(</span>for Version <span class="special-character GreaterEqual">&#8805;</span>11.0<span class="closeparenthesis">)</span></td><td><span class="TT">Appearence of the animation.</span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/operBasis.html">operBasis</a></td><td>&quot;Warsaw&quot;</td><td><span class="TT">Choice of basis of the  Dim.-6 operators </span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/format.html">format</a></td><td>&quot;List&quot;</td><td><span class="TT">The output format.</span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/style.html">style</a></td><td><a href="http://reference.wolfram.com/language/ref/Large.html">Large</a></td><td><span class="TT">The fontsize of the output.</span></td></tr>
+   <tr class="" style=""><td>ibp</td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">Turns the 'Integration by Parts' option on. Detail available on the <a href="http://reference.wolfram.com/language/CoDEx/ref/loopOutput.html">loopOutput</a> page.</span></td></tr>
+  </table>
+ </div>
+ <p class="Caption"><a name="161773327"></a>Options for <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/loopOutput.html">loopOutput</a></span>.</p>
+ <div class="MCap"><a name="1236403970"></a>Loop level WCs calculation:</div>
+ <div class="IO">
+  <table class="InCell">
+   <tr><td class="lab" /><td class="Input"><div>
+      <a name="428899474"></a>
+      <img src="Files/HowToRun/I_20.png"
+          height="16"
+          width="184"
+          alt="Click for copyable input" />
+     </div><div id="i_19_out" class="IFL"></div></td></tr>
+  </table>
+  <table class="OCell">
+   <tr><td class="lab" /><td class="Output"><div class="output-image">
+      <img src="Files/HowToRun/O_10.png"
+          height="68"
+          width="344"
+          alt="" />
+     </div></td></tr>
+  </table>
+ </div>
+ <p class="Text"><a name="255246218"></a>You can see that this takes the model name used by <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/initializeLoop.html">initializeLoop</a></span> function above (here: <span class="InlineCode">&quot;ewrts&quot;</span>) to correctly identify the symmetry generators, in addition to the Lagrangian and the list of heavy field definitions. This functionality lets you define multiple models, Lagrangians, and heavy field definitions in the same Notebook and run them without mixing the definitions.</p>
+ <p class="Text"><a name="907663570"></a>The <a href="http://reference.wolfram.com/language/ref/OptionValue.html">OptionValue</a> selecting the basis of dimension six operators (Option: <span class="InlineCode">operBasis</span>) has its default value set to <span class="InlineCode">&quot;Warsaw&quot;</span>. We can also choose the <span class="InlineCode">&quot;SILH&quot;</span> operator basis. Details of these bases are listed in the guide &quot;<a href="http://reference.wolfram.com/language/CoDEx/guide/CoDExParafernalia.html#113489491">Operator Bases</a>&quot;.</p>
+ <h3 class="Subsection"><a name="338066066"></a>Using codexOutput: A Single function for everything</h3>
+ <p class="Text"><a name="340648584"></a><span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/codexOutput.html">codexOutput</a></span> is a generic function for WCs calculation. Among other options, the tree level or the loop level result can be chosen by changing the option '<span class="InlineCode">outRange</span>'.</p>
+ <div class="MathTable DefinitionBox3Col">
+  <a name="5051314"></a>
+  <table class="nogridboxdividers">
+   <col width="35%" />
+   <col width="20%" />
+   <col width="45%" />
+   <tr class="lineAbove" style=""><td><span class="TI">Option Name</span></td><td><span class="TI">Default Value</span></td><td><span class="TT"><span class="TI">Details</span></span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/monitor.html">monitor</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">Shows an animation while computing</span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/appearence.html">appearance</a></td><td>&quot;Percolate&quot;
+<span class="openparenthesis">(</span>for Version <span class="special-character GreaterEqual">&#8805;</span>11.0<span class="closeparenthesis">)</span></td><td><span class="TT">Appearence of the animation.</span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/operBasis.html">operBasis</a></td><td>&quot;Warsaw&quot;</td><td><span class="TT">Choice of basis of the  Dim.-6 operators </span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/format.html">format</a></td><td>&quot;List&quot;</td><td><span class="TT">The output format.</span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/model.html">model</a></td><td>&quot;&quot;</td><td><span class="TT">Takes the same input as <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/initializeLoop.html">initializeLoop</a></span><span class="specialcharacters">. If left blank<span class="comma">,</span> will give the tree-level.</span></span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/outRange.html">outRange</a></td><td>&quot;All&quot;</td><td><span class="TT">This determines the level at which output is evaluated. 'All' means the result calculates both tree and loop level results and combines them.</span></td></tr>
+   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/style.html">style</a></td><td><a href="http://reference.wolfram.com/language/ref/Large.html">Large</a></td><td><span class="TT">The fontsize of the output.</span></td></tr>
+   <tr class="" style=""><td>ibp</td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">Turns the 'Integration by Parts' option on. Detail available on the <a href="http://reference.wolfram.com/language/CoDEx/ref/loopOutput.html">loopOutput</a> page.</span></td></tr>
+  </table>
+ </div>
+ <p class="Caption"><a name="98144568"></a>Options for <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/codexOutput.html">codexOutput</a></span>.</p>
+ <ul class="Notes">
+  <li><a name="154711198"></a>For tree level WCs:</li>
+ </ul>
+ <div class="IO">
+  <table class="InCell">
+   <tr><td class="lab" /><td class="Input"><div>
+      <a name="524030311"></a>
+      <img src="Files/HowToRun/I_22.png"
+          height="16"
+          width="362"
+          alt="Click for copyable input" />
+     </div><div id="i_21_out" class="IFL"></div></td></tr>
+  </table>
+  <table class="OCell">
+   <tr><td class="lab" /><td class="Output"><div class="output-image">
+      <img src="Files/HowToRun/O_11.png"
+          height="33"
+          width="187"
+          alt="" />
+     </div></td></tr>
+  </table>
+ </div>
+ <ul class="Notes">
+  <li><a name="1057321256"></a>For loop level WCs:</li>
+ </ul>
+ <p class="Text"><a name="246676273"></a>To run this, we again need to run the function <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/initializeLoop.html">initializeLoop</a></span>. As we have done that above, here can safely run <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/codexOutput.html">codexOutput</a></span>. We also need to specify the name of the model that was used in <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/initializeLoop.html">initializeLoop</a></span>, as the OptionValue of the option '<span class="InlineCode">model</span>'. Failing to do this will give the tree level result, even if the option '<span class="InlineCode">outRange</span>' is set to <span class="InlineCode">&quot;Loop&quot; </span>/ <span class="InlineCode">&quot;All&quot;</span>.</p>
+ <div class="IO">
+  <table class="InCell">
+   <tr><td class="lab" /><td class="Input"><div>
+      <a name="92691690"></a>
+      <img src=""
+          data-src="Files/HowToRun/I_24.png"
+          data-big="462 16"
+          data-small="239 33"
+          alt="Click for copyable input" />
+     </div><div id="i_23_out" class="IFL"></div></td></tr>
+  </table>
+  <table class="OCell">
+   <tr><td class="lab" /><td class="Output"><div class="output-image">
+      <img src="Files/HowToRun/O_12.png"
+          height="68"
+          width="443"
+          alt="" />
+     </div></td></tr>
+  </table>
+ </div>
+ <ul class="Notes">
+  <li><a name="308234968"></a>All WCs up to 1loop:</li>
+ </ul>
+ <div class="IO">
+  <table class="InCell">
+   <tr><td class="lab" /><td class="Input"><div>
+      <a name="127659160"></a>
+      <img src="Files/HowToRun/I_26.png"
+          height="16"
+          width="349"
+          alt="Click for copyable input" />
+     </div><div id="i_25_out" class="IFL"></div></td></tr>
+  </table>
+  <table class="OCell">
+   <tr><td class="lab" /><td class="Output"><div class="output-image">
+      <img src="Files/HowToRun/O_13.png"
+          height="68"
+          width="412"
+          alt="" />
+     </div></td></tr>
+  </table>
+ </div>
+ <ul class="Notes">
+  <li>
+   <a name="39796541"></a>
+   <span class="MenuName">Note!</span>
+   <span class="MenuNameDelimiter"> <span class="special-character FilledRightTriangle">&#9654;</span> </span>
+   <span class="MenuName">The OptionValue of the option '</span>
+   <span class="InlineCode">model</span>
+   <span class="MenuName">' should match with the model name defined in </span>
+   <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/initializeLoop.html">initializeLoop</a></span>
+   <span class="MenuName">. Otherwise errors will occur.</span>
+  </li>
+ </ul>
+ <ul class="Notes">
+  <li><a name="458088988"></a>All WCs up to 1loop in <span class="InlineCode">&quot;Warsaw&quot;</span> basis:</li>
+ </ul>
+ <div class="IO">
+  <table class="InCell">
+   <tr><td class="lab" /><td class="Input"><div>
+      <a name="774550612"></a>
+      <img src="Files/HowToRun/I_28.png"
+          height="16"
+          width="239"
+          alt="Click for copyable input" />
+     </div><div id="i_27_out" class="IFL"></div></td></tr>
+  </table>
+  <table class="OCell">
+   <tr><td class="lab" /><td class="Output"><div class="output-image">
+      <img src="Files/HowToRun/O_14.png"
+          height="68"
+          width="377"
+          alt="" />
+     </div></td></tr>
+  </table>
+ </div>
+ <p class="Text"><a name="14215765"></a>Details on the output formatting, copying the result in Latex format, and the renormalization group evolution of these Wilson Coefficients can be found in these pages: <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/formPick.html">formPick</a></span>, <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/texTable.html">texTable</a></span> and <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/RGFlow.html">RGFlow</a></span>.</p>
+ <div class="expandWrap"
+     id="RelatedGuides">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Related Guides</a><a class="collapse" title="hide" href="#">Related Guides</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li>
+      <a name="380889192"></a>
+      <span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/treeOutput.html">treeOutput</a></span>
+     </li>
+     <li>
+      <a name="35798883"></a>
+      <span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/loopOutput.html">loopOutput</a></span>
+     </li>
+     <li>
+      <a name="429124607"></a>
+      <span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/initializeLoop.html">initializeLoop</a></span>
+     </li>
+     <li>
+      <a name="234004127"></a>
+      <span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/codexOutput.html">codexOutput</a></span>
+     </li>
+     <li>
+      <a name="38055115"></a>
+      <span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/formPick.html">formPick</a></span>
+     </li>
+     <li>
+      <a name="167052594"></a>
+      <span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/texTable.html">texTable</a></span>
+     </li>
+     <li>
+      <a name="171871532"></a>
+      <span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/RGFlow.html">RGFlow</a></span>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="RelatedTutorials">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Related Tutorials</a><a class="collapse" title="hide" href="#">Related Tutorials</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li>
+      <a name="806871991"></a>
+      <a href="http://reference.wolfram.com/language/CoDEx/tutorial/BuildLagrangian.html">BuildLagrangian</a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>
+</div><!-- /wrapper -->
+
+
+	
+</div>
+
+
+</body></html>

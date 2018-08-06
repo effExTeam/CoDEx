@@ -1,0 +1,4 @@
+<pre name='i_3_in' id='i_3_in' class='IFT'>fields =
+  {
+   {ph, 3, 1, 3, 0, 0, m}
+   };</pre><div class='IFU'><a name='682857193'></a>http://wolfram.com/xid/04wx5oq82lvxiziwkg9y-lkt99n</div>

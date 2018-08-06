@@ -1,4 +1,0 @@
-<pre name='i_9_in' id='i_9_in' class='IFT'>\!\(
-ButtonBox[&quot;partCov&quot;,
-BaseStyle-&gt;&quot;Link&quot;,
-ButtonData-&gt;&quot;paclet:CoDEx/ref/partCov&quot;]\)</pre><div class='IFU'>http://wolfram.com/xid/0bypxf2uqkku63wa97vju0ryq2r</div>

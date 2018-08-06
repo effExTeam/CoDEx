@@ -1,0 +1,4 @@
+<pre name='i_23_in' id='i_23_in' class='IFT'>fieldewqs =
+  {
+   {hf, 4, 6, 5, 3/2, 0, m}
+   };</pre><div class='IFU'><a name='350136602'></a>http://wolfram.com/xid/0fnv7ejza16yj0kxoynj2dc-f2qxe0</div>

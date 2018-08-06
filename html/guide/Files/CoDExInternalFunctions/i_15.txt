@@ -1,4 +1,0 @@
-<pre name='i_15_in' id='i_15_in' class='IFT'>\!\(
-ButtonBox[&quot;gprime1&quot;,
-BaseStyle-&gt;&quot;Link&quot;,
-ButtonData-&gt;&quot;paclet:CoDEx/ref/gprime1&quot;]\)</pre><div class='IFU'>http://wolfram.com/xid/0bypxf2uqkku63wa97vju0ryq2r</div>

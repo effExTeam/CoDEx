@@ -1,0 +1,2 @@
+<pre name='i_7_in' id='i_7_in' class='IFT'>texTable[tstres, vertical -&gt; True, horizontal -&gt; True, 
+ alignment -&gt; &quot;l&quot;, interpret -&gt; &quot;Copy&quot;]</pre><div class='IFU'><a name='335956019'></a>http://wolfram.com/xid/0bzjl0277uxe5hsb54xbm-fuazlx</div>

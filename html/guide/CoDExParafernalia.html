@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+
+<title>CoDEx Parafernalia&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000" />
+<meta name="historydata" content="{1.0, , , }" />
+<meta name="keywords" content="CoDExParafernalia" />
+
+<meta name="description" content="CoDEx is a package which can be used to calculate Wilson Coefficients (both tree level and one loop) for a given BSM theory in which heavy degrees of freedom with spin 0, 1/2 or 1. The Wilson Coefficients will be evaluated at the scale of the mass of the heavy particle." />
+<script language="JavaScript" type="text/javascript">baselang='CoDExParafernalia';</script>
+<!--#include virtual="/common/includes/gl-head-includes.html"-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--[if IE]>
+<style type="text/css">
+/* doctype problem overrides */
+#menu .searchboxsub, #menu .searchboxsub-on { padding-bottom: 0; }
+#menu .headerSearchSubmit { margin-bottom: 4px; }
+
+/*
+.WRIdropMenu .WRImenuContents { margin-top: -2px; margin-left: -2px; }
+.WRIdropMenu .WRImenuContents .WRImenuContents { margin: 0; }
+*/
+</style>
+<![endif]-->
+<link rel="stylesheet" href="../css/reference.css" />
+
+
+            <link rel="stylesheet" href="../css/clipboard.css" />
+            <script src="../javascript/jquery/core/1.7.2/jquery.min.js"></script>
+            <script src="../javascript/reference.js"></script>
+        
+<script src="../javascript/documentation-search.js"></script>
+<script src="../javascript/faster-page-load.js"></script>
+<script src="../javascript/hyperlink-filter.js"></script>
+<script src="../javascript/brokenlinks.js"></script>
+<script src="../javascript/clipboard.js"></script>
+<script src="../javascript/image-swap.js"></script>
+
+<!--#include virtual="/2013/includes/carousel-head.html"--> 
+</head>
+<body id="guide">
+<a name="top"></a>
+ 
+<div class="main-wrapper">
+<div class="outer-wrapper">
+
+<div class="wrapper mainOuter">
+    <div class="mainContent">
+ <div class="topContentWrap">
+  <div class="ribbonWrap">
+   <span class="ribbonOuter"><span class="ribbonInner">CO D EX GUIDE</span></span>
+  </div>
+  <ul class="dropdown">
+   <li>
+    <a href="#">Functions</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/ref/PauliMatrix.html"><span class="dropdownPad">PauliMatrix</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="If[StringMatchQ[StringReplace[If[StringMatchQ[{}[[2]], paclet*], {{}, {}}[[1]][[2]], paclet:&lt;&gt;{{}, {}}[[1]][[2]]], paclet: -&gt; ], http://~~__], bdata$13011, DotHTML[StringReplace[StringReplace[StringReplace[StringReplace[/language/&lt;&gt;{{}[[1]], StringReplace[If[StringMatchQ[{}[[2]], paclet*], {{}, {}}[[1]][[2]], paclet:&lt;&gt;{{}, {}}[[1]][[2]]], paclet: -&gt; ]}[[2]], {JLink/ref/java/ -&gt; JLink/ref/java/com/wolfram/jlink/}], {NETLink/ref/net/ -&gt; NETLink/ref/net/Wolfram.NETLink., IKernelLink/ -&gt; IKernelLink.}], {NETLink/ref/net/Wolfram.NETLink.NETLink -&gt; NETLink/ref/net/Wolfram.NETLink, Wolfram.NETLink.IKernelLink.EvaluateToOutputForm -&gt; Wolfram.NETLink.IKernelLink.EvaluateToOutputForm_overloads, Wolfram.NETLink.IKernelLink.EvaluateToImage -&gt; Wolfram.NETLink.IKernelLink.EvaluateToImage_overloads, Wolfram.NETLink.IKernelLink.Evaluate -&gt; Wolfram.NETLink.IKernelLink.Evaluate_overloads, Wolfram.NETLink.IKernelLink.GetInteger -&gt; Wolfram.NETLink.IMathLink.GetInteger, Wolfram.NETLink.ConsoleWindow -&gt; Wolfram.NETLink.UI.ConsoleWindow, Wolfram.NETLink.DoubleBufferedPanel -&gt; Wolfram.NETLink.UI.DoubleBufferedPanel, Wolfram.NETLink.MathPictureBox -&gt; Wolfram.NETLink.UI.MathPictureBox, Wolfram.NETLink.MathLinkFactory/CreateKernelLink -&gt; Wolfram.NETLink.MathLinkFactory.CreateKernelLink_overloads, NETLink/ref/net/DotNETInterface -&gt; NETLink/guide/DotNETInterface}], {/language/WSMLink/ -&gt; /system-modeler/WSMLink/}]]]"><span class="dropdownPad" /></a>
+     </li>
+     <li>
+      <a href="If[StringMatchQ[StringReplace[If[StringMatchQ[{}[[2]], paclet*], {{}, {}}[[2]][[2]], paclet:&lt;&gt;{{}, {}}[[2]][[2]]], paclet: -&gt; ], http://~~__], bdata$13019, DotHTML[StringReplace[StringReplace[StringReplace[StringReplace[/language/&lt;&gt;{{}[[1]], StringReplace[If[StringMatchQ[{}[[2]], paclet*], {{}, {}}[[2]][[2]], paclet:&lt;&gt;{{}, {}}[[2]][[2]]], paclet: -&gt; ]}[[2]], {JLink/ref/java/ -&gt; JLink/ref/java/com/wolfram/jlink/}], {NETLink/ref/net/ -&gt; NETLink/ref/net/Wolfram.NETLink., IKernelLink/ -&gt; IKernelLink.}], {NETLink/ref/net/Wolfram.NETLink.NETLink -&gt; NETLink/ref/net/Wolfram.NETLink, Wolfram.NETLink.IKernelLink.EvaluateToOutputForm -&gt; Wolfram.NETLink.IKernelLink.EvaluateToOutputForm_overloads, Wolfram.NETLink.IKernelLink.EvaluateToImage -&gt; Wolfram.NETLink.IKernelLink.EvaluateToImage_overloads, Wolfram.NETLink.IKernelLink.Evaluate -&gt; Wolfram.NETLink.IKernelLink.Evaluate_overloads, Wolfram.NETLink.IKernelLink.GetInteger -&gt; Wolfram.NETLink.IMathLink.GetInteger, Wolfram.NETLink.ConsoleWindow -&gt; Wolfram.NETLink.UI.ConsoleWindow, Wolfram.NETLink.DoubleBufferedPanel -&gt; Wolfram.NETLink.UI.DoubleBufferedPanel, Wolfram.NETLink.MathPictureBox -&gt; Wolfram.NETLink.UI.MathPictureBox, Wolfram.NETLink.MathLinkFactory/CreateKernelLink -&gt; Wolfram.NETLink.MathLinkFactory.CreateKernelLink_overloads, NETLink/ref/net/DotNETInterface -&gt; NETLink/guide/DotNETInterface}], {/language/WSMLink/ -&gt; /system-modeler/WSMLink/}]]]"><span class="dropdownPad" /></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#">Tutorials</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/tutorial/CoDExOverview.html"><span class="dropdownPad">CoDExOverview</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/tutorial/HowToRun.html"><span class="dropdownPad">HowToRun</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <div class="clear"><!-- --></div>
+ </div>
+ <h1><a name="942062912"></a>CoDEx Parafernalia</h1>
+ <p class="intro"><a name="2001916300"></a>CoDEx is a package which can be used to calculate Wilson Coefficients (both tree level and one loop)  for a given BSM theory in which heavy degrees of freedom with spin 0, 1/2 or 1. The Wilson Coefficients will be evaluated at the scale of the mass of the heavy particle.</p>
+ <div class="expandWrap">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#"><img src="Files/CoDExParafernalia/1.gif" height="17" width="6" alt="" />Functions available to the User</a><a class="collapse" title="hide" href="#"><img src="Files/CoDExParafernalia/1.gif" height="17" width="6" alt="" />Functions available to the User</a></h2>
+   <div class="expanded">
+    <div class="GuideDelimiterTop"><!-- --></div>
+    <p class="intro"><a name="26672003"></a>There are some key functions, which let the user to define a list of BSM particles (along with their properties), build a Lagrangian, calculate the effective Wilson Coefficients </p>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#"><img src="Files/CoDExParafernalia/2.gif" height="17" width="6" alt="" />Functions Internal to CoDEx</a><a class="collapse" title="hide" href="#"><img src="Files/CoDExParafernalia/2.gif" height="17" width="6" alt="" />Functions Internal to CoDEx</a></h2>
+   <div class="expanded">
+    <div class="GuideDelimiterTop"><!-- --></div>
+    <p class="intro"><a name="786093135"></a>This guide lists all the functions that <span class="TI">CoDEx</span> uses to do its job. Help files are not created for these functions and users are requested not to open these. Some of these we plan to make customizable later on, and their properties are listed in the next section, but for now, they are better left untouched.</p>
+    <h3><a name="32658026"></a>Functions for Building the Lagrangian</h3>
+    <p class="singleFunction"><a name="67514479"></a><span class="IFSans">re</span> <span class="dash">&mdash;</span> <span class="IF">re<span class="openbracket">[</span><em>expression</em><span class="closebracket">]</span></span> gives only the real part of <span class="IFSans">expression</span>.</p>
+    <p class="singleFunction"><a name="334064530"></a><span class="IFSans">im</span> <span class="dash">&mdash;</span> <span class="IF">im<span class="openbracket">[</span><em>expression</em><span class="closebracket">]</span></span> gives only the imaginary part of <span class="IFSans">expression</span>.</p>
+    <p class="singleFunction"><a name="80214447"></a><span class="IFSans">abs</span> <span class="dash">&mdash;</span> Provides the norm of a vector. <span class="IF">abs<span class="openbracket">[</span><em>A</em><span class="closebracket">]</span>= Sqrt<span class="openbracket">[</span>A.dag<span class="openbracket">[</span>A<span class="closebracket">]</span><span class="closebracket">]</span></span> </p>
+    <p class="singleFunction"><a name="317077265"></a><span class="IFSans">dag</span> <span class="dash">&mdash;</span> Stands for the Dagger operation on some expression. </p>
+    <p class="singleFunction">
+     <a name="69244117"></a>
+     <span class="IF">dag<span class="openbracket">[</span><em>a</em><span class="closebracket">]</span>=<span class="openparenthesis">(</span>ComplexExpand//@<span class="openparenthesis">(</span>If<span class="openbracket">[</span>VectorQ<span class="openbracket">[</span>a<span class="closebracket">]</span><span class="special-character Equal">&#62513;</span>True<span class="comma">,</span>Conjugate<span class="openbracket">[</span>a<span class="closebracket">]</span><span class="comma">,</span>ConjugateTranspose<span class="openbracket">[</span>ExpandAll//@a<span class="closebracket">]</span><span class="closebracket">]</span><span class="closeparenthesis">)</span><span class="closeparenthesis">)</span></span>
+    </p>
+    <p class="singleFunction"><a name="157879953"></a><span class="IFSans">commutator</span> <span class="dash">&mdash;</span> <span class="IF">commutator<span class="openbracket">[</span><em>a</em><span class="comma">,</span><em>b</em><span class="closebracket">]</span>=a.b - b.a</span>  (a and b should be matrices)</p>
+    <p class="singleFunction"><a name="182243753"></a><span class="IFSans">antiCommutator</span> <span class="dash">&mdash;</span>  <span class="IF">anticommutator<span class="openbracket">[</span><em>a</em><span class="comma">,</span><em>b</em><span class="closebracket">]</span>=a.b + b.a</span>  (a and b should be matrices)</p>
+    <p class="singleFunction"><a name="322201201"></a><span class="IFSans">pau</span> <span class="dash">&mdash;</span> Slightly modified version of <a href="http://reference.wolfram.com/language/ref/PauliMatrix.html">PauliMatrix</a>. <span class="IF">pau<span class="openbracket">[</span>4<span class="closebracket">]</span>=<span class="special-character ImaginaryI">&#63310;</span>*PauliMatrix<span class="openbracket">[</span>4<span class="closebracket">]</span></span>. Otherwise <span class="IF">pau<span class="openbracket">[</span><em>i</em><span class="closebracket">]</span> = PauliMatrix<span class="openbracket">[</span>i<span class="closebracket">]</span></span>.</p>
+    <p class="singleFunction"><a name="412393276"></a><span class="IFSans">tau</span> <span class="dash">&mdash;</span> <span class="IF">tau<span class="openbracket">[</span><em>a</em><span class="closebracket">]</span> = <span class="openparenthesis">(</span>1/2<span class="closeparenthesis">)</span> * pau<span class="openbracket">[</span>a<span class="closebracket">]</span></span></p>
+    <p class="singleFunction"><a name="892358252"></a><span class="IFSans">del</span> <span class="dash">&mdash;</span> del is a variation of a partial derivative operator. In <span class="IF">del<span class="openbracket">[</span><em>a</em><span class="comma">,</span>expression<span class="closebracket">]</span></span>, <span class="IFSans">a</span> is the Lorentz index, and runs from 0 to 3.</p>
+    <p class="singleFunction"><a name="16615322"></a><span class="IFSans">hermitianConjugate</span> <span class="dash">&mdash;</span> <span class="IF">hermitianConjugate<span class="openbracket">[</span><em>a</em><span class="closebracket">]</span>=ComplexExpand<span class="openbracket">[</span>Conjugate<span class="openbracket">[</span>a<span class="closebracket">]</span><span class="closebracket">]</span></span></p>
+    <p class="singleFunction"><a name="65049877"></a><span class="IFSans">gamma</span> <span class="dash">&mdash;</span> It is a user-defined matrix.</p>
+    <p class="singleFunction"><a name="99072141"></a><span class="IFSans">sigma</span> <span class="dash">&mdash;</span> It is a user-defined matrix.</p>
+    <p class="singleFunction"><a name="221053352"></a><span class="IFSans">su3fijk</span> <span class="dash">&mdash;</span> These are the <em>SU(3)</em> structure constants.</p>
+    <h3><a name="206760792"></a>Functions for Wilson Coefficient Calculation</h3>
+    <p class="singleFunction"><a name="388645563"></a><span class="IFSans">smCoeff</span> <span class="dash">&mdash;</span> picks the Standard Model Coefficient from the given expression.</p>
+    <p class="singleFunction"><a name="144231328"></a><span class="IFSans">fieldStructure</span> <span class="dash">&mdash;</span> picks only the fields from the given expression</p>
+    <p class="singleFunction"><a name="654648886"></a><span class="IFSans">number</span> <span class="dash">&mdash;</span> picks only the numbers from the given expression.</p>
+    <p class="singleFunction"><a name="363337664"></a><span class="IFSans">wcPick</span> <span class="dash">&mdash;</span> finds the Wilson Coefficients from the given expression for a given operator.</p>
+    <p class="singleFunction"><a name="367073848"></a><span class="IFSans">byParts</span> <span class="dash">&mdash;</span> takes  <span class="IF"><span class="specialcharacters">expression1 D^<span class="openbrace">{</span>2<span class="closebrace">}</span> <span class="openbracket">[</span> expression2 <span class="closebracket">]</span>  -&gt;  - D<span class="openbracket">[</span> expression1 <span class="closebracket">]</span> D<span class="openbracket">[</span> expression2 <span class="closebracket">]</span></span></span> where expression2 must be a series of field terms.</p>
+    <p class="singleFunction"><a name="244132014"></a><span class="IFSans">switchIntegral</span> <span class="dash">&mdash;</span> takes  <span class="IF"><span class="specialcharacters">expression1 D^<span class="openbrace">{</span>2<span class="closebrace">}</span> <span class="openbracket">[</span> expression2 <span class="closebracket">]</span>  -&gt;  - D<span class="openbracket">[</span> expression1 <span class="closebracket">]</span> D<span class="openbracket">[</span> expression2 <span class="closebracket">]</span></span></span> but expression2 must be a single term.</p>
+    <p class="singleFunction"><a name="37817293"></a><span class="IFSans">filter</span> <span class="dash">&mdash;</span>  picks terms from an expression which have <span class="IM"><img src="Files/CoDExParafernalia/3.png" height="26" width="15" alt="" /></span> where i can takes values from 0 to 6.</p>
+    <p class="singleFunction"><a name="486593037"></a><span class="IFSans">bosonFieldGenerator</span> <span class="dash">&mdash;</span> <span class="IF"><span class="specialcharacters">bosonFieldGenerator<span class="openbracket">[</span>B<span class="closebracket">]</span>= <span class="openbrace">{</span>B<span class="openbracket">[</span>0<span class="closebracket">]</span><span class="comma">,</span>B<span class="openbracket">[</span>1<span class="closebracket">]</span><span class="comma">,</span>B<span class="openbracket">[</span>2<span class="closebracket">]</span><span class="comma">,</span>B<span class="openbracket">[</span>3<span class="closebracket">]</span><span class="closebrace">}</span></span></span></p>
+    <p class="singleFunction"><a name="516997929"></a><span class="IFSans">hftlvecs</span> <span class="dash">&mdash;</span> defines the solutions to the Euler-Lagrange equation for the provided lagrangian and heavy fields.</p>
+    <p class="singleFunction"><a name="24717342"></a><span class="IFSans">lagranKinMix</span> <span class="dash">&mdash;</span> Checks whether Kinematic mixing is allowed or not.</p>
+    <div class="GuideDelimiter"><!-- --></div>
+    <p class="inlineFunctionList"><a name="197027730"></a><span class="IFSans"><a class="package-symbol" href="../ref/initAbort.html">initAbort</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/impreplst.html">impreplst</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/impreplst2.html">impreplst2</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/infoHeavyFields.html">infoHeavyFields</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/partCov.html">partCov</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/delCov.html">delCov</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/gprime.html">gprime</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/gprime1.html">gprime1</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/zprime.html">zprime</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/fieldChoice1.html">fieldChoice1</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/fieldChoice2.html">fieldChoice2</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/fieldCompo.html">fieldCompo</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/dz.html">dz</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/dzb.html">dzb</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/uprimes.html">uprimes</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/uprime1.html">uprime1</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/unew.html">unew</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/aaiso.html">aaiso</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/vviso.html">vviso</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/rplst.html">rplst</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/jbig.html">jbig</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/jred.html">jred</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/jnew.html">jnew</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/jnul.html">jnul</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/lstTerms1.html">lstTerms1</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/totTerms1.html">totTerms1</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/lInput1.html">lInput1</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/lstTerms2.html">lstTerms2</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/totTerms2.html">totTerms2</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/lstTerms3.html">lstTerms3</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/lstTerms4.html">lstTerms4</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/totTerms3.html">totTerms3</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/totTerms4.html">totTerms4</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/lInput.html">lInput</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/kay.html">kay</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/dmu2.html">dmu2</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/lng.html">lng</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/cocom.html">cocom</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/covar.html">covar</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/opervec1.html">opervec1</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/stopervec2.html">stopervec2</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/opervec2.html">opervec2</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/opervec3.html">opervec3</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/opervecDim5.html">opervecDim5</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/opervecMur.html">opervecMur</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineBullet">&nbsp;&#9642;&nbsp;</span> <span class="IFSans"><a class="package-symbol" href="../ref/stylefunc1.html">stylefunc1</a></span></p>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#"><img src="Files/CoDExParafernalia/4.gif" height="17" width="6" alt="" />Standard Model (SM) Fields</a><a class="collapse" title="hide" href="#"><img src="Files/CoDExParafernalia/4.gif" height="17" width="6" alt="" />Standard Model (SM) Fields</a></h2>
+   <div class="expanded">
+    <div class="GuideDelimiterTop"><!-- --></div>
+    <p class="intro"><a name="105002428"></a>The SM fields that has to used while writing the Beyond Standard Model Lagrangian.</p>
+    <h3><a name="90085324"></a>Fermion sector:</h3>
+    <p class="inlineFunctionList">
+     <a name="1929780765"></a>
+     <span class="TR">The Leptons:</span>
+    </p>
+    <p class="singleFunction"><a name="1548509757"></a>Left handed electrons <span class="special-character RightArrow">&#8594;</span> <table class="InCell">
+      <tr><td class="lab" /><td class="Input"><div>
+         <img src="Files/CoDExParafernalia/I_2.png"
+             height="35"
+             width="356"
+             alt="Click for copyable input" />
+        </div><div id="i_1_out" class="IFL"></div></td></tr>
+     </table> </p>
+    <p class="singleFunction"><a name="1625561148"></a>Left handed neutrinos <span class="special-character RightArrow">&#8594;</span> <table class="InCell">
+      <tr><td class="lab" /><td class="Input"><div>
+         <img src=""
+             data-src="Files/CoDExParafernalia/I_4.png"
+             data-big="410 35"
+             data-small="410 35"
+             alt="Click for copyable input" />
+        </div><div id="i_3_out" class="IFL"></div></td></tr>
+     </table> </p>
+    <p class="singleFunction"><a name="1398691867"></a>Right handed electrons <span class="special-character RightArrow">&#8594;</span> <table class="InCell">
+      <tr><td class="lab" /><td class="Input"><div>
+         <img src="Files/CoDExParafernalia/I_6.png"
+             height="35"
+             width="366"
+             alt="Click for copyable input" />
+        </div><div id="i_5_out" class="IFL"></div></td></tr>
+     </table> </p>
+    <p class="singleFunction"><a name="1205735339"></a>eLb[p] , nuLb[p] and eRb[p] are the Lorentz conjugates ( <span class="IF"><img src="Files/CoDExParafernalia/5.png" height="25" width="14" style="vertical-align:middle;" alt="" title="" /></span> = <span class="IF"><span class="special-character CapitalPsi">&#936;</span><sup><span class="special-character Dagger">&#8224;</span></sup><span class="special-character Gamma">&#947;</span><sup>0</sup></span>)   respectively.<br />Lepton Doublet ,<img src="Files/CoDExParafernalia/CellNone_6.png" height="26" width="41" alt="" style="vertical-align:middle;" /> <span class="special-character RightArrow">&#8594;</span> <strong>lep[p]</strong> <br />and <strong>lepb[p]</strong> is the Lorentz conjugate of <strong>lep[p]</strong>. </p>
+    <div class="GuideDelimiter"><!-- --></div>
+    <p class="inlineFunctionList">
+     <a name="435188213"></a>
+     <span class="TR">The Quarks:</span>
+    </p>
+    <p class="singleFunction"><a name="1585756038"></a>Left handed up type quarks <span class="special-character RightArrow">&#8594;</span> <table class="InCell">
+      <tr><td class="lab" /><td class="Input"><div>
+         <img src=""
+             data-src="Files/CoDExParafernalia/I_8.png"
+             data-big="509 35"
+             data-small="278 53"
+             alt="Click for copyable input" />
+        </div><div id="i_7_out" class="IFL"></div></td></tr>
+     </table> </p>
+    <p class="singleFunction"><a name="1529671396"></a>Left handed down type quarks<span class="special-character RightArrow">&#8594;</span> <table class="InCell">
+      <tr><td class="lab" /><td class="Input"><div>
+         <img src=""
+             data-src="Files/CoDExParafernalia/I_10.png"
+             data-big="542 35"
+             data-small="303 53"
+             alt="Click for copyable input" />
+        </div><div id="i_9_out" class="IFL"></div></td></tr>
+     </table> </p>
+    <p class="singleFunction"><a name="139149762"></a>Right handed up type quarks <span class="special-character RightArrow">&#8594;</span> <table class="InCell">
+      <tr><td class="lab" /><td class="Input"><div>
+         <img src=""
+             data-src="Files/CoDExParafernalia/I_12.png"
+             data-big="518 35"
+             data-small="278 53"
+             alt="Click for copyable input" />
+        </div><div id="i_11_out" class="IFL"></div></td></tr>
+     </table> </p>
+    <p class="singleFunction"><a name="1855492236"></a>Right handed down type quarks <span class="special-character RightArrow">&#8594;</span> <table class="InCell">
+      <tr><td class="lab" /><td class="Input"><div>
+         <img src=""
+             data-src="Files/CoDExParafernalia/I_14.png"
+             data-big="527 35"
+             data-small="278 53"
+             alt="Click for copyable input" />
+        </div><div id="i_13_out" class="IFL"></div></td></tr>
+     </table> </p>
+    <p class="singleFunction"><a name="33735580"></a>uLb[p] , dLb[p], uRb and dRb[p] are the Lorentz conjugates respectively.<br />Quark Doublet ,<img src="Files/CoDExParafernalia/CellNone_7.png" height="26" width="46" alt="" style="vertical-align:middle;" /> <span class="special-character RightArrow">&#8594;</span> <strong>qdub[p,c]</strong> <br />and <strong>qdubb[p,c]</strong> is the Lorentz conjugate of <strong>qdub[p,c]</strong>. </p>
+    <h3><a name="13612660"></a>Bosonic sector:</h3>
+    <p class="singleFunction"><a name="791377520"></a>The SM bosonic sector consists of the SM Higgs doublet, three<span class="TI"> </span><span class="TI"><span class="IF"><span class="TI">SU<span class="openparenthesis">(</span>2<span class="closeparenthesis">)</span><sub>L</sub></span></span></span> gauge bosons and eight <span class="IF"><span class="TI">SU<span class="openparenthesis">(</span>3<span class="closeparenthesis">)</span><sub>C</sub></span></span> gauge bosons (gluons).</p>
+    <div class="GuideDelimiter"><!-- --></div>
+    <p class="singleFunction"><a name="629292581"></a><span class="IFSans">H</span> <span class="dash">&mdash;</span> SM Higgs doublet</p>
+    <p class="singleFunction"><a name="845706286"></a><span class="IFSans">A</span> <span class="dash">&mdash;</span> SM Isospin gauge bosons. Acts like a vector with three components. Each component behaves like a spin 1 field.</p>
+    <p class="singleFunction"><a name="101385896"></a><span class="IFSans">bYvec</span> <span class="dash">&mdash;</span> SM abelian gauge boson. Acts like a spin 0 field.</p>
+    <p class="singleFunction"><a name="11023062"></a><span class="IFSans">gluons</span> <span class="dash">&mdash;</span> SM color gauge bosons. Acts like a vector with eight components. Each component behaves like a spin 1 field.</p>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#"><img src="Files/CoDExParafernalia/8.gif" height="17" width="6" alt="" />Operator Bases</a><a class="collapse" title="hide" href="#"><img src="Files/CoDExParafernalia/8.gif" height="17" width="6" alt="" />Operator Bases</a></h2>
+   <div class="expanded">
+    <div class="GuideDelimiterTop"><!-- --></div>
+    <p class="singleFunction"><a name="578948420"></a>CoDEx can find Wilson coefficients according two bases of SMEFT operators, namely &quot;Warsaw&quot; and &quot;SILH&quot;. They are listed below. Their details can be obtained in this page. Below are the operators in a grid format.</p>
+    <h3><a name="137086004"></a>Warsaw Basis</h3>
+    <table class="OCell">
+     <tr><td class="lab" /><td class="Output"><div class="output-image">
+        <img src="Files/CoDExParafernalia/O_1.png"
+            height="845"
+            width="542"
+            alt="" />
+       </div></td></tr>
+    </table>
+    <p class="singleFunction"><a name="323444974"></a>These operators are represented in the code as:</p>
+    <table class="OCell">
+     <tr><td class="lab" /><td class="Output"><div class="output-image">
+        <img src="Files/CoDExParafernalia/O_2.png"
+            height="739"
+            width="332"
+            alt="" />
+       </div></td></tr>
+    </table>
+    <h3><a name="63344593"></a>SILH Basis</h3>
+    <table class="OCell">
+     <tr><td class="lab" /><td class="Output"><div class="output-image">
+        <img src="Files/CoDExParafernalia/O_3.png"
+            height="205"
+            width="359"
+            alt="" />
+       </div></td></tr>
+    </table>
+    <p class="singleFunction"><a name="150047658"></a>These operators are represented in the code as:</p>
+    <table class="OCell">
+     <tr><td class="lab" /><td class="Output"><div class="output-image">
+        <img src="Files/CoDExParafernalia/O_4.png"
+            height="161"
+            width="174"
+            alt="" />
+       </div></td></tr>
+    </table>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="RelatedGuides">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Related Guides</a><a class="collapse" title="hide" href="#">Related Guides</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li><a name="1567025153"></a>Website</li>
+     <li><a name="252299663"></a>arXiv Pre-print</li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>
+</div><!-- /wrapper -->
+
+	
+</div>
+
+
+</body></html>

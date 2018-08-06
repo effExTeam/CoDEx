@@ -1,0 +1,1 @@
+<pre name='i_21_in' id='i_21_in' class='IFT'>codexOutput[LBSM, fields, outRange -&gt; &quot;Tree&quot;, operBasis -&gt; &quot;SILH&quot;]</pre><div class='IFU'><a name='524030311'></a>http://wolfram.com/xid/04wx5oq82lvxiziwkg9y-ix92nt</div>

@@ -1,0 +1,2 @@
+<pre name='i_23_in' id='i_23_in' class='IFT'>codexOutput[LBSM, fields, model -&gt; &quot;ewrts&quot;, outRange -&gt; &quot;Loop&quot;, 
+ operBasis -&gt; &quot;SILH&quot;]</pre><div class='IFU'><a name='92691690'></a>http://wolfram.com/xid/04wx5oq82lvxiziwkg9y-btgzng</div>

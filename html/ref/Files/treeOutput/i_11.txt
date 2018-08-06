@@ -1,1 +1,1 @@
-<pre name='i_11_in' id='i_11_in' class='IFT'>treeOutput[Lpotenewrss, fieldewrss, operBasis -&gt; &quot;SILH&quot;]</pre><div class='IFU'><a name='1242902962'></a>http://wolfram.com/xid/0bsqkp30f4mul0ycfnah5u-ut90ck</div>
+<pre name='i_11_in' id='i_11_in' class='IFT'>treeOutput[Lpotenewrss, fieldewrss, format -&gt; &quot;Detailed2&quot;]</pre><div class='IFU'><a name='31355818'></a>http://wolfram.com/xid/0bsqkp30f4mul0ycfnah5u-syck8</div>

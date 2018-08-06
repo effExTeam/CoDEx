@@ -52,7 +52,24 @@
   <div class="ribbonWrap">
    <span class="ribbonOuter"><span class="ribbonInner">CO D EX SYMBOL</span></span>
   </div>
-  
+  <ul class="dropdown">
+   <li>
+    <a href="#">Tutorials</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/tutorial/HowToRun.html"><span class="dropdownPad">HowToRun</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/ref/CoDExOverview.html"><span class="dropdownPad">CoDExOverview</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul>
   <div class="clear"><!-- --></div>
  </div>
  <h1>treeOutput</h1>
@@ -68,9 +85,23 @@
    <div class="expanded">
     <ul class="functionList">
      <li><a name="1131473392"></a>Put BSM Lagrangian as the first argument.</li>
-     <li><a name="1299163246"></a>fieldlist (second argument) : It is a list which has information about the heavy multiplet. The generic structure of the fieldList is :<br />{heavy multiplet name, total number of field components (count each spin 0 , spin 1/2 and spin 1 field), <span class="IF">SU<span class="openparenthesis">(</span>3<span class="closeparenthesis">)</span><sub>C</sub></span> quantum number, <span class="IF">SU<span class="openparenthesis">(</span>2<span class="closeparenthesis">)</span><sub>L</sub></span> quantum number, <span class="IF">U<span class="openparenthesis">(</span>1<span class="closeparenthesis">)</span><sub>Y</sub> </span> charge, spin of heavy multiplet, mass of heavy multiplet}</li>
-     <li><a name="1816773422"></a>Default dimension six operator basis of 'treeOutput' function is &quot;Warsaw&quot;.</li>
-     <li><a name="1343721350"></a>CoDEx provides dimension six operators in &quot;SILH&quot; basis. See Examples.</li>
+     <li><a name="1299163246"></a><span class="TI">fieldlist</span> (second argument) : It is a list which has information about the heavy multiplet. The generic structure of the fieldList is : {heavy multiplet name, total number of field components (count each spin 0 , spin 1/2 and spin 1 field), <span class="IF">SU<span class="openparenthesis">(</span>3<span class="closeparenthesis">)</span><sub>C</sub></span> quantum number, <span class="IF">SU<span class="openparenthesis">(</span>2<span class="closeparenthesis">)</span><sub>L</sub></span> quantum number, <span class="IF">U<span class="openparenthesis">(</span>1<span class="closeparenthesis">)</span><sub>Y</sub> </span> charge, spin of heavy multiplet, mass of heavy multiplet}</li>
+     <li><a name="1816773422"></a>Default dimension six operator basis of '<span class="InlineCode">treeOutput</span>' function is <span class="InlineCode">&quot;Warsaw&quot;</span>.</li>
+     <li><a name="1343721350"></a>CoDEx also provides dimension six operators in <span class="InlineCode">&quot;SILH&quot;</span> basis. See Examples.</li>
+     <li><a name="484703426"></a>Options for <span class="InlineCode"><a href="../ref/treeOutput.html">treeOutput</a></span> are:</li>
+     <li class="NotesTable">
+      <a name="267440573"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a href="../ref/monitor.html">monitor</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="TT">Shows an animation while computing</span></span></td></tr>
+       <tr class="" style=""><td /><td><a href="../ref/appearence.html">appearance</a></td><td>&quot;Percolate&quot;<br /><span class="openparenthesis">(</span>for Version <span class="special-character GreaterEqual">&#8805;</span>11.0<span class="closeparenthesis">)</span></td><td><span class="TT"><span class="TT">Appearence of the animation.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a href="../ref/operBasis.html">operBasis</a></td><td>&quot;Warsaw&quot;</td><td><span class="TT"><span class="TT">Choice of basis of the  Dim.-6 operators </span></span></td></tr>
+       <tr class="" style=""><td /><td><a href="../ref/format.html">format</a></td><td>&quot;List&quot;</td><td><span class="TT"><span class="TT">The output format.</span></span></td></tr>
+      </table>
+     </li>
     </ul>
    </div>
   </div>
@@ -84,15 +115,17 @@
      <div class="expandSubOuter">
       <h3 class="expandSubInner"><a class="expand hide" href="#" title="show">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a><a class="collapse" href="#" title="hide">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a></h3>
       <div class="expanded">
+       <p><a name="375050777"></a>Load the package:</p>
        <table class="InCell">
         <tr><td class="lab">In[1]:=</td><td class="Input"><div>
-           <a name="312767630"></a>
+           <a name="176010929"></a>
            <img src="Files/treeOutput/I_2.png"
                height="16"
                width="93"
                alt="Click for copyable input" />
           </div><div id="i_1_out" class="IFL"></div></td></tr>
        </table>
+       <p><a name="185381131"></a>Build the Lagrangian:</p>
        <table class="InCell">
         <tr><td class="lab">In[2]:=</td><td class="Input"><div>
            <a name="949613639"></a>
@@ -102,25 +135,15 @@
                alt="Click for copyable input" />
           </div><div id="i_3_out" class="IFL"></div></td></tr>
        </table>
-       <div class="IO">
-        <table class="InCell">
-         <tr><td class="lab">In[3]:=</td><td class="Input"><div>
-            <a name="57966169"></a>
-            <img src="Files/treeOutput/I_6.png"
-                height="16"
-                width="239"
-                alt="Click for copyable input" />
-           </div><div id="i_5_out" class="IFL"></div></td></tr>
-        </table>
-        <table class="OCell">
-         <tr><td class="lab">Out[3]=</td><td class="Output"><div class="output-image">
-            <img src="Files/treeOutput/O_1.png"
-                height="16"
-                width="56"
-                alt="" />
-           </div></td></tr>
-        </table>
-       </div>
+       <table class="InCell">
+        <tr><td class="lab">In[3]:=</td><td class="Input"><div>
+           <a name="57966169"></a>
+           <img src="Files/treeOutput/I_6.png"
+               height="16"
+               width="243"
+               alt="Click for copyable input" />
+          </div><div id="i_5_out" class="IFL"></div></td></tr>
+       </table>
        <table class="InCell">
         <tr><td class="lab">In[4]:=</td><td class="Input"><div>
            <a name="1411740654"></a>
@@ -131,7 +154,7 @@
                alt="Click for copyable input" />
           </div><div id="i_7_out" class="IFL"></div></td></tr>
        </table>
-       <div class="MCap"><a name="1984617238"></a>Warsaw basis is set as default dimension six basis for Wilson Coefficients.</div>
+       <p><a name="15095613"></a><span class="InlineCode">&quot;Warsaw&quot;</span> is set as default basis of dimension 6 operators for Wilson Coefficients.</p>
        <div class="IO">
         <table class="InCell">
          <tr><td class="lab">In[5]:=</td><td class="Input"><div>
@@ -144,29 +167,70 @@
         </table>
         <table class="OCell">
          <tr><td class="lab">Out[5]=</td><td class="Output"><div class="output-image">
-            <img src="Files/treeOutput/O_2.png"
+            <img src="Files/treeOutput/O_1.png"
                 height="33"
                 width="222"
                 alt="" />
            </div></td></tr>
         </table>
        </div>
-       <div class="MCap"><a name="344771146"></a>Setting &quot;SILH&quot; basis for dimension six operators.</div>
+       <p><a name="802008351"></a>Same result can be displayed in different formats. For all possible types of <span class="InlineCode">format</span>, check options of <span class="InlineCode"><a href="../ref/formPick.html">formPick</a></span>.</p>
        <div class="IO">
         <table class="InCell">
          <tr><td class="lab">In[6]:=</td><td class="Input"><div>
-            <a name="1242902962"></a>
+            <a name="31355818"></a>
             <img src="Files/treeOutput/I_12.png"
                 height="16"
-                width="308"
+                width="319"
                 alt="Click for copyable input" />
            </div><div id="i_11_out" class="IFL"></div></td></tr>
         </table>
         <table class="OCell">
          <tr><td class="lab">Out[6]=</td><td class="Output"><div class="output-image">
+            <img src="Files/treeOutput/O_2.png"
+                height="64"
+                width="227"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+       <p><a name="116344084"></a>Setting <span class="InlineCode">&quot;SILH&quot;</span> basis for dimension 6 operators:</p>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[7]:=</td><td class="Input"><div>
+            <a name="1242902962"></a>
+            <img src="Files/treeOutput/I_14.png"
+                height="16"
+                width="308"
+                alt="Click for copyable input" />
+           </div><div id="i_13_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab">Out[7]=</td><td class="Output"><div class="output-image">
             <img src="Files/treeOutput/O_3.png"
                 height="33"
                 width="197"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+       <p><a name="10288146"></a>Details of the operator bases are listed in the guide &quot;<a href="../guide/CoDExParafernalia.html">CoDExParafernalia</a>&quot;.</p>
+       <p><a name="12423270"></a>In addition to the options detailed in the <a href="../ref/treeOutput.html#1224892054">Details</a> section, treeOutput takes all options of <span class="InlineCode"><a href="../ref/formPick.html">formPick</a></span>.</p>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[8]:=</td><td class="Input"><div>
+            <a name="307988960"></a>
+            <img src="Files/treeOutput/I_16.png"
+                height="33"
+                width="368"
+                alt="Click for copyable input" />
+           </div><div id="i_15_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab">Out[8]=</td><td class="Output"><div class="output-image">
+            <img src="Files/treeOutput/O_4.png"
+                height="90"
+                width="421"
                 alt="" />
            </div></td></tr>
         </table>
@@ -178,6 +242,45 @@
      <a href="#top">Top</a>
     </div>
     <div class="clear"><!-- --></div>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="Tutorials">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Tutorials</a><a class="collapse" title="hide" href="#">Tutorials</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li>
+      <a name="341631938"></a>
+      <a class="package-symbol" href="../tutorial/HowToRun.html">HowToRun</a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="RelatedGuides">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Related Guides</a><a class="collapse" title="hide" href="#">Related Guides</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li>
+      <a name="48565188"></a>
+      <a href="../ref/CoDExOverview.html">CoDExOverview</a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="RelatedLinks">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Related Links</a><a class="collapse" title="hide" href="#">Related Links</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="../ref/loopOutput.html">loopOutput</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/codexOutput.html">codexOutput</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/texTable.html">texTable</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/formPick.html">formPick</a></span></p>
+    </ul>
    </div>
   </div>
  </div>

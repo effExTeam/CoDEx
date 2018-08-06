@@ -1,2 +1,1 @@
-<pre name='i_11_in' id='i_11_in' class='IFT'>formPick[&quot;SILH&quot;, &quot;Detailed2&quot;, tree1, FontSize -&gt; Large, 
- FontFamily -&gt; &quot;Times New Roman&quot;, Frame -&gt; All]</pre><div class='IFU'><a name='544163343'></a>http://wolfram.com/xid/0gb3f1k6xnojk8w2mivmty-i99lep</div>
+<pre name='i_11_in' id='i_11_in' class='IFT'>formPick[&quot;SILH&quot;, &quot;Detailed2&quot;, tstres, latex -&gt; True]</pre><div class='IFU'><a name='222521836'></a>http://wolfram.com/xid/0gb3f1k6xnojk8w2mivmty-dyro8e</div>

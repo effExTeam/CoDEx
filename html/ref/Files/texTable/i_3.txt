@@ -1,0 +1,2 @@
+<pre name='i_3_in' id='i_3_in' class='IFT'>tstres = {{&quot;a1&quot;, -((b^2 c)/(2 m^4)), Sin[\[Mu]]/(
+    6 m^6)}, {&quot;a2&quot;, \[ScriptCapitalR] + (b^2 c)/(2 m^4)}};</pre><div class='IFU'><a name='26628375'></a>http://wolfram.com/xid/0bzjl0277uxe5hsb54xbm-p40vd</div>

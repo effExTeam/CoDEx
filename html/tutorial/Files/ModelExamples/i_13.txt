@@ -1,0 +1,7 @@
+<pre name='i_13_in' id='i_13_in' class='IFT'>Needs[&quot;CoDEx`&quot;];
+codexOutput[Lpotenewrss, fieldewrss, model -&gt; &quot;ewrss&quot;];
+formPick[&quot;Warsaw&quot;, &quot;Detailed2&quot;, %, FontSize -&gt; Medium, 
+ FontFamily -&gt; &quot;Times New Roman&quot;, Frame -&gt; All];
+codexOutput[Lpotenewrss, fieldewrss, model -&gt; &quot;ewrss&quot;];
+formPick[&quot;Warsaw&quot;, &quot;Detailed2&quot;, %, FontSize -&gt; Medium, 
+ FontFamily -&gt; &quot;Times New Roman&quot;, Frame -&gt; All]</pre><div class='IFU'><a name='522034157'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-iw3ae3</div>

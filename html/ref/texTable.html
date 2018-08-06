@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+
+<title>texTable&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000" />
+<meta name="historydata" content="{1.0, , , }" />
+<meta name="keywords" content="texTable" />
+
+<meta name="description" content="texTable[list] given a table in form of a list, returns the tex output of a tabular environment, displayed and/or copied to clipboard" />
+<script language="JavaScript" type="text/javascript">baselang='texTable';</script>
+<!--#include virtual="/common/includes/gl-head-includes.html"-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--[if IE]>
+<style type="text/css">
+/* doctype problem overrides */
+#menu .searchboxsub, #menu .searchboxsub-on { padding-bottom: 0; }
+#menu .headerSearchSubmit { margin-bottom: 4px; }
+
+/*
+.WRIdropMenu .WRImenuContents { margin-top: -2px; margin-left: -2px; }
+.WRIdropMenu .WRImenuContents .WRImenuContents { margin: 0; }
+*/
+</style>
+<![endif]-->
+<link rel="stylesheet" href="../css/reference.css" />
+
+
+            <link rel="stylesheet" href="../css/clipboard.css" />
+            <script src="../javascript/jquery/core/1.7.2/jquery.min.js"></script>
+            <script src="../javascript/reference.js"></script>
+        
+<script src="../javascript/documentation-search.js"></script>
+<script src="../javascript/faster-page-load.js"></script>
+<script src="../javascript/hyperlink-filter.js"></script>
+<script src="../javascript/brokenlinks.js"></script>
+<script src="../javascript/clipboard.js"></script>
+<script src="../javascript/image-swap.js"></script>
+
+<script language="JavaScript" type="text/javascript" src="../javascript/toggle-highlight.js"></script>
+</head>
+<body id="ref" class="function">
+<a name="top"></a>
+ 
+<div class="main-wrapper">
+<div class="outer-wrapper">
+
+<div class="wrapper mainOuter">
+    <div class="mainContent">
+ <div class="topContentWrap">
+  <div class="ribbonWrap">
+   <span class="ribbonOuter"><span class="ribbonInner">CO D EX SYMBOL</span></span>
+  </div>
+  <ul class="dropdown">
+   <li>
+    <a href="#">See Also</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/ref/formPick.html"><span class="dropdownPad">formPick</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/treeOutput.html"><span class="dropdownPad">treeOutput</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/loopOutput.html"><span class="dropdownPad">loopOutput</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/codexOutput.html"><span class="dropdownPad">codexOutput</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <div class="clear"><!-- --></div>
+ </div>
+ <h1>texTable</h1>
+ <div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p><span class="IF">texTable[<span class="TI">list</span>]</span> <br />given a table in form of a <span class="TI">list</span>, returns the tex output of a tabular environment, displayed and/or copied to clipboard</p>
+  </div>
+ </div>
+ <div class="expandWrap closed"
+     id="DetailsAndOptions">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Details</a><a class="collapse" title="hide" href="#">Details</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li><a name="1067943069"></a>The function <span class="InlineCode"><a href="../ref/formPick.html">formPick</a></span> uses the function <span class="InlineCode">texTable</span> inside it.</li>
+     <li><a name="42062124"></a>The '<span class="TI">list</span>' can be a vector or a Matrix (usable in Latex tabular).</li>
+     <li><a name="24981"></a>Possible options for <span class="InlineCode"><em>texTable</em></span> are:</li>
+     <li class="NotesTable">
+      <a name="37366442"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a href="../ref/vertical.html">vertical</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="TT"><span class="specialcharacters">Inserts vertical separators in tex table <span class="openparenthesis">(</span>or not<span class="closeparenthesis">)</span>.</span></span></span></td></tr>
+       <tr class="" style=""><td /><td><a href="../ref/horizontal.html">horizontal</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="specialcharacters">Inserts horizontal separators in tex table <span class="openparenthesis">(</span>or not<span class="closeparenthesis">)</span>.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a href="../ref/alignment.html">alignment</a></td><td>&quot;c&quot;</td><td><span class="TT">Determines the alignment of cells in the table output.</span></td></tr>
+       <tr class="" style=""><td /><td><a href="../ref/interpret.html">interpret</a></td><td>&quot;Print&quot;</td><td><span class="TT"><span class="TT">Determines whether to copy the result to clipboard or not.</span></span></td></tr>
+      </table>
+     </li>
+     <li><a name="42960751"></a>texTable is a simplified code built upon the package <a href="http://library.wolfram.com/infocenter/MathSource/2720/">TexTableForm</a></li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="Examples">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Examples</a><a class="collapse" title="hide" href="#">Examples</a><a class="all opener" title="open all" href="#"><span>open all</span></a><a class="all closer hide" title="close all" href="#"><span>close all</span></a></h2>
+   <div class="expanded">
+    <div class="expandSubWrap">
+     <div class="expandSubOuter">
+      <h3 class="expandSubInner"><a class="expand hide" href="#" title="show">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a><a class="collapse" href="#" title="hide">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a></h3>
+      <div class="expanded">
+       <p><a name="395497065"></a>Load the package:</p>
+       <table class="InCell">
+        <tr><td class="lab">In[1]:=</td><td class="Input"><div>
+           <a name="352133397"></a>
+           <img src="Files/texTable/I_2.png"
+               height="16"
+               width="93"
+               alt="Click for copyable input" />
+          </div><div id="i_1_out" class="IFL"></div></td></tr>
+       </table>
+       <p><a name="69609809"></a>Say this is list that you convert to Latex table form. Let's give it a name:</p>
+       <table class="InCell">
+        <tr><td class="lab">In[2]:=</td><td class="Input"><div>
+           <a name="26628375"></a>
+           <img src="Files/texTable/I_4.png"
+               height="40"
+               width="279"
+               alt="Click for copyable input" />
+          </div><div id="i_3_out" class="IFL"></div></td></tr>
+       </table>
+       <p><a name="4513943"></a>texTable prints the required output in the 'tabular' environment. This output you can copy as plain text and use in your Latex document.  </p>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[3]:=</td><td class="Input"><div>
+            <a name="857266120"></a>
+            <img src="Files/texTable/I_6.png"
+                height="16"
+                width="84"
+                alt="Click for copyable input" />
+           </div><div id="i_5_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab">Out[3]=</td><td class="Output"><div class="output-image">
+            <img src="Files/texTable/O_1.png"
+                height="84"
+                width="354"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+       <p><a name="160446920"></a>Let us now change all the default options for texTable to some other values.</p>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[4]:=</td><td class="Input"><div>
+            <a name="335956019"></a>
+            <img src=""
+                data-src="Files/texTable/I_8.png"
+                data-big="472 16"
+                data-small="310 33"
+                alt="Click for copyable input" />
+           </div><div id="i_7_out" class="IFL"></div></td></tr>
+        </table>
+        <div class="Print">
+         <a name="311216663"></a>
+         <img class="FlushInput"
+             src="Files/texTable/Image_1.gif"
+             alt=" " />
+        </div>
+        <table class="OCell">
+         <tr><td class="lab">Out[4]=</td><td class="Output"><div class="output-image">
+            <img src="Files/texTable/O_2.png"
+                height="135"
+                width="351"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+       <p><a name="338086950"></a>This result is already copied in clipboard, thus just pasting in some Latex editor or a file will do the job for you.</p>
+      </div>
+     </div>
+    </div>
+    <div class="toplink">
+     <a href="#top">Top</a>
+    </div>
+    <div class="clear"><!-- --></div>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="SeeAlso">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">See Also</a><a class="collapse" title="hide" href="#">See Also</a></h2>
+   <div class="expanded">
+    <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="../ref/formPick.html">formPick</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/treeOutput.html">treeOutput</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/loopOutput.html">loopOutput</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/codexOutput.html">codexOutput</a></span></p>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="Tutorials">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Tutorials</a><a class="collapse" title="hide" href="#">Tutorials</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li><a name="341631938"></a>HowToRun</li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>
+</div><!-- /wrapper -->
+
+	
+</div>
+
+
+</body></html>

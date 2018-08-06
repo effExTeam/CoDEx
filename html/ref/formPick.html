@@ -54,14 +54,6 @@
   </div>
   <ul class="dropdown">
    <li>
-    <a href="#">Tutorials</a>
-    <ul class="sub_menu">
-     <li>
-      <a href="/language/CoDEx/tutorial/CoDExTutorial.html"><span class="dropdownPad">CoDExTutorial</span></a>
-     </li>
-    </ul>
-   </li>
-   <li>
     <a href="#">See Also</a>
     <ul class="sub_menu">
      <li>
@@ -70,13 +62,19 @@
      <li>
       <a href="/language/CoDEx/ref/loopOutput.html"><span class="dropdownPad">loopOutput</span></a>
      </li>
+     <li>
+      <a href="/language/CoDEx/ref/codexOutput.html"><span class="dropdownPad">codexOutput</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/texTable.html"><span class="dropdownPad">texTable</span></a>
+     </li>
     </ul>
    </li>
    <li>
     <a href="#">Related Guides</a>
     <ul class="sub_menu">
      <li>
-      <a href="/language/CoDEx/tutorial/CoDExTutorial.html"><span class="dropdownPad">CoDExTutorial</span></a>
+      <a href="/language/CoDEx/tutorial/CoDExOverview.html"><span class="dropdownPad">CoDExOverview</span></a>
      </li>
     </ul>
    </li>
@@ -95,7 +93,7 @@
    <h2 class="expandInner"><a class="expand hide" title="show" href="#">Details</a><a class="collapse" title="hide" href="#">Details</a></h2>
    <div class="expanded">
     <ul class="functionList">
-     <li><a name="440118102"></a><a href="http://reference.wolfram.com/language/ref/Grid.html">Both </a><span class="IF"><a class="package-symbol" href="../ref/treeOutput.html">treeOutput</a></span> and <span class="IF"><a class="package-symbol" href="../ref/loopOutput.html">loopOutput</a></span> uses <span class="IF">formPick</span> inside them. </li>
+     <li><a name="272198657"></a>The functions <span class="InlineCode"><a href="../ref/treeOutput.html">treeOutput</a></span>, <span class="InlineCode"><a href="../ref/loopOutput.html">loopOutput</a></span>, and <span class="InlineCode"><a href="../ref/codexOutput.html">codexOutput</a></span> uses the function <span class="InlineCode">formPick</span> inside them.</li>
      <li><a name="24981"></a>Possible values for <em>form</em> are:</li>
      <li class="NotesTable">
       <a name="101217442"></a>
@@ -109,7 +107,22 @@
        <tr class="" style=""><td /><td><span class="TT">&quot;Detailed2&quot;</span></td><td><span class="TT">Adds the cursiv form of the default operator names to &quot;Detailed1&quot;.</span></td></tr>
       </table>
      </li>
-     <li><a name="534051301"></a><span class="IF"><a class="package-symbol" href="../ref/formPick.html">formPick</a></span> takes all options for <em>Mathematica</em> inbuilt-function <a href="http://reference.wolfram.com/language/ref/Style.html">Style</a>. For the last three arguments, additional options can be used for <span class="IF">formPick</span>. They are same as the <em>Mathematica</em> inbuilt-function <a href="http://reference.wolfram.com/language/ref/Grid.html">Grid</a>.</li>
+     <li><a name="534051301"></a><span class="InlineCode">formPick</span> takes all options for <em>Mathematica</em> inbuilt-function <a href="http://reference.wolfram.com/language/ref/Style.html">Style</a>. For the last three types of arguments of '<span class="TI">form</span>', additional options can be used for <span class="InlineCode">formPick</span>. They are same as the <em>Mathematica</em> inbuilt-function <a href="http://reference.wolfram.com/language/ref/Grid.html">Grid</a>.</li>
+     <li><a name="51044985"></a>Other options that can be used for <span class="InlineCode">formPick</span> are:</li>
+     <li class="NotesTable">
+      <a name="127417082"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a href="../ref/latex.html">latex</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="TT"><span class="specialcharacters">If True<span class="comma">,</span> gives output in Latex table format. All options for </span><span class="InlineCode"><a href="../ref/texTable.html">texTable</a></span> can be used then.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a href="../ref/vertical.html">vertical</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="TT">An option for <span class="InlineCode"><a href="../ref/texTable.html">texTable</a></span></span></span></td></tr>
+       <tr class="" style=""><td /><td><a href="../ref/horizontal.html">horizontal</a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="TT">An option for <span class="InlineCode"><a href="../ref/texTable.html">texTable</a></span></span></span></td></tr>
+       <tr class="" style=""><td /><td><a href="../ref/alignment.html">alignment</a></td><td>&quot;c&quot;</td><td><span class="TT"><span class="TT">An option for <span class="InlineCode"><a href="../ref/texTable.html">texTable</a></span></span></span></td></tr>
+       <tr class="" style=""><td /><td><a href="../ref/interpret.html">interpret</a></td><td>&quot;Print&quot;</td><td><span class="TT"><span class="TT">An option for <span class="InlineCode"><a href="../ref/texTable.html">texTable</a></span></span></span></td></tr>
+      </table>
+     </li>
     </ul>
    </div>
   </div>
@@ -123,119 +136,73 @@
      <div class="expandSubOuter">
       <h3 class="expandSubInner"><a class="expand hide" href="#" title="show">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a><a class="collapse" href="#" title="hide">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a></h3>
       <div class="expanded">
-       <li><a name="2806716"></a>Model: One heavy real singlet scalar</li>
        <p><a name="395497065"></a>Load the package:</p>
        <table class="InCell">
         <tr><td class="lab">In[1]:=</td><td class="Input"><div>
-           <a name="47228123"></a>
+           <a name="352133397"></a>
            <img src="Files/formPick/I_2.png"
                height="16"
                width="93"
                alt="Click for copyable input" />
           </div><div id="i_1_out" class="IFL"></div></td></tr>
        </table>
-       <p><a name="555104394"></a>Define the fields:</p>
+       <p><a name="69609809"></a>Say this is the output of CoDEx that you have found and saved. Let's give it a name:</p>
        <table class="InCell">
         <tr><td class="lab">In[2]:=</td><td class="Input"><div>
-           <a name="97873843"></a>
+           <a name="205856946"></a>
            <img src="Files/formPick/I_4.png"
-               height="67"
-               width="135"
+               height="82"
+               width="381"
                alt="Click for copyable input" />
           </div><div id="i_3_out" class="IFL"></div></td></tr>
        </table>
-       <p><a name="21628252"></a>This creates a list of the fields in a recognizable and usable component form, according to the assigned quantum numbers above.</p>
+       <p><a name="160446920"></a>This prints the above result in a detailed format, with explicit forms of operators and in a grid.</p>
        <div class="IO">
         <table class="InCell">
          <tr><td class="lab">In[3]:=</td><td class="Input"><div>
-            <a name="380503622"></a>
+            <a name="527381338"></a>
             <img src="Files/formPick/I_6.png"
                 height="16"
-                width="237"
+                width="201"
                 alt="Click for copyable input" />
            </div><div id="i_5_out" class="IFL"></div></td></tr>
         </table>
         <table class="OCell">
          <tr><td class="lab">Out[3]=</td><td class="Output"><div class="output-image">
             <img src="Files/formPick/O_1.png"
-                height="16"
-                width="137"
+                height="64"
+                width="328"
                 alt="" />
            </div></td></tr>
         </table>
        </div>
-       <p><a name="126195819"></a>Write the lagrangian :</p>
-       <table class="InCell">
-        <tr><td class="lab">In[4]:=</td><td class="Input"><div>
-           <a name="189544689"></a>
-           <img src=""
-               data-src="Files/formPick/I_8.png"
-               data-big="540 91"
-               data-small="353 108"
-               alt="Click for copyable input" />
-          </div><div id="i_7_out" class="IFL"></div></td></tr>
-       </table>
-       <p><a name="504644359"></a>Obtain the Wilson coefficients in terms of the model parameters at tree-level, in <span class="IF">&quot;SILH&quot;</span> operator basis:</p>
+       <p><a name="51235395"></a>This does the same thing, with specific options for <span class="InlineCode"><a href="http://reference.wolfram.com/language/ref/Style.html">Style</a></span> and <span class="InlineCode"><a href="http://reference.wolfram.com/language/ref/Grid.html">Grid</a></span> changed.</p>
        <div class="IO">
         <table class="InCell">
-         <tr><td class="lab">In[5]:=</td><td class="Input"><div>
-            <a name="15703593"></a>
-            <img src="Files/formPick/I_10.png"
-                height="16"
-                width="345"
-                alt="Click for copyable input" />
-           </div><div id="i_9_out" class="IFL"></div></td></tr>
-        </table>
-        <table class="OCell">
-         <tr><td class="lab">Out[5]=</td><td class="Output"><div class="output-image">
-            <img src="Files/formPick/O_2.png"
-                height="33"
-                width="267"
-                alt="" />
-           </div></td></tr>
-        </table>
-       </div>
-       <p><a name="160446920"></a>This prints the above result in a detailed format, with explicit forms of operators and in a grid.</p>
-       <div class="IO">
-        <table class="InCell">
-         <tr><td class="lab">In[6]:=</td><td class="Input"><div>
-            <a name="544163343"></a>
-            <img src="Files/formPick/I_12.png"
+         <tr><td class="lab">In[4]:=</td><td class="Input"><div>
+            <a name="14094659"></a>
+            <img src="Files/formPick/I_8.png"
                 height="33"
                 width="368"
                 alt="Click for copyable input" />
-           </div><div id="i_11_out" class="IFL"></div></td></tr>
+           </div><div id="i_7_out" class="IFL"></div></td></tr>
         </table>
         <table class="OCell">
-         <tr><td class="lab">Out[6]=</td><td class="Output"><div class="output-image">
-            <img src="Files/formPick/O_3.png"
-                height="135"
-                width="343"
-                alt="" />
-           </div></td></tr>
-        </table>
-       </div>
-       <p><a name="206191400"></a>This prints the same result reformatted according to the fourth argument and the frames removed.</p>
-       <div class="IO">
-        <table class="InCell">
-         <tr><td class="lab">In[7]:=</td><td class="Input"><div>
-            <a name="175863716"></a>
-            <img src="Files/formPick/I_14.png"
-                height="16"
-                width="334"
-                alt="Click for copyable input" />
-           </div><div id="i_13_out" class="IFL"></div></td></tr>
-        </table>
-        <table class="OCell">
-         <tr><td class="lab">Out[7]=</td><td class="Output"><div class="output-image">
-            <img src="Files/formPick/O_4.png"
-                height="108"
-                width="201"
+         <tr><td class="lab">Out[4]=</td><td class="Output"><div class="output-image">
+            <img src="Files/formPick/O_2.png"
+                height="139"
+                width="542"
                 alt="" />
            </div></td></tr>
         </table>
        </div>
       </div>
+     </div>
+    </div>
+    <div class="expandSubWrap closed">
+     <div class="expandSubOuter">
+      <h3 class="expandSubInner"><a class="expand hide" href="#" title="show">Scope<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(2)</span></a><a class="collapse" href="#" title="hide">Scope<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(2)</span></a></h3>
+      <div class="expanded"></div>
      </div>
     </div>
     <div class="toplink">
@@ -250,7 +217,7 @@
   <div class="expandOuter">
    <h2 class="expandInner"><a class="expand hide" title="show" href="#">See Also</a><a class="collapse" title="hide" href="#">See Also</a></h2>
    <div class="expanded">
-    <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="../ref/treeOutput.html">treeOutput</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/loopOutput.html">loopOutput</a></span></p>
+    <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="../ref/treeOutput.html">treeOutput</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/loopOutput.html">loopOutput</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/codexOutput.html">codexOutput</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/texTable.html">texTable</a></span></p>
    </div>
   </div>
  </div>
@@ -260,10 +227,7 @@
    <h2 class="expandInner"><a class="expand hide" title="show" href="#">Tutorials</a><a class="collapse" title="hide" href="#">Tutorials</a></h2>
    <div class="expanded">
     <ul class="functionList">
-     <li>
-      <a name="341631938"></a>
-      <a class="package-symbol" href="../tutorial/CoDExTutorial.html">CoDExTutorial</a>
-     </li>
+     <li><a name="1272222"></a>HowToRun</li>
     </ul>
    </div>
   </div>
@@ -275,8 +239,8 @@
    <div class="expanded">
     <ul class="functionList">
      <li>
-      <a name="102422046"></a>
-      <a class="package-symbol" href="../tutorial/CoDExTutorial.html">CoDExTutorial</a>
+      <a name="127265124"></a>
+      <a class="package-symbol" href="../tutorial/CoDExOverview.html">CoDExOverview</a>
      </li>
     </ul>
    </div>

@@ -1,4 +1,0 @@
-<pre name='i_7_in' id='i_7_in' class='IFT'>\!\(
-ButtonBox[&quot;infoHeavyFields&quot;,
-BaseStyle-&gt;&quot;Link&quot;,
-ButtonData-&gt;&quot;paclet:CoDEx/ref/infoHeavyFields&quot;]\)</pre><div class='IFU'>http://wolfram.com/xid/0bypxf2uqkku63wa97vju0ryq2r</div>

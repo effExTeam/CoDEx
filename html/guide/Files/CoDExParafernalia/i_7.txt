@@ -1,0 +1,3 @@
+<pre name='i_7_in' id='i_7_in' class='IFT'>uL[p, c] where p = 1, 2, 3 &amp; c = 1, 2, 3.
+ p is the generation index. c is the color index. So, 
+uL[2, 1] is the left handed charm  quark.</pre><div class='IFU'>http://wolfram.com/xid/0cdqrs90djz657bajeb7m4t22jxfr58</div>

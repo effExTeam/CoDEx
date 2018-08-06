@@ -8,7 +8,7 @@
 <meta name="historydata" content="{1.0, , , }" />
 <meta name="keywords" content="initializeLoop" />
 
-<meta name="description" content="initializeLoop[] initializeLoop" />
+<meta name="description" content="initializeLoop[modelName_String, fldlst] prepares the Isospin and Color symmetry generators for the model named &amp;apos;modelName&amp;apos; with the heavy field content &amp;apos;fldlst&amp;apos;. loopOutput can only be run after this step is done " />
 <script language="JavaScript" type="text/javascript">baselang='initializeLoop';</script>
 <!--#include virtual="/common/includes/gl-head-includes.html"-->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -52,13 +52,366 @@
   <div class="ribbonWrap">
    <span class="ribbonOuter"><span class="ribbonInner">CO D EX SYMBOL</span></span>
   </div>
-  
+  <ul class="dropdown">
+   <li>
+    <a href="#">Tutorials</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/tutorial/HowToRun.html"><span class="dropdownPad">HowToRun</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#">See Also</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/ref/loopOutput.html"><span class="dropdownPad">loopOutput</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/codexOutput.html"><span class="dropdownPad">codexOutput</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul>
   <div class="clear"><!-- --></div>
  </div>
  <h1>initializeLoop</h1>
  <div class="functionIntroWrap">
   <div class="functionIntro">
-   <p><span class="IF"><span class="specialcharacters">initializeLoop<span class="openbracket">[</span><span class="closebracket">]</span></span></span> <br />initializeLoop</p>
+   <p><span class="IF">initializeLoop<span class="openbracket">[</span><span class="TI">modelName_String</span><span class="comma">,</span><span class="TI">fldlst</span><span class="closebracket">]</span></span> <br />prepares the Isospin and Color symmetry generators for the model named '<span class="TI">modelName</span>' with the heavy field content '<span class="TI">fldlst</span>'. loopOutput can only be run after this step is done </p>
+  </div>
+ </div>
+ <div class="expandWrap closed"
+     id="DetailsAndOptions">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Details</a><a class="collapse" title="hide" href="#">Details</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li><a name="1067943069"></a>Options and their default values for <span class="InlineCode">initializeLoop</span>:</li>
+     <li class="NotesTable">
+      <a name="55948793"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a href="../ref/printInfo.html">printInfo</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="TT">Prints a cell redirecting the user to the page <a href="../guide/CoDExParafernalia.html">CoDExParafernalia</a></span></span></td></tr>
+       <tr class="" style=""><td /><td><a href="../ref/kernels.html">kernels</a></td><td><a href="http://reference.wolfram.com/language/ref/All.html">All</a></td><td><span class="TT"><span class="TT">Number of Parallel Kernels to open for parallel evaluation</span></span></td></tr>
+       <tr class="" style=""><td /><td><a href="../ref/cellDelete.html">cellDelete</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT"><span class="TT">Removes previous cells printed by the option printInfo</span></span></td></tr>
+      </table>
+     </li>
+     <p><a name="357065563"></a>In the first argument, you provide a name of the model as a string. This will be used to uniquely define the symmetry generators.</p>
+     <p><a name="7385786"></a>In the second argument, you provide list of heavy field definitions. The symmetry generators are defined using the information about the Isospin and Color charges for each heavy field from the list of field definitions.</p>
+     <p><a name="524566949"></a>We have provided Isospin symmetry generators for Isospin quantum number from 1 to 4. For heavy fields with Isospin more than that, you have to define them yourself (you will be prompted to do so in such a case).</p>
+     <p><a name="92284949"></a>Color symmetry generators are provided for Color quantum number 1 and 3. For the unlikely case of  heavy fields with color charge 6 or more than that, you have to define them yourself (you will be prompted to do so in such a case).</p>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="Examples">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Examples</a><a class="collapse" title="hide" href="#">Examples</a><a class="all opener" title="open all" href="#"><span>open all</span></a><a class="all closer hide" title="close all" href="#"><span>close all</span></a></h2>
+   <div class="expanded">
+    <div class="expandSubWrap">
+     <div class="expandSubOuter">
+      <h3 class="expandSubInner"><a class="expand hide" href="#" title="show">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(2)</span></a><a class="collapse" href="#" title="hide">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(2)</span></a></h3>
+      <div class="expanded">
+       <p><a name="655896500"></a>Load the package</p>
+       <table class="InCell">
+        <tr><td class="lab">In[1]:=</td><td class="Input"><div>
+           <a name="590671744"></a>
+           <img src="Files/initializeLoop/I_2.png"
+               height="16"
+               width="93"
+               alt="Click for copyable input" />
+          </div><div id="i_1_out" class="IFL"></div></td></tr>
+       </table>
+       <p><a name="27681172"></a>Provide the field list in the format specified in '<a href="../tutorial/BuildLagrangian.html">BuildLagrangian</a>'.</p>
+       <table class="InCell">
+        <tr><td class="lab">In[2]:=</td><td class="Input"><div>
+           <a name="900611830"></a>
+           <img src="Files/initializeLoop/I_4.png"
+               height="67"
+               width="148"
+               alt="Click for copyable input" />
+          </div><div id="i_3_out" class="IFL"></div></td></tr>
+       </table>
+       <p><a name="814885927"></a>This launches the default number of parallel kernels, generates the Isospin and Color symmetry generators in array format, prompts the user to go to the guide page titled '<a href="../guide/CoDExParafernalia.html">CoDExParafernalia</a>', and echoes the values of the generators for each heavy field</p>
+       <table class="InCell">
+        <tr><td class="lab">In[3]:=</td><td class="Input"><div>
+           <a name="72440502"></a>
+           <img src="Files/initializeLoop/I_6.png"
+               height="16"
+               width="180"
+               alt="Click for copyable input" />
+          </div><div id="i_5_out" class="IFL"></div></td></tr>
+       </table>
+       <div class="Text"><a name="85667629"></a>Check the documentation page <a href="../guide/CoDExParafernalia.html">CoDExParafernalia</a> for details.</div>
+       <table class="OCell">
+        <tr><td class="lab" /><td class="Echo"><div class="output-image">
+           <img src="Files/initializeLoop/O_1.png"
+               height="16"
+               width="371"
+               alt="" />
+          </div></td></tr>
+       </table>
+       <table class="OCell">
+        <tr><td class="lab" /><td class="Echo"><div class="output-image">
+           <img src="Files/initializeLoop/O_2.png"
+               height="16"
+               width="331"
+               alt="" />
+          </div></td></tr>
+       </table>
+       <p><a name="291321846"></a>Running the following arrays will give the correct forms for the generators to be used by CoDEx while running <span class="InlineCode"><a href="../ref/loopOutput.html">loopOutput</a></span> or <span class="InlineCode"><a href="../ref/codexOutput.html">codexOutput</a></span>.</p>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[4]:=</td><td class="Input"><div>
+            <a name="517566585"></a>
+            <img src="Files/initializeLoop/I_8.png"
+                height="16"
+                width="70"
+                alt="Click for copyable input" />
+           </div><div id="i_7_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab">Out[4]=</td><td class="Output"><div class="output-image">
+            <img src="Files/initializeLoop/O_3.png"
+                height="34"
+                width="308"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+       <div class="ExLine"><a name="459876183"></a><!-- --></div>
+       <table class="InCell">
+        <tr><td class="lab">In[1]:=</td><td class="Input"><div>
+           <a name="13883633"></a>
+           <img src="Files/initializeLoop/I_10.png"
+               height="16"
+               width="93"
+               alt="Click for copyable input" />
+          </div><div id="i_9_out" class="IFL"></div></td></tr>
+       </table>
+       <table class="InCell">
+        <tr><td class="lab">In[2]:=</td><td class="Input"><div>
+           <a name="125099801"></a>
+           <img src="Files/initializeLoop/I_12.png"
+               height="67"
+               width="148"
+               alt="Click for copyable input" />
+          </div><div id="i_11_out" class="IFL"></div></td></tr>
+       </table>
+       <p><a name="692354650"></a>This does the same thing as above, without generating the prompt to the guide page.</p>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[3]:=</td><td class="Input"><div>
+            <a name="332819800"></a>
+            <img src="Files/initializeLoop/I_14.png"
+                height="16"
+                width="276"
+                alt="Click for copyable input" />
+           </div><div id="i_13_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab" /><td class="Echo"><div class="output-image">
+            <img src="Files/initializeLoop/O_4.png"
+                height="16"
+                width="371"
+                alt="" />
+           </div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab" /><td class="Echo"><div class="output-image">
+            <img src="Files/initializeLoop/O_5.png"
+                height="16"
+                width="331"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+       <li>
+        <a name="385640418"></a>
+        <span class="MenuName">Note!</span>
+        <span class="MenuNameDelimiter"> <span class="special-character FilledRightTriangle">&#9654;</span> </span>
+        <span class="MenuName">(Remember, you need to restart the kernel and load CoDEx again before running </span>
+        <span class="InlineCode">initializeLoop</span>
+        <span class="MenuName"> with identical arguments. Running </span>
+        <span class="InlineCode">initializeLoop</span>
+        <span class="MenuName"> for different models/field lists (i.e. different arguments) can be done without reloading the package, though.)</span>
+       </li>
+       <div class="ExLine"><a name="477131214"></a><!-- --></div>
+       <table class="InCell">
+        <tr><td class="lab">In[1]:=</td><td class="Input"><div>
+           <a name="183702794"></a>
+           <img src="Files/initializeLoop/I_16.png"
+               height="16"
+               width="93"
+               alt="Click for copyable input" />
+          </div><div id="i_15_out" class="IFL"></div></td></tr>
+       </table>
+       <table class="InCell">
+        <tr><td class="lab">In[2]:=</td><td class="Input"><div>
+           <a name="64191267"></a>
+           <img src="Files/initializeLoop/I_18.png"
+               height="67"
+               width="148"
+               alt="Click for copyable input" />
+          </div><div id="i_17_out" class="IFL"></div></td></tr>
+       </table>
+       <p><a name="106495950"></a>This again does the same thing as above, only while launching 3 parallel kernels for evaluation.</p>
+       <table class="InCell">
+        <tr><td class="lab">In[3]:=</td><td class="Input"><div>
+           <a name="627302453"></a>
+           <img src="Files/initializeLoop/I_20.png"
+               height="16"
+               width="246"
+               alt="Click for copyable input" />
+          </div><div id="i_19_out" class="IFL"></div></td></tr>
+       </table>
+       <div class="Text"><a name="165262314"></a>Check the documentation page <a href="../guide/CoDExParafernalia.html">CoDExParafernalia</a> for details.</div>
+       <table class="OCell">
+        <tr><td class="lab" /><td class="Echo"><div class="output-image">
+           <img src="Files/initializeLoop/O_6.png"
+               height="16"
+               width="371"
+               alt="" />
+          </div></td></tr>
+       </table>
+       <table class="OCell">
+        <tr><td class="lab" /><td class="Echo"><div class="output-image">
+           <img src="Files/initializeLoop/O_7.png"
+               height="16"
+               width="331"
+               alt="" />
+          </div></td></tr>
+       </table>
+       <div class="ExLine"><a name="784875905"></a><!-- --></div>
+       <p><a name="149889377"></a>If you set dimensions of the symmetry generators higher than those provided by CoDEx, you'll be prompted to define them yourself.</p>
+       <table class="InCell">
+        <tr><td class="lab">In[1]:=</td><td class="Input"><div>
+           <a name="14114355"></a>
+           <img src="Files/initializeLoop/I_22.png"
+               height="16"
+               width="93"
+               alt="Click for copyable input" />
+          </div><div id="i_21_out" class="IFL"></div></td></tr>
+       </table>
+       <table class="InCell">
+        <tr><td class="lab">In[2]:=</td><td class="Input"><div>
+           <a name="350136602"></a>
+           <img src="Files/initializeLoop/I_24.png"
+               height="67"
+               width="148"
+               alt="Click for copyable input" />
+          </div><div id="i_23_out" class="IFL"></div></td></tr>
+       </table>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[3]:=</td><td class="Input"><div>
+            <a name="43888454"></a>
+            <img src="Files/initializeLoop/I_26.png"
+                height="16"
+                width="276"
+                alt="Click for copyable input" />
+           </div><div id="i_25_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab" /><td class="Echo"><div class="output-image">
+            <img src="Files/initializeLoop/O_8.png"
+                height="16"
+                width="416"
+                alt="" />
+           </div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab" /><td class="Echo"><div class="output-image">
+            <img src="Files/initializeLoop/O_9.png"
+                height="16"
+                width="409"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+       <div class="ExLine"><a name="163395697"></a><!-- --></div>
+       <p><a name="16254692"></a>If you set wrong dimensions of the color symmetry generators (less than 6), CoDEx will let you know of that.</p>
+       <table class="InCell">
+        <tr><td class="lab">In[1]:=</td><td class="Input"><div>
+           <a name="603231544"></a>
+           <img src="Files/initializeLoop/I_28.png"
+               height="16"
+               width="93"
+               alt="Click for copyable input" />
+          </div><div id="i_27_out" class="IFL"></div></td></tr>
+       </table>
+       <table class="InCell">
+        <tr><td class="lab">In[2]:=</td><td class="Input"><div>
+           <a name="801316476"></a>
+           <img src="Files/initializeLoop/I_30.png"
+               height="67"
+               width="148"
+               alt="Click for copyable input" />
+          </div><div id="i_29_out" class="IFL"></div></td></tr>
+       </table>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[3]:=</td><td class="Input"><div>
+            <a name="214955001"></a>
+            <img src="Files/initializeLoop/I_32.png"
+                height="16"
+                width="276"
+                alt="Click for copyable input" />
+           </div><div id="i_31_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab" /><td class="Echo"><div class="output-image">
+            <img src="Files/initializeLoop/O_10.png"
+                height="16"
+                width="371"
+                alt="" />
+           </div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab" /><td class="Echo"><div class="output-image">
+            <img src="Files/initializeLoop/O_11.png"
+                height="16"
+                width="289"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="toplink">
+     <a href="#top">Top</a>
+    </div>
+    <div class="clear"><!-- --></div>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="SeeAlso">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">See Also</a><a class="collapse" title="hide" href="#">See Also</a></h2>
+   <div class="expanded">
+    <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="../ref/loopOutput.html">loopOutput</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/codexOutput.html">codexOutput</a></span></p>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="Tutorials">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Tutorials</a><a class="collapse" title="hide" href="#">Tutorials</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li>
+      <a name="341631938"></a>
+      <a class="package-symbol" href="../tutorial/HowToRun.html">HowToRun</a>
+     </li>
+    </ul>
+   </div>
   </div>
  </div>
 </div>

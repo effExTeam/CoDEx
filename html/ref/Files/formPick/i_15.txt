@@ -1,0 +1,2 @@
+<pre name='i_15_in' id='i_15_in' class='IFT'>formPick[&quot;SILH&quot;, &quot;Detailed2&quot;, tstres, latex -&gt; True, 
+ interpret -&gt; &quot;Copy&quot;]</pre><div class='IFU'><a name='50817388'></a>http://wolfram.com/xid/0gb3f1k6xnojk8w2mivmty-4jg8e</div>

@@ -1,0 +1,9 @@
+<pre name='i_43_in' id='i_43_in' class='IFT'>Needs[&quot;CoDEx`&quot;];
+codexOutput[Lpotenewrts, fieldewrts, model -&gt; &quot;ewrts&quot;, 
+  operBasis -&gt; &quot;SILH&quot;];
+formPick[&quot;SILH&quot;, &quot;Detailed2&quot;, %, FontSize -&gt; Medium, 
+ FontFamily -&gt; &quot;Times New Roman&quot;, Frame -&gt; All];
+codexOutput[Lpotenewrts, fieldewrts, model -&gt; &quot;ewrts&quot;, 
+  operBasis -&gt; &quot;SILH&quot;];
+formPick[&quot;SILH&quot;, &quot;Detailed2&quot;, %, FontSize -&gt; Medium, 
+ FontFamily -&gt; &quot;Times New Roman&quot;, Frame -&gt; All]</pre><div class='IFU'><a name='133242895'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-chl45t</div>
