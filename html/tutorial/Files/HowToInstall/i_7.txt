@@ -1,0 +1,2 @@
+<pre name='i_7_in' id='i_7_in' class='IFT'>$PathToCoDExArchive = &quot;path&quot;;
+InstallCoDEx[]</pre><div class='IFU'><a name='68357845'></a>http://wolfram.com/xid/0g3bk9h10ku3f7v68jrfa-bezfjb</div>

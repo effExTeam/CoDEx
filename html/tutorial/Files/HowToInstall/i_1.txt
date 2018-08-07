@@ -1,0 +1,2 @@
+<pre name='i_1_in' id='i_1_in' class='IFT'>Import[&quot;https://github.com/effExTeam/CoDEx-1.0.0/raw/master/install.\
+m&quot;];</pre><div class='IFU'><a name='171558764'></a>http://wolfram.com/xid/0g3bk9h10ku3f7v68jrfa-c4fdvi</div>
