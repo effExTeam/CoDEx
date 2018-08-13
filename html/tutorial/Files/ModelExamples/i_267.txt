@@ -1,0 +1,2 @@
+<pre name='i_267_in' id='i_267_in' class='IFT'>Note \[FilledRightTriangle] [[1,1]] at the end casts the Lagrangian as an expression.
+Otherwise, it would be recognized by Mathematica as a 1 * 1 matrix.</pre><div class='IFU'><a name='343864164'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-fy0hkm</div>

@@ -1,0 +1,4 @@
+<pre name='i_39_in' id='i_39_in' class='IFT'>fieldList5 =
+  {
+   {hf5, 1, 1, 1, 0, 1/2, m5}
+   };</pre><div class='IFU'><a name='178275713'></a>http://wolfram.com/xid/0nprfkmtwkl8y8jr18thzaq9l9v-c8fcpf</div>

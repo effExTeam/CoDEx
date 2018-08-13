@@ -1,0 +1,1 @@
+<pre name='i_259_in' id='i_259_in' class='IFT'>U = Expand[ArrayFlatten[{{U11, U12}, {U21, U22}}]];</pre><div class='IFU'><a name='40313373'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-yab97</div>

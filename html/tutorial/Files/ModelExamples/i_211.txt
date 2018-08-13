@@ -1,0 +1,5 @@
+<pre name='i_211_in' id='i_211_in' class='IFT'>wcC2p3silh = 
+  codexOutput[Lpotentrpdb, fieldtrpdb, model -&gt; &quot;trpdb&quot;, 
+   operBasis -&gt; &quot;SILH&quot;];
+formPick[&quot;SILH&quot;, &quot;Detailed2&quot;, wcC2p3silh, FontSize -&gt; Medium, 
+ FontFamily -&gt; &quot;Times New Roman&quot;, Frame -&gt; All]</pre><div class='IFU'><a name='336501796'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-fumoqe</div>

@@ -1,0 +1,1 @@
+<pre name='i_57_in' id='i_57_in' class='IFT'>hfvec5 = hfarray5[[1, 1, 1]][[1]];</pre><div class='IFU'><a name='1733649628'></a>http://wolfram.com/xid/0nprfkmtwkl8y8jr18thzaq9l9v-2ygewe</div>

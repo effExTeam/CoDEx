@@ -1,0 +1,4 @@
+<pre name='i_77_in' id='i_77_in' class='IFT'>fieldt1ss =
+  {
+   {hf, 1, 1, 1, 0, 1/2, mN}
+   };</pre><div class='IFU'><a name='469353343'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-h1p5m5</div>

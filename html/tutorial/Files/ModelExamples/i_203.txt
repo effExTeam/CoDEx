@@ -1,0 +1,2 @@
+<pre name='i_203_in' id='i_203_in' class='IFT'>Lpotentrpdb = \[ScriptCapitalL]2 + \[ScriptCapitalL]3 + \
+\[ScriptCapitalL]INT // Expand;</pre><div class='IFU'><a name='56491619'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-7w3hx</div>

@@ -1,0 +1,4 @@
+<pre name='i_169_in' id='i_169_in' class='IFT'>Lpotenkin = - (\[Kappa]/2)  Sum[
+     bYst[mu, nu] * (del[mu, K[[nu + 1]]] - del[nu, K[[mu + 1]]])* 
+      gmunu[[mu + 1, mu + 1]]*gmunu[[nu + 1, nu + 1]] , {mu, 0, 
+      3}, {nu, 0, 3}]  // Expand;</pre><div class='IFU'><a name='400756115'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-gwvvol</div>

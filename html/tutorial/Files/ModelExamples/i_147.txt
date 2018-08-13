@@ -1,0 +1,2 @@
+<pre name='i_147_in' id='i_147_in' class='IFT'>JW[a_, nu_] := 
+ Sum[del[mu, W[a, mu, nu]] gmunu[[mu + 1, mu + 1]], {mu, 0, 3}] </pre><div class='IFU'><a name='7266694'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-el1aw</div>

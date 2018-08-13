@@ -1,1 +1,2 @@
-<pre name='i_3_in' id='i_3_in' class='IFT'>RGFlow[{{&quot;qH&quot;, \[Eta]^2/m^2}}, m, \[Mu]]</pre><div class='IFU'><a name='1980375636'></a>http://wolfram.com/xid/0cpiahfwz7ysdn39od-61clwm</div>
+<pre name='i_3_in' id='i_3_in' class='IFT'>trrt = {{&quot;qH&quot;, -((\[Eta] \[Kappa]^2)/m^4)}, {&quot;qHbox&quot;, \[Kappa]^2/
+    m^4}, {&quot;qHD&quot;, -((2 \[Kappa]^2)/m^4)}};</pre><div class='IFU'><a name='1443351520'></a>http://wolfram.com/xid/0cpiahfwz7ysdn39od-x5mbf2</div>

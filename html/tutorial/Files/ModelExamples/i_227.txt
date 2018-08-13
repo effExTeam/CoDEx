@@ -1,0 +1,4 @@
+<pre name='i_227_in' id='i_227_in' class='IFT'>\[ScriptCapitalL]INT = 
+  2 gc * ( \[Phi] * 
+      Sum[(dag[H]. tau[i].H)*\[CapitalPhi][[i]], {i, 3}])     // 
+   Expand;</pre><div class='IFU'><a name='60176755'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-932yt</div>

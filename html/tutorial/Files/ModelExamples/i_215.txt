@@ -1,0 +1,5 @@
+<pre name='i_215_in' id='i_215_in' class='IFT'>fieldtrpsng =
+  {
+   {hf1, 3, 1, 3, 0, 0, m1},
+   {hf2, 1, 1, 1, 0, 0, m2}
+   };</pre><div class='IFU'><a name='502453157'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-ilflmf</div>

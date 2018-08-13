@@ -1,0 +1,1 @@
+<pre name='i_263_in' id='i_263_in' class='IFT'>Note \[FilledRightTriangle] &apos;i&apos; runs over 1,2,3: i.e. the color indicies.</pre><div class='IFU'><a name='964551255'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-p8jysp</div>

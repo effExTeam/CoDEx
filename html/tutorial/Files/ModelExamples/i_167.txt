@@ -1,0 +1,1 @@
+<pre name='i_167_in' id='i_167_in' class='IFT'>gmunu = Table[If[i == j, If[i == 1, 1, -1], 0], {i, 4}, {j, 4}]</pre><div class='IFU'><a name='298518326'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-e70kh0</div>

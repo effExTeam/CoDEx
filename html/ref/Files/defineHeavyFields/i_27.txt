@@ -1,0 +1,1 @@
+<pre name='i_27_in' id='i_27_in' class='IFT'>hfvec4 = hfarray4[[1, 1]][[All, 1]]</pre><div class='IFU'><a name='1729190386'></a>http://wolfram.com/xid/0nprfkmtwkl8y8jr18thzaq9l9v-2vst4k</div>

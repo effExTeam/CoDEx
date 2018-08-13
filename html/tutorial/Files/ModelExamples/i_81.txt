@@ -1,0 +1,1 @@
+<pre name='i_81_in' id='i_81_in' class='IFT'>\[Psi] = hfvecst1ss[[1, 1, 1, 1]];</pre><div class='IFU'><a name='42636044'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-zn4gu</div>

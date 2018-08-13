@@ -8,7 +8,7 @@
 <meta name="historydata" content="{1.0, , , }" />
 <meta name="keywords" content="defineHeavyFields" />
 
-<meta name="description" content="defineHeavyFields[List] creates representation of heavy fields. Use output of &amp;apos;defineHeavyFields&amp;apos; to construct the BSM Lagrangian." />
+<meta name="description" content="defineHeavyFields[fieldlist] creates representation of heavy fields. Use output of &amp;apos;defineHeavyFields&amp;apos; to construct the BSM Lagrangian." />
 <script language="JavaScript" type="text/javascript">baselang='defineHeavyFields';</script>
 <!--#include virtual="/common/includes/gl-head-includes.html"-->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -57,7 +57,29 @@
     <a href="#">Tutorials</a>
     <ul class="sub_menu">
      <li>
-      <a href="/language/CoDEx/tutorial/BuildLagrangian.html"><span class="dropdownPad">BuildLagrangian</span></a>
+      <a href="/language/CoDEx/tutorial/ModelExamples.html"><span class="dropdownPad">ModelExamples</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/tutorial/CoDExOverview.html"><span class="dropdownPad">CoDExOverview</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#">See Also</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/ref/initializeLoop.html"><span class="dropdownPad">initializeLoop</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/codexOutput.html"><span class="dropdownPad">codexOutput</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/guide/CoDExParafernalia.html"><span class="dropdownPad">CoDEx Parafernalia</span></a>
      </li>
     </ul>
    </li>
@@ -67,7 +89,7 @@
  <h1>defineHeavyFields</h1>
  <div class="functionIntroWrap">
   <div class="functionIntro">
-   <p><span class="IF"><span class="specialcharacters">defineHeavyFields<span class="openbracket">[</span>List<span class="closebracket">]</span></span></span> <br />creates representation of heavy fields. Use output of 'defineHeavyFields' to construct the BSM Lagrangian.</p>
+   <p><span class="IF">defineHeavyFields[<span class="TI">fieldlist</span>]</span> <br />creates representation of heavy fields. Use output of '<span class="IF">defineHeavyFields</span>' to construct the BSM Lagrangian.</p>
   </div>
  </div>
  <div class="expandWrap closed"
@@ -76,8 +98,8 @@
    <h2 class="expandInner"><a class="expand hide" title="show" href="#">Details</a><a class="collapse" title="hide" href="#">Details</a></h2>
    <div class="expanded">
     <ul class="functionList">
-     <li><a name="1067943069"></a>'defineHeavyFields' function lists all the field components (color, isospin and Lorentz) for the given heavy field multiplet.</li>
-     <li><a name="999426095"></a>InputList (argument) : {heavy multiplet name, total number of field components (count each spin 0 , spin 1/2 and spin 1 field), <span class="IF">SU<span class="openparenthesis">(</span>3<span class="closeparenthesis">)</span><sub>C</sub></span> quantum number, <span class="IF">SU<span class="openparenthesis">(</span>2<span class="closeparenthesis">)</span><sub>L</sub></span> quantum number, <span class="IF">U<span class="openparenthesis">(</span>1<span class="closeparenthesis">)</span><sub>Y</sub> </span> charge, spin of heavy multiplet, mass of heavy multiplet}</li>
+     <li><a name="1067943069"></a>'<span class="InlineCode">defineHeavyFields</span>' function creates the heavy field representation which is used for building the Lagrangian.</li>
+     <li><a name="301306602"></a>The argument structure :-<span class="TI"> <br />fieldlist </span>:{heavy multiplet name, total number of field components (count each spin 0 , spin 1/2 and spin 1 field), <span class="IF">SU<span class="openparenthesis">(</span>3<span class="closeparenthesis">)</span><sub>C</sub></span> quantum number, <span class="IF">SU<span class="openparenthesis">(</span>2<span class="closeparenthesis">)</span><sub>L</sub></span> quantum number, <span class="IF">U<span class="openparenthesis">(</span>1<span class="closeparenthesis">)</span><sub>Y</sub> </span> charge, spin of heavy multiplet, mass of heavy multiplet}</li>
     </ul>
    </div>
   </div>
@@ -89,8 +111,9 @@
    <div class="expanded">
     <div class="expandSubWrap">
      <div class="expandSubOuter">
-      <h3 class="expandSubInner"><a class="expand hide" href="#" title="show">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a><a class="collapse" href="#" title="hide">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a></h3>
+      <h3 class="expandSubInner"><a class="expand hide" href="#" title="show">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(5)</span></a><a class="collapse" href="#" title="hide">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(5)</span></a></h3>
       <div class="expanded">
+       <p><a name="395497065"></a>Load the package:</p>
        <table class="InCell">
         <tr><td class="lab">In[1]:=</td><td class="Input"><div>
            <a name="1196114049"></a>
@@ -100,91 +123,280 @@
                alt="Click for copyable input" />
           </div><div id="i_1_out" class="IFL"></div></td></tr>
        </table>
-       <div class="Text"><a name="1988483766"></a>    CoDEx-1.0.0</div>
-       <div class="Text"><a name="1306140548"></a>Supratim Das Bakshi, Joydeep Chakrabortty, Sunando K. Patra
- IIT Kanpur, India</div>
-       <div class="Text"><a name="726350602"></a>If you are using CoDEx for the first time, try running ' <strong>tuteMode[]</strong> '.</div>
-       <div class="MCap"><a name="1789893194"></a>Defining InputList</div>
-       <div class="IO">
-        <table class="InCell">
-         <tr><td class="lab">In[2]:=</td><td class="Input"><div>
-            <a name="1171563007"></a>
-            <img src="Files/defineHeavyFields/I_4.png"
-                height="16"
-                width="232"
-                alt="Click for copyable input" />
-           </div><div id="i_3_out" class="IFL"></div></td></tr>
-        </table>
-        <table class="OCell">
-         <tr><td class="lab">Out[2]=</td><td class="Output"><div class="output-image">
-            <img src="Files/defineHeavyFields/O_1.png"
-                height="29"
-                width="174"
-                alt="" />
-           </div></td></tr>
-        </table>
+       <div class="expandSubsubsubWrap closed">
+        <div class="expandSubsubsubOuter">
+         <h5 class="expandSubsubsubInner"><a class="expand" href="#" title="show">Using'defineHeavyFields' for one heavy field:<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a><a class="collapse hide" href="#" title="hide">Using'defineHeavyFields' for one heavy field:<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a></h5>
+         <div class="expanded hide">
+          <p><a name="854081966"></a>The argument for only one heavy field is: </p>
+          <table class="InCell">
+           <tr><td class="lab" /><td class="Input"><div>
+              <a name="1423895744"></a>
+              <img src="Files/defineHeavyFields/I_4.png"
+                  height="67"
+                  width="135"
+                  alt="Click for copyable input" />
+             </div><div id="i_3_out" class="IFL"></div></td></tr>
+          </table>
+          <p><a name="36422142"></a>Use this as an argument for <span class="IF">defineHeavyFields</span> :</p>
+          <div class="IO">
+           <table class="InCell">
+            <tr><td class="lab" /><td class="Input"><div>
+               <a name="1700065830"></a>
+               <img src="Files/defineHeavyFields/I_6.png"
+                   height="16"
+                   width="202"
+                   alt="Click for copyable input" />
+              </div><div id="i_5_out" class="IFL"></div></td></tr>
+           </table>
+           <table class="OCell">
+            <tr><td class="lab" /><td class="Output"><div class="output-image">
+               <img src="Files/defineHeavyFields/O_1.png"
+                   height="16"
+                   width="137"
+                   alt="" />
+              </div></td></tr>
+           </table>
+          </div>
+          <p><a name="1701000410"></a>Now, use this output for creating the heavy field representation.</p>
+          <div class="IO">
+           <table class="InCell">
+            <tr><td class="lab" /><td class="Input"><div>
+               <a name="2052961901"></a>
+               <img src="Files/defineHeavyFields/I_8.png"
+                   height="16"
+                   width="115"
+                   alt="Click for copyable input" />
+              </div><div id="i_7_out" class="IFL"></div></td></tr>
+           </table>
+           <table class="OCell">
+            <tr><td class="lab" /><td class="Output"><div class="output-image">
+               <img src="Files/defineHeavyFields/O_2.png"
+                   height="16"
+                   width="123"
+                   alt="" />
+              </div></td></tr>
+           </table>
+          </div>
+         </div>
+        </div>
        </div>
-       <div class="MCap"><a name="532443627"></a>Using 'defineHeavyFields'</div>
-       <div class="IO">
-        <table class="InCell">
-         <tr><td class="lab">In[3]:=</td><td class="Input"><div>
-            <a name="1286937963"></a>
-            <img src="Files/defineHeavyFields/I_6.png"
-                height="16"
-                width="200"
-                alt="Click for copyable input" />
-           </div><div id="i_5_out" class="IFL"></div></td></tr>
-        </table>
-        <table class="OCell">
-         <tr><td class="lab">Out[3]=</td><td class="Output"><div class="output-image">
-            <img src="Files/defineHeavyFields/O_2.png"
-                height="16"
-                width="304"
-                alt="" />
-           </div></td></tr>
-        </table>
+       <div class="expandSubsubsubWrap closed">
+        <div class="expandSubsubsubOuter">
+         <h5 class="expandSubsubsubInner"><a class="expand" href="#" title="show">Using 'defineHeavyFields' for two heavy fields:<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a><a class="collapse hide" href="#" title="hide">Using 'defineHeavyFields' for two heavy fields:<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a></h5>
+         <div class="expanded hide">
+          <table class="InCell">
+           <tr><td class="lab" /><td class="Input"><div>
+              <a name="588468000"></a>
+              <img src="Files/defineHeavyFields/I_10.png"
+                  height="84"
+                  width="154"
+                  alt="Click for copyable input" />
+             </div><div id="i_9_out" class="IFL"></div></td></tr>
+          </table>
+          <div class="IO">
+           <table class="InCell">
+            <tr><td class="lab" /><td class="Input"><div>
+               <a name="2034185744"></a>
+               <img src="Files/defineHeavyFields/I_12.png"
+                   height="16"
+                   width="217"
+                   alt="Click for copyable input" />
+              </div><div id="i_11_out" class="IFL"></div></td></tr>
+           </table>
+           <table class="OCell">
+            <tr><td class="lab" /><td class="Output"><div class="output-image">
+               <img src="Files/defineHeavyFields/O_3.png"
+                   height="33"
+                   width="458"
+                   alt="" />
+              </div></td></tr>
+           </table>
+          </div>
+          <p><a name="1239762168"></a>Representation for first heavy field :</p>
+          <div class="IO">
+           <table class="InCell">
+            <tr><td class="lab" /><td class="Input"><div>
+               <a name="1034133459"></a>
+               <img src="Files/defineHeavyFields/I_14.png"
+                   height="16"
+                   width="135"
+                   alt="Click for copyable input" />
+              </div><div id="i_13_out" class="IFL"></div></td></tr>
+           </table>
+           <table class="OCell">
+            <tr><td class="lab" /><td class="Output"><div class="output-image">
+               <img src="Files/defineHeavyFields/O_4.png"
+                   height="16"
+                   width="139"
+                   alt="" />
+              </div></td></tr>
+           </table>
+          </div>
+          <p><a name="51242490"></a>Representation for second heavy field :</p>
+          <div class="IO">
+           <table class="InCell">
+            <tr><td class="lab" /><td class="Input"><div>
+               <a name="1821588910"></a>
+               <img src="Files/defineHeavyFields/I_16.png"
+                   height="16"
+                   width="115"
+                   alt="Click for copyable input" />
+              </div><div id="i_15_out" class="IFL"></div></td></tr>
+           </table>
+           <table class="OCell">
+            <tr><td class="lab" /><td class="Output"><div class="output-image">
+               <img src="Files/defineHeavyFields/O_5.png"
+                   height="33"
+                   width="444"
+                   alt="" />
+              </div></td></tr>
+           </table>
+          </div>
+         </div>
+        </div>
        </div>
-       <div class="IO">
-        <table class="InCell">
-         <tr><td class="lab">In[4]:=</td><td class="Input"><div>
-            <a name="195248477"></a>
-            <img src="Files/defineHeavyFields/I_8.png"
-                height="16"
-                width="89"
-                alt="Click for copyable input" />
-           </div><div id="i_7_out" class="IFL"></div></td></tr>
-        </table>
-        <table class="OCell">
-         <tr><td class="lab">Out[4]=</td><td class="Output"><div class="output-image">
-            <img src="Files/defineHeavyFields/O_3.png"
-                height="16"
-                width="290"
-                alt="" />
-           </div></td></tr>
-        </table>
+       <div class="expandSubsubsubWrap closed">
+        <div class="expandSubsubsubOuter">
+         <h5 class="expandSubsubsubInner"><a class="expand" href="#" title="show">Using 'defineHeavyFields' for spin 1 heavy field :<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a><a class="collapse hide" href="#" title="hide">Using 'defineHeavyFields' for spin 1 heavy field :<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a></h5>
+         <div class="expanded hide">
+          <table class="InCell">
+           <tr><td class="lab" /><td class="Input"><div>
+              <a name="424903564"></a>
+              <img src="Files/defineHeavyFields/I_18.png"
+                  height="67"
+                  width="148"
+                  alt="Click for copyable input" />
+             </div><div id="i_17_out" class="IFL"></div></td></tr>
+          </table>
+          <p><a name="10785210"></a>We do not count the Lorentz components of a heavy field while writing the total number of field components (the entry next to heavy field name).</p>
+          <div class="IO">
+           <table class="InCell">
+            <tr><td class="lab" /><td class="Input"><div>
+               <a name="2110349958"></a>
+               <img src="Files/defineHeavyFields/I_20.png"
+                   height="16"
+                   width="217"
+                   alt="Click for copyable input" />
+              </div><div id="i_19_out" class="IFL"></div></td></tr>
+           </table>
+           <table class="OCell">
+            <tr><td class="lab" /><td class="Output"><div class="output-image">
+               <img src="Files/defineHeavyFields/O_6.png"
+                   height="33"
+                   width="404"
+                   alt="" />
+              </div></td></tr>
+           </table>
+          </div>
+          <div class="IO">
+           <table class="InCell">
+            <tr><td class="lab" /><td class="Input"><div>
+               <a name="1467469587"></a>
+               <img src="Files/defineHeavyFields/I_22.png"
+                   height="16"
+                   width="115"
+                   alt="Click for copyable input" />
+              </div><div id="i_21_out" class="IFL"></div></td></tr>
+           </table>
+           <table class="OCell">
+            <tr><td class="lab" /><td class="Output"><div class="output-image">
+               <img src="Files/defineHeavyFields/O_7.png"
+                   height="33"
+                   width="390"
+                   alt="" />
+              </div></td></tr>
+           </table>
+          </div>
+         </div>
+        </div>
        </div>
-       <div class="MCap"><a name="1365931270"></a>A term in BSM Lagrangian</div>
-       <div class="IO">
-        <table class="InCell">
-         <tr><td class="lab">In[5]:=</td><td class="Input"><div>
-            <a name="606668460"></a>
-            <img src="Files/defineHeavyFields/I_10.png"
-                height="16"
-                width="255"
-                alt="Click for copyable input" />
-           </div><div id="i_9_out" class="IFL"></div></td></tr>
-        </table>
-        <table class="OCell">
-         <tr><td class="lab">Out[5]=</td><td class="Output"><div class="output-image">
-            <img src="Files/defineHeavyFields/O_4.png"
-                height="16"
-                width="296"
-                alt="" />
-           </div></td></tr>
-        </table>
+       <div class="expandSubsubsubWrap closed">
+        <div class="expandSubsubsubOuter">
+         <h5 class="expandSubsubsubInner"><a class="expand" href="#" title="show">Using 'defineHeavyFields' for spin <span class="IF"><img src="Files/defineHeavyFields/1.png" height="26" width="9" style="vertical-align:middle;" alt="" title="" /></span> heavy field :<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a><a class="collapse hide" href="#" title="hide">Using 'defineHeavyFields' for spin <span class="IF"><img src="Files/defineHeavyFields/2.png" height="26" width="9" style="vertical-align:middle;" alt="" title="" /></span> heavy field :<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a></h5>
+         <div class="expanded hide">
+          <table class="InCell">
+           <tr><td class="lab" /><td class="Input"><div>
+              <a name="367904351"></a>
+              <img src="Files/defineHeavyFields/I_24.png"
+                  height="105"
+                  width="155"
+                  alt="Click for copyable input" />
+             </div><div id="i_23_out" class="IFL"></div></td></tr>
+          </table>
+          <p><a name="775527047"></a>We do not count the Lorentz components of a heavy field while writing the total number of field components (the entry next to heavy field name).</p>
+          <div class="IO">
+           <table class="InCell">
+            <tr><td class="lab" /><td class="Input"><div>
+               <a name="1448068828"></a>
+               <img src="Files/defineHeavyFields/I_26.png"
+                   height="16"
+                   width="217"
+                   alt="Click for copyable input" />
+              </div><div id="i_25_out" class="IFL"></div></td></tr>
+           </table>
+           <table class="OCell">
+            <tr><td class="lab" /><td class="Output"><div class="output-image">
+               <img src="Files/defineHeavyFields/O_8.png"
+                   height="67"
+                   width="539"
+                   alt="" />
+              </div></td></tr>
+           </table>
+          </div>
+          <div class="IO">
+           <table class="InCell">
+            <tr><td class="lab" /><td class="Input"><div>
+               <a name="1729190386"></a>
+               <img src="Files/defineHeavyFields/I_28.png"
+                   height="16"
+                   width="169"
+                   alt="Click for copyable input" />
+              </div><div id="i_27_out" class="IFL"></div></td></tr>
+           </table>
+           <table class="OCell">
+            <tr><td class="lab" /><td class="Output"><div class="output-image">
+               <img src="Files/defineHeavyFields/O_9.png"
+                   height="33"
+                   width="486"
+                   alt="" />
+              </div></td></tr>
+           </table>
+          </div>
+          <div class="IO">
+           <table class="InCell">
+            <tr><td class="lab" /><td class="Input"><div>
+               <a name="1402023048"></a>
+               <img src="Files/defineHeavyFields/I_30.png"
+                   height="16"
+                   width="176"
+                   alt="Click for copyable input" />
+              </div><div id="i_29_out" class="IFL"></div></td></tr>
+           </table>
+           <table class="OCell">
+            <tr><td class="lab" /><td class="Output"><div class="output-image">
+               <img src="Files/defineHeavyFields/O_10.png"
+                   height="33"
+                   width="538"
+                   alt="" />
+              </div></td></tr>
+           </table>
+          </div>
+         </div>
+        </div>
        </div>
-       <div class="TR" id="1719013532"><a name="1719013532"></a>This term is equivalent to <span class="IF"><span class="openparenthesis">(</span><span class="special-character CapitalPhi">&#934;</span><sup><span class="special-character Dagger">&#8224;</span></sup><span class="special-character CapitalPhi">&#934;</span><span class="closeparenthesis">)</span></span>, where heavyfirst[[1,1]] <span class="special-character Equivalent">&#10726;</span> <span class="special-character CapitalPhi">&#934;</span> here.</div>
       </div>
+     </div>
+    </div>
+    <div class="expandSubWrap closed">
+     <div class="expandSubOuter">
+      <h3 class="expandSubInner"><a class="expand hide" href="#" title="show">Applications<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(2)</span></a><a class="collapse" href="#" title="hide">Applications<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(2)</span></a></h3>
+      <div class="expanded"></div>
+     </div>
+    </div>
+    <div class="expandSubWrap closed">
+     <div class="expandSubOuter">
+      <h3 class="expandSubInner"><a class="expand hide" href="#" title="show">Possible Issues<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a><a class="collapse" href="#" title="hide">Possible Issues<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a></h3>
+      <div class="expanded"></div>
      </div>
     </div>
     <div class="toplink">
@@ -195,14 +407,58 @@
   </div>
  </div>
  <div class="expandWrap"
+     id="SeeAlso">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">See Also</a><a class="collapse" title="hide" href="#">See Also</a></h2>
+   <div class="expanded">
+    <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="../ref/initializeLoop.html">initializeLoop</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/codexOutput.html">codexOutput</a></span></p>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
      id="Tutorials">
   <div class="expandOuter">
    <h2 class="expandInner"><a class="expand hide" title="show" href="#">Tutorials</a><a class="collapse" title="hide" href="#">Tutorials</a></h2>
    <div class="expanded">
     <ul class="functionList">
+     <p class="inlineFunctionList">
+      <a href="../tutorial/HowToRun.html">HowToRun</a>
+     </p>
      <li>
-      <a name="621088882"></a>
-      <a class="package-symbol" href="../tutorial/BuildLagrangian.html">BuildLagrangian</a>
+      <a name="43311733"></a>
+      <a class="package-symbol" href="../tutorial/ModelExamples.html">ModelExamples</a>
+     </li>
+     <li>
+      <a name="190051650"></a>
+      <a class="package-symbol" href="../tutorial/CoDExOverview.html">CoDExOverview</a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="RelatedGuides">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Related Guides</a><a class="collapse" title="hide" href="#">Related Guides</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li>
+      <a name="105715849"></a>
+      <a class="package-symbol" href="../guide/CoDExParafernalia.html">CoDEx Parafernalia</a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="RelatedLinks">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Related Links</a><a class="collapse" title="hide" href="#">Related Links</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li>
+      <a name="1038487239"></a>
+      <a href="https://effexteam.github.io/CoDEx/">Website</a>
      </li>
     </ul>
    </div>

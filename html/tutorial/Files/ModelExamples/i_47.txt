@@ -1,0 +1,8 @@
+<pre name='i_47_in' id='i_47_in' class='IFT'>lyukawa = 
+  Expand[ y\[CapitalSigma]  Sum[(hermitianConjugate[
+         lepb[1][[i]]].gamma[
+         0].chargeC.(\[CapitalDelta]c[[i, j]]*lep[1][[j]])), {i, 
+       2}, {j, 2}] + + y\[CapitalSigma] Sum[
+      lepb[1][[i]].gamma[
+        0].(dag[\[CapitalDelta]c][[i, j]]*
+         dag[chargeC].lep[1][[j]]), {i, 2}, {j, 2}]];</pre><div class='IFU'><a name='51423821'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-4wg5r</div>

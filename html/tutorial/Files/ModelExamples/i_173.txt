@@ -1,0 +1,3 @@
+<pre name='i_173_in' id='i_173_in' class='IFT'>wcU1gbsilh = 
+  codexOutput[Lpotenkin, fldkinmix, model -&gt; &quot;kinmix&quot;, 
+   operBasis -&gt; &quot;SILH&quot;];</pre><div class='IFU'><a name='524091619'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-iybdyt</div>

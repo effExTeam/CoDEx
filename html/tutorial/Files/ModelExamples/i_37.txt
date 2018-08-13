@@ -1,5 +1,1 @@
-<pre name='i_37_in' id='i_37_in' class='IFT'>Lpotenewrts = 
-  2 \[Kappa]*
-    Table[(dag[H].tau[a].H), {a, 3}].\[CapitalPhi] - \[Eta] abs[
-     H]^2*\[CapitalPhi].\[CapitalPhi] - 
-   1/4 \[Lambda] (\[CapitalPhi].\[CapitalPhi])^2;</pre><div class='IFU'><a name='353697918'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-f4u9cg</div>
+<pre name='i_37_in' id='i_37_in' class='IFT'>\[Delta] = hfvecst2ss[[1, 1]]</pre><div class='IFU'><a name='91003680'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-bsgs6a</div>

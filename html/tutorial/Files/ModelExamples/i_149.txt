@@ -1,0 +1,7 @@
+<pre name='i_149_in' id='i_149_in' class='IFT'>Lpotengb = 
+  Sum[1/2 Q[[a, 
+       mu]] (g1^4/(2 (g1^2 + g2^2)) (dag[H].H) KroneckerDelta[a, b]*
+        gmunu[[mu, nu]]) Q[[b, nu]], {mu, 4}, {nu, 4}, {a, 3}, {b, 
+      3}] + g1^2/Sqrt[g1^2 + g2^2]
+      Sum[Q[[a, nu + 1]]*JW[a, nu]*gmunu[[nu + 1, nu + 1]], {nu, 0, 
+       3}, {a, 3}]  // Expand;</pre><div class='IFU'><a name='139270345'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-ck7byz</div>

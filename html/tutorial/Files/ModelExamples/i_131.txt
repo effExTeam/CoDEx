@@ -1,0 +1,3 @@
+<pre name='i_131_in' id='i_131_in' class='IFT'>wc2HDMsilh = 
+  codexOutput[Lpoten2HDM, field2HDM, model -&gt; &quot;2HDM&quot;, 
+   operBasis -&gt; &quot;SILH&quot;];</pre><div class='IFU'><a name='960731972'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-p593ti</div>

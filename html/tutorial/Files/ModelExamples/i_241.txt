@@ -1,0 +1,5 @@
+<pre name='i_241_in' id='i_241_in' class='IFT'>fieldsqst =
+  {
+   {hfQ, 6, 3, 2, 1/6, 0, m1},
+   {hfT, 3, 3, 1, 2/3, 0, m2}
+   };</pre><div class='IFU'><a name='237340833'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-d7lbm7</div>

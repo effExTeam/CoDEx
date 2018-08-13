@@ -1,0 +1,2 @@
+<pre name='i_67_in' id='i_67_in' class='IFT'>B = {H[[1]]^3, Sqrt[3] H[[1]]^2 H[[2]], Sqrt[3] H[[1]] H[[2]]^2, 
+   H[[2]]^3};</pre><div class='IFU'><a name='420004743'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-g8cf0p</div>

@@ -1,1 +1,1 @@
-<pre name='i_39_in' id='i_39_in' class='IFT'>initializeLoop[&quot;ewrts&quot;, fieldewrts]</pre><div class='IFU'><a name='40009603'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-x3tv5</div>
+<pre name='i_39_in' id='i_39_in' class='IFT'>\[CapitalDelta] = Sum[\[Delta][[i]]*PauliMatrix[i], {i, 3}];</pre><div class='IFU'><a name='8706192'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-fgv0y</div>

@@ -1,0 +1,1 @@
+<pre name='i_185_in' id='i_185_in' class='IFT'>\[CapitalDelta] = Sum[\[Delta][[i]]*PauliMatrix[i], {i, 3}];</pre><div class='IFU'><a name='17022195'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-ke4o1</div>

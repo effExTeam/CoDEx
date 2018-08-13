@@ -1,0 +1,4 @@
+<pre name='i_161_in' id='i_161_in' class='IFT'>fldkinmix =
+  {
+   {hf, 1, 1, 1, 0, 1, mK}
+   };</pre><div class='IFU'><a name='540654439'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-i76dw5</div>

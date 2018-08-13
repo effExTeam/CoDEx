@@ -1,0 +1,5 @@
+<pre name='i_55_in' id='i_55_in' class='IFT'>wcT2SSsilh = 
+  codexOutput[Lpotent2ss, fieldt2ss, model -&gt; &quot;t2ss&quot;, 
+   operBasis -&gt; &quot;SILH&quot;];
+formPick[&quot;SILH&quot;, &quot;Detailed2&quot;, wcT2SSsilh, FontSize -&gt; Medium, 
+ FontFamily -&gt; &quot;Times New Roman&quot;, Frame -&gt; All]</pre><div class='IFU'><a name='133242895'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-chl45t</div>

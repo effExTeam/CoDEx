@@ -1,0 +1,11 @@
+<pre name='i_127_in' id='i_127_in' class='IFT'>Lpoten2HDM = 
+  Expand[- (\[Lambda]\[Phi]/
+      4) (dag[\[CurlyPhi]].\[CurlyPhi])^2 + (\[Eta]H*
+        dag[Htilde].Htilde + \[Eta]\[Phi]*
+        dag[\[CurlyPhi]].\[CurlyPhi])*(dag[Htilde].\[CurlyPhi] + 
+       dag[\[CurlyPhi]].Htilde) - 
+    Subscript[\[Lambda], 
+     1] (dag[Htilde].Htilde)*(dag[\[CurlyPhi]].\[CurlyPhi]) - \
+\[Lambda]2 hermitianConjugate[(dag[Htilde].\[CurlyPhi])]*(dag[
+        Htilde].\[CurlyPhi]) - \[Lambda]3 ((dag[
+          Htilde].\[CurlyPhi])^2 + (dag[\[CurlyPhi]].Htilde)^2)];</pre><div class='IFU'><a name='24596110'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-oxgrk</div>

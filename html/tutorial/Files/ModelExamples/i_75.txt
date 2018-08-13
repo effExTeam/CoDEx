@@ -1,0 +1,5 @@
+<pre name='i_75_in' id='i_75_in' class='IFT'>wcQSsilh = 
+  codexOutput[Lpotenewqs, fieldewqs, model -&gt; &quot;ewqs&quot;, 
+   operBasis -&gt; &quot;SILH&quot;];
+formPick[&quot;SILH&quot;, &quot;Detailed2&quot;, wcQSsilh, FontSize -&gt; Medium, 
+ FontFamily -&gt; &quot;Times New Roman&quot;, Frame -&gt; All]</pre><div class='IFU'><a name='388184034'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-gpeez4</div>

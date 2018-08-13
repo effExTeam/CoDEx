@@ -1,0 +1,5 @@
+<pre name='i_109_in' id='i_109_in' class='IFT'>Lpotent3ss = 
+  y Sum[lepb[1][[a]][[i]]* \[CapitalSigma][i][[a, b]]*Htilde[[b]], {a,
+         2}, {b, 2}, {i, 4}] + 
+     y Sum[(-I*H.pau[2])[[a]] * \[CapitalSigma]b[i][[a, b]]*
+        lep[1][[b]][[i]], {a, 2}, {b, 2}, {i, 4}]   // Expand // re;</pre><div class='IFU'><a name='524171202'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-iyc3dg</div>

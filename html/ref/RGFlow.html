@@ -8,7 +8,7 @@
 <meta name="historydata" content="{1.0, , , }" />
 <meta name="keywords" content="RGFlow" />
 
-<meta name="description" content="RGFlow[{Operators, Wilson Coefficients}, Matching Scale, \[Mu]] Renormalization Group Flow of Wilson Coefficients of dimension six operators in Warsaw Basis from matching scale to arbitrary scale \[Mu] (\[Mu] &amp;lt; Matching Scale )." />
+<meta name="description" content="RGFlow[WCList, Matching Scale, \[Mu]] Renormalization Group Flow of Wilson Coefficients of dimension six operators in Warsaw Basis from matching scale to arbitrary scale \[Mu] (\[Mu] &amp;lt; Matching Scale )." />
 <script language="JavaScript" type="text/javascript">baselang='RGFlow';</script>
 <!--#include virtual="/common/includes/gl-head-includes.html"-->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -52,13 +52,53 @@
   <div class="ribbonWrap">
    <span class="ribbonOuter"><span class="ribbonInner">CO D EX SYMBOL</span></span>
   </div>
-  
+  <ul class="dropdown">
+   <li>
+    <a href="#">Tutorials</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/tutorial/HowToRun.html"><span class="dropdownPad">HowToRun</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#">See Also</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/ref/treeOutput.html"><span class="dropdownPad">treeOutput</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/loopOutput.html"><span class="dropdownPad">loopOutput</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/codexOutput.html"><span class="dropdownPad">codexOutput</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/formpick.html"><span class="dropdownPad">formpick</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/ref/texTable.html"><span class="dropdownPad">texTable</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/language/CoDEx/guide/CoDExParafernalia.html"><span class="dropdownPad">CoDEx Parafernalia</span></a>
+     </li>
+     <li>
+      <a href="/language/CoDEx/tutorial/CoDExOverview.html"><span class="dropdownPad">CoDExOverview</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul>
   <div class="clear"><!-- --></div>
  </div>
  <h1>RGFlow</h1>
  <div class="functionIntroWrap">
   <div class="functionIntro">
-   <p><span class="IF">RGFlow<span class="openbracket">[</span><span class="openbrace">{</span>Operators<span class="comma">,</span>Wilson Coefficients<span class="closebrace">}</span><span class="comma">,</span>Matching Scale<span class="comma">,</span> <span class="special-character Mu">&#956;</span><span class="closebracket">]</span></span> <br />Renormalization Group Flow of Wilson Coefficients of dimension six operators in Warsaw Basis from matching scale to arbitrary scale <span class="special-character Mu">&#956;</span> (<span class="special-character Mu">&#956;</span> &lt; Matching Scale ).</p>
+   <p><span class="IF">RGFlow<span class="openbracket">[</span><span class="TI">WCList</span><span class="comma">,</span><span class="TI">Matching Scale</span><span class="comma">,</span> <span class="TI"><span class="special-character Mu">&#956;</span></span><span class="closebracket">]</span></span> <br />Renormalization Group Flow of Wilson Coefficients of dimension six operators in Warsaw Basis from matching scale to arbitrary scale <span class="special-character Mu">&#956;</span> (<span class="special-character Mu">&#956;</span> &lt; Matching Scale ).</p>
   </div>
  </div>
  <div class="expandWrap closed"
@@ -67,12 +107,10 @@
    <h2 class="expandInner"><a class="expand hide" title="show" href="#">Details</a><a class="collapse" title="hide" href="#">Details</a></h2>
    <div class="expanded">
     <ul class="functionList">
-     <li>
-      <a name="280477814"></a>
-      <span class="GuideText">Use output from 'treeOuput' and 'loopOutput' functions as first argument of 'RGFlow' function.</span>
-     </li>
-     <li><a name="1239913562"></a>Put matching scale as the second argument.</li>
-     <li><a name="447807540"></a><span class="special-character Mu">&#956;</span> can be any RG scale that is lower than the matching scale.</li>
+     <li><a name="280477814"></a><span class="IF">RGFlow</span><span class="GuideText"> takes list of Wilson coefficients as its first argument. List output from </span><span class="IF"><a class="package-symbol" href="../ref/treeOuput.html">treeOuput</a></span><span class="GuideText">, </span><span class="IF"><a class="package-symbol" href="../ref/loopOutput.html">loopOutput</a></span> and <span class="IF"><a class="package-symbol" href="../ref/codexOutput.html">codexOutput</a></span><span class="GuideText"> functions should be used as the first argument.</span></li>
+     <li><a name="54657957"></a><span class="IF">RGFlow</span> takes Wilson Coefficients of dimension six operators in Warsaw basis only.</li>
+     <li><a name="1239913562"></a>The second argument is the scale at which the full BSM theory is matched with the EFT.</li>
+     <li><a name="447807540"></a><span class="special-character Mu">&#956;</span> can be any RG scale below the matching scale.</li>
     </ul>
    </div>
   </div>
@@ -86,52 +124,80 @@
      <div class="expandSubOuter">
       <h3 class="expandSubInner"><a class="expand hide" href="#" title="show">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a><a class="collapse" href="#" title="hide">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span>(1)</span></a></h3>
       <div class="expanded">
+       <p><a name="395497065"></a>Load the package:</p>
        <table class="InCell">
         <tr><td class="lab">In[1]:=</td><td class="Input"><div>
-           <a name="570039929"></a>
+           <a name="352133397"></a>
            <img src="Files/RGFlow/I_2.png"
                height="16"
                width="93"
                alt="Click for copyable input" />
           </div><div id="i_1_out" class="IFL"></div></td></tr>
        </table>
-       <div class="Text"><a name="1797941142"></a>    CoDEx-1.0.0</div>
-       <div class="Text"><a name="754376657"></a>Supratim Das Bakshi, Joydeep Chakrabortty, Sunando K. Patra
- IIT Kanpur, India</div>
-       <div class="Text"><a name="65022311"></a>If you are using CoDEx for the first time, try running ' <strong>tuteMode[]</strong> '.</div>
-       <div class="IO">
-        <table class="InCell">
-         <tr><td class="lab">In[2]:=</td><td class="Input"><div>
-            <a name="1980375636"></a>
-            <img src="Files/RGFlow/I_4.png"
-                height="40"
-                width="160"
-                alt="Click for copyable input" />
-           </div><div id="i_3_out" class="IFL"></div></td></tr>
-        </table>
-        <table class="OCell">
-         <tr><td class="lab">Out[2]=</td><td class="Output"><div class="output-image">
-            <img src="Files/RGFlow/O_1.png"
-                height="44"
-                width="207"
-                alt="" />
-           </div></td></tr>
-        </table>
-       </div>
-       <div class="MCap"><a name="1368437802"></a>RGFlow function does not take Wilson Coefficients for Operators in SILH basis.</div>
+       <p><a name="69609809"></a>Say this is the output of CoDEx that you have found and saved. These WCs are evaluated at the high scale. Let's give it a name:</p>
+       <table class="InCell">
+        <tr><td class="lab">In[2]:=</td><td class="Input"><div>
+           <a name="1443351520"></a>
+           <img src="Files/RGFlow/I_4.png"
+               height="40"
+               width="312"
+               alt="Click for copyable input" />
+          </div><div id="i_3_out" class="IFL"></div></td></tr>
+       </table>
+       <p><a name="1651635444"></a>Now, to compute the WCs at the electro-weak scale(<span class="special-character Mu">&#956;</span>), we need to perform their RGEs. After setting the matching scale (high scale) at the mass of the heavy particle (m), we have to recall the function <span class="IF">RGFlow</span> as:</p>
        <div class="IO">
         <table class="InCell">
          <tr><td class="lab">In[3]:=</td><td class="Input"><div>
-            <a name="1239835780"></a>
+            <a name="1980375636"></a>
             <img src="Files/RGFlow/I_6.png"
-                height="40"
-                width="159"
+                height="16"
+                width="147"
                 alt="Click for copyable input" />
            </div><div id="i_5_out" class="IFL"></div></td></tr>
         </table>
         <table class="OCell">
          <tr><td class="lab">Out[3]=</td><td class="Output"><div class="output-image">
+            <img src="Files/RGFlow/O_1.png"
+                height="420"
+                width="539"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+       <p><a name="15627469"></a>Now, if you want, you can apply '<span class="InlineCode"><a href="../ref/formPick.html">formPick</a></span>' on this result to get your output in a specific required format.</p>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[4]:=</td><td class="Input"><div>
+            <a name="614674502"></a>
+            <img src="Files/RGFlow/I_8.png"
+                height="33"
+                width="311"
+                alt="Click for copyable input" />
+           </div><div id="i_7_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab">Out[4]=</td><td class="Output"><div class="output-image">
             <img src="Files/RGFlow/O_2.png"
+                height="683"
+                width="542"
+                alt="" />
+           </div></td></tr>
+        </table>
+       </div>
+       <p><a name="167378817"></a>RGFlow function does not take Wilson Coefficients for Operators in SILH basis.</p>
+       <div class="IO">
+        <table class="InCell">
+         <tr><td class="lab">In[5]:=</td><td class="Input"><div>
+            <a name="1239835780"></a>
+            <img src="Files/RGFlow/I_10.png"
+                height="40"
+                width="159"
+                alt="Click for copyable input" />
+           </div><div id="i_9_out" class="IFL"></div></td></tr>
+        </table>
+        <table class="OCell">
+         <tr><td class="lab">Out[5]=</td><td class="Output"><div class="output-image">
+            <img src="Files/RGFlow/O_3.png"
                 height="33"
                 width="337"
                 alt="" />
@@ -145,6 +211,47 @@
      <a href="#top">Top</a>
     </div>
     <div class="clear"><!-- --></div>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="SeeAlso">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">See Also</a><a class="collapse" title="hide" href="#">See Also</a></h2>
+   <div class="expanded">
+    <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="../ref/treeOutput.html">treeOutput</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/loopOutput.html">loopOutput</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/codexOutput.html">codexOutput</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/formpick.html">formpick</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"><img src="../images/bullet-greysq.gif" style="vertical-align:middle;" width="4" height="4" alt="bullet" title="bullet" /></span> <span class="IF"><a class="package-symbol" href="../ref/texTable.html">texTable</a></span></p>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="Tutorials">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Tutorials</a><a class="collapse" title="hide" href="#">Tutorials</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li>
+      <a name="1272222"></a>
+      <a class="package-symbol" href="../tutorial/HowToRun.html">HowToRun</a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="expandWrap"
+     id="RelatedGuides">
+  <div class="expandOuter">
+   <h2 class="expandInner"><a class="expand hide" title="show" href="#">Related Guides</a><a class="collapse" title="hide" href="#">Related Guides</a></h2>
+   <div class="expanded">
+    <ul class="functionList">
+     <li>
+      <a name="9077540"></a>
+      <a class="package-symbol" href="../guide/CoDExParafernalia.html">CoDEx Parafernalia</a>
+     </li>
+     <li>
+      <a name="38524522"></a>
+      <a class="package-symbol" href="../tutorial/CoDExOverview.html">CoDExOverview</a>
+     </li>
+    </ul>
    </div>
   </div>
  </div>

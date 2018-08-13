@@ -1,0 +1,1 @@
+<pre name='i_51_in' id='i_51_in' class='IFT'>Sum[(dag[Htilde][[j]]*lepb[1][[j]]).hfvec5b, {j, 2}] // Expand // re</pre><div class='IFU'><a name='820538352'></a>http://wolfram.com/xid/0nprfkmtwkl8y8jr18thzaq9l9v-nus9qa</div>

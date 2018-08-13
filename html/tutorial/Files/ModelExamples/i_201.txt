@@ -1,0 +1,3 @@
+<pre name='i_201_in' id='i_201_in' class='IFT'>\[ScriptCapitalL]INT = (\[Mu]1 * 
+     dag[H].\[CapitalDelta].\[CurlyPhi]  + \[Mu]1*
+     hermitianConjugate[ dag[H].\[CapitalDelta].\[CurlyPhi]]);</pre><div class='IFU'><a name='283562500'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-ey30ie</div>

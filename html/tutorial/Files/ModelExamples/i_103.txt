@@ -1,0 +1,1 @@
+<pre name='i_103_in' id='i_103_in' class='IFT'>\[CapitalSigma][j_] := Sum[pau[i]* \[Psi][[i, j]], {i, 3}]</pre><div class='IFU'><a name='29826282'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-r1kd4</div>

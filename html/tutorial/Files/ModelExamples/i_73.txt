@@ -1,0 +1,3 @@
+<pre name='i_73_in' id='i_73_in' class='IFT'>wcQSwar = codexOutput[Lpotenewqs, fieldewqs, model -&gt; &quot;ewqs&quot;];
+formPick[&quot;Warsaw&quot;, &quot;Detailed2&quot;, wcQSwar, FontSize -&gt; Medium, 
+ FontFamily -&gt; &quot;Times New Roman&quot;, Frame -&gt; All]</pre><div class='IFU'><a name='204827642'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-dn8ga0</div>

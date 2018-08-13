@@ -1,0 +1,2 @@
+<pre name='i_115_in' id='i_115_in' class='IFT'>formPick[&quot;Dim5&quot;, &quot;Detailed2&quot;, wcT3SSdim5, FontSize -&gt; Medium, 
+ FontFamily -&gt; &quot;Times New Roman&quot;, Frame -&gt; All]</pre><div class='IFU'><a name='79347818'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-blizgc</div>

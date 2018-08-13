@@ -1,0 +1,3 @@
+<pre name='i_113_in' id='i_113_in' class='IFT'>wcT3SSdim5 = 
+ codexOutput[Lpotent3ss, fieldt3ss, model -&gt; &quot;t3ss&quot;, 
+  operBasis -&gt; &quot;Dim5&quot;, monitor -&gt; True]</pre><div class='IFU'><a name='133306611'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-chnibp</div>

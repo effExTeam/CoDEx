@@ -1,0 +1,3 @@
+<pre name='i_233_in' id='i_233_in' class='IFT'>wc3p1silh = 
+  codexOutput[Lpotentrpsng, fieldtrpsng, model -&gt; &quot;trpsng&quot;, 
+   operBasis -&gt; &quot;SILH&quot;];</pre><div class='IFU'><a name='590898389'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-j13aef</div>

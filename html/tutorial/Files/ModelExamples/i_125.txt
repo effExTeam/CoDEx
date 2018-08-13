@@ -1,0 +1,1 @@
+<pre name='i_125_in' id='i_125_in' class='IFT'>Htilde = I pau[2].hermitianConjugate[H];</pre><div class='IFU'><a name='25665783'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-pkd4p</div>

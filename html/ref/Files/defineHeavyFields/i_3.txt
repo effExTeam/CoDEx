@@ -1,1 +1,4 @@
-<pre name='i_3_in' id='i_3_in' class='IFT'>inlist = {{heavy1, 2, 1, 2, 1/2, 0, mheavy1}}</pre><div class='IFU'><a name='1171563007'></a>http://wolfram.com/xid/0nprfkmtwkl8y8jr18thzaq9l9v-tnsx25</div>
+<pre name='i_3_in' id='i_3_in' class='IFT'>fieldList =
+  {
+   {hf, 3, 1, 3, 0, 0, m}
+   };</pre><div class='IFU'><a name='1423895744'></a>http://wolfram.com/xid/0nprfkmtwkl8y8jr18thzaq9l9v-xt1a9u</div>

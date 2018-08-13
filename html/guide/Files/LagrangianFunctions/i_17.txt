@@ -1,1 +1,0 @@
-<pre name='i_17_in' id='i_17_in' class='IFT'>antiCommutator[{{a1, b1}, {c1, d1}}, {{a2, b2}, {c2, d2}}]</pre><div class='IFU'><a name='22530144'></a>http://wolfram.com/xid/0dm5klve6uvf3ypu87l3fh4uf0j-no6nm</div>

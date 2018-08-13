@@ -1,0 +1,4 @@
+<pre name='i_87_in' id='i_87_in' class='IFT'>Lpotent1ss = 
+  re@Expand[
+    y*\[Psi]b.(dag[Htilde].lep[1]) + 
+     y*(Transpose[lepb[1]].dag[Htilde]).\[Psi]];</pre><div class='IFU'><a name='133370204'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-chovd6</div>

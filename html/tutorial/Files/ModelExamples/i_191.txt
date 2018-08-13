@@ -1,0 +1,2 @@
+<pre name='i_191_in' id='i_191_in' class='IFT'>Note! \[FilledRightTriangle] If you want to use charge conjugation operator in your Lagrangian,
+you have to use &apos;gamma[0]&apos; for that. (as is demonstrated in this example).</pre><div class='IFU'><a name='684788407'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-llzoeh</div>

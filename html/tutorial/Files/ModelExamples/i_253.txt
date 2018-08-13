@@ -1,0 +1,1 @@
+<pre name='i_253_in' id='i_253_in' class='IFT'>U12 = Xt * Transpose[Htil];</pre><div class='IFU'><a name='38917108'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-xgew2</div>

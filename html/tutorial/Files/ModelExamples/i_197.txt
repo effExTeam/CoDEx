@@ -1,0 +1,14 @@
+<pre name='i_197_in' id='i_197_in' class='IFT'>\[ScriptCapitalL]3 = 
+  y\[CapitalSigma]  Sum[(hermitianConjugate[lepb[1][[i]]].gamma[
+        0].chargeC.(\[CapitalDelta]c[[i, j]]*lep[1][[j]])), {i, 
+      2}, {j, 2}] + + y\[CapitalSigma] Sum[
+     lepb[1][[i]].gamma[
+       0].(dag[\[CapitalDelta]c][[i, j]]*
+        dag[chargeC].lep[1][[j]]), {i, 2}, {j, 
+      2}] - (\[Zeta]1 (dag[H].H)* 
+      Tr[dag[\[CapitalDelta]].\[CapitalDelta]] + \[Zeta]2 Sum[(dag[
+           H].tau[i].H) Tr[
+         dag[\[CapitalDelta]].tau[i].\[CapitalDelta]], {i, 
+        3}] + (\[Mu] H.(I*
+          tau[2].dag[\[CapitalDelta]]).H) + (\[Mu] (dag[
+          H].(-I*\[CapitalDelta].tau[2] ).hermitianConjugate[H]))) ;</pre><div class='IFU'><a name='33505603'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-t8fdh</div>

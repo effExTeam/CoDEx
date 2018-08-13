@@ -1,0 +1,9 @@
+<pre name='i_199_in' id='i_199_in' class='IFT'>\[ScriptCapitalL]2 = - (\[Lambda]\[Phi]/
+     4) (dag[\[CurlyPhi]].\[CurlyPhi])^2 + (\[Eta]H*
+       dag[Htilde].Htilde + \[Eta]\[Phi]*
+       dag[\[CurlyPhi]].\[CurlyPhi])*(dag[Htilde].\[CurlyPhi] + 
+      dag[\[CurlyPhi]].Htilde) - \[Lambda]1 (dag[
+       Htilde].Htilde)*(dag[\[CurlyPhi]].\[CurlyPhi]) - \[Lambda]2 \
+hermitianConjugate[(dag[Htilde].\[CurlyPhi])]*(dag[
+       Htilde].\[CurlyPhi]) - \[Lambda]3 ((dag[
+         Htilde].\[CurlyPhi])^2 + (dag[\[CurlyPhi]].Htilde)^2);</pre><div class='IFU'><a name='450593501'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-hqj2gf</div>

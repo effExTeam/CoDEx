@@ -1,0 +1,2 @@
+<pre name='i_93_in' id='i_93_in' class='IFT'>wcT1SS = codexOutput[Lpotent1ss, fieldt1ss, model -&gt; &quot;t1ss&quot;, 
+  operBasis -&gt; &quot;Dim5&quot;]</pre><div class='IFU'><a name='29890397'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-r2xu3</div>

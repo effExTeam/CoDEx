@@ -1,0 +1,4 @@
+<pre name='i_117_in' id='i_117_in' class='IFT'>field2HDM =
+  {
+   {hf, 2, 1, 2, -1/2, 0, m}
+   };</pre><div class='IFU'><a name='286548647'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-e0v0mx</div>

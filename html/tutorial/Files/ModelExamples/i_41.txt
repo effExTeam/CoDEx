@@ -1,7 +1,1 @@
-<pre name='i_41_in' id='i_41_in' class='IFT'>Needs[&quot;CoDEx`&quot;];
-codexOutput[Lpotenewrts, fieldewrts, model -&gt; &quot;ewrts&quot;];
-formPick[&quot;Warsaw&quot;, &quot;Detailed2&quot;, %, FontSize -&gt; Medium, 
- FontFamily -&gt; &quot;Times New Roman&quot;, Frame -&gt; All];
-codexOutput[Lpotenewrts, fieldewrts, model -&gt; &quot;ewrts&quot;];
-formPick[&quot;Warsaw&quot;, &quot;Detailed2&quot;, %, FontSize -&gt; Medium, 
- FontFamily -&gt; &quot;Times New Roman&quot;, Frame -&gt; All]</pre><div class='IFU'><a name='227923080'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-d1zguy</div>
+<pre name='i_41_in' id='i_41_in' class='IFT'>\[CapitalDelta]c = I tau[2].\[CapitalDelta];</pre><div class='IFU'><a name='157633634'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-cv4w6c</div>

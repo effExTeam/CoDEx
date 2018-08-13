@@ -1,2 +1,4 @@
-<pre name='i_1_in' id='i_1_in' class='IFT'>eL[p] where p = 1, 2, 3 .
-   p is the generation index. So, eL[3] is the left handed taon.</pre><div class='IFU'>http://wolfram.com/xid/0cdqrs90djz657bajeb7m4t22jxfr58</div>
+<pre name='i_1_in' id='i_1_in' class='IFT'>\!\(
+ButtonBox[&quot;defineHeavyFields&quot;,
+BaseStyle-&gt;&quot;Link&quot;,
+ButtonData-&gt;&quot;paclet:CoDEx/ref/defineHeavyFields&quot;]\)</pre><div class='IFU'>http://wolfram.com/xid/0cdqrs90djz657bajeb7m4t22jxfr58</div>

@@ -1,0 +1,1 @@
+<pre name='i_261_in' id='i_261_in' class='IFT'>Q3tR[i_] := {Flatten[Join[Q3[[i]], tR[[i]]]]}  </pre><div class='IFU'><a name='17637854'></a>http://wolfram.com/xid/0yhixbhwvrv9yozyu0rcv0-ksbqo</div>
