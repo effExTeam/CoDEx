@@ -109,7 +109,7 @@
   <table class="nogridboxdividers">
    <col />
    <col />
-   <tr class="lineAbove" style=""><td><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/tutorial/HowToRun.html#80532280">Building the Lagrangian</a></td><td><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/tutorial/HowToRun.html#6608685">Wilson Coefficients in SMEFT</a></td></tr>
+   <tr class="lineAbove" style=""><td><a class="package-symbol" href="../tutorial/HowToRun.html#80532280">Building the Lagrangian</a></td><td><a class="package-symbol" href="../tutorial/HowToRun.html#6608685">Wilson Coefficients in SMEFT</a></td></tr>
   </table>
  </div>
  <p class="Text"><a name="1534169418"></a>In this tutorial, we present the available functions for calculating Wilson Coefficients (WCs) for a given BSM Lagrangian and describe the necessary workflow to do that. Following functions are mainly used for the bulk of this job:</p>
@@ -118,13 +118,13 @@
   <table class="nogridboxdividers">
    <col width="40%" />
    <col width="60%" />
-   <tr class="lineAbove" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/treeOutput.html">treeOutput</a></td><td><span class="TT">Calculates tree level Wilson Coefficients.</span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/loopOutput.html">loopOutput</a></td><td><span class="TT">Calculates 1 loop level Wilson Coefficients.</span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/codexOutput.html">codexOutput</a></td><td><span class="TT">Generic function for WCs calculation upto 1 loop.</span></td></tr>
+   <tr class="lineAbove" style=""><td><a href="../ref/treeOutput.html">treeOutput</a></td><td><span class="TT">Calculates tree level Wilson Coefficients.</span></td></tr>
+   <tr class="" style=""><td><a href="../ref/loopOutput.html">loopOutput</a></td><td><span class="TT">Calculates 1 loop level Wilson Coefficients.</span></td></tr>
+   <tr class="" style=""><td><a href="../ref/codexOutput.html">codexOutput</a></td><td><span class="TT">Generic function for WCs calculation upto 1 loop.</span></td></tr>
   </table>
  </div>
  <h2 class="Section"><a name="80532280"></a>Building the Lagrangian</h2>
- <h3 class="Subsection"><a name="41316574"></a>The Example Model: <a href="http://reference.wolfram.com/language/CoDEx/tutorial/ModelExamples.html#123352059">Electroweak Real Triplet Scalar</a></h3>
+ <h3 class="Subsection"><a name="41316574"></a>The Example Model: <a href="../tutorial/ModelExamples.html#123352059">Electroweak Real Triplet Scalar</a></h3>
  <p class="Text"><a name="291669580"></a>Let us demonstrate this with a toy example where the Lagrangian is given in its traditional form:</p>
  <p class="Text">
   <a name="599301425"></a>
@@ -190,7 +190,7 @@
     </div><div id="i_3_out" class="IFL"></div></td></tr>
  </table>
  <h3 class="Subsection"><a name="815626120"></a>Writing the Lagrangian</h3>
- <p class="Text"><a name="749728319"></a>Now that our field definitions are ready, it's time to write the Lagrangian in a form that our code understands. For that, first we have to create the representations of these fields in their component form. This is done by a function called '<span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/defineHeavyFields.html">defineHeavyFields</a></span>'. Please go to <a href="http://reference.wolfram.com/language/CoDEx/ref/defineHeavyFields.html">this page</a> for details on how it works.</p>
+ <p class="Text"><a name="749728319"></a>Now that our field definitions are ready, it's time to write the Lagrangian in a form that our code understands. For that, first we have to create the representations of these fields in their component form. This is done by a function called '<span class="IF"><a class="package-symbol" href="../ref/defineHeavyFields.html">defineHeavyFields</a></span>'. Please go to <a href="../ref/defineHeavyFields.html">this page</a> for details on how it works.</p>
  <div class="MCap"><a name="10288008"></a>Creating field representations:</div>
  <div class="IO">
   <table class="InCell">
@@ -280,15 +280,15 @@
    <col width="20%" />
    <col width="45%" />
    <tr class="lineAbove" style=""><td><span class="TI">Option Name</span></td><td><span class="TI">Default Value</span></td><td><span class="TT"><span class="TI">Details</span></span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/monitor.html">monitor</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">Shows an animation while computing</span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/appearence.html">appearance</a></td><td>&quot;Percolate&quot;
+   <tr class="" style=""><td><a href="../ref/monitor.html">monitor</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">Shows an animation while computing</span></td></tr>
+   <tr class="" style=""><td><a href="../ref/appearence.html">appearance</a></td><td>&quot;Percolate&quot;
 <span class="openparenthesis">(</span>for Version <span class="special-character GreaterEqual">&#8805;</span>11.0<span class="closeparenthesis">)</span></td><td><span class="TT">Appearence of the animation.</span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/operBasis.html">operBasis</a></td><td>&quot;Warsaw&quot;</td><td><span class="TT">Choice of basis of the  Dim.-6 operators </span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/format.html">format</a></td><td>&quot;List&quot;</td><td><span class="TT">The output format.</span></td></tr>
+   <tr class="" style=""><td><a href="../ref/operBasis.html">operBasis</a></td><td>&quot;Warsaw&quot;</td><td><span class="TT">Choice of basis of the  Dim.-6 operators </span></td></tr>
+   <tr class="" style=""><td><a href="../ref/format.html">format</a></td><td>&quot;List&quot;</td><td><span class="TT">The output format.</span></td></tr>
   </table>
  </div>
- <p class="Caption"><a name="21462984"></a>Options for <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/treeOutput.html">treeOutput</a></span>.</p>
- <p class="Text"><a name="909726728"></a>The <a href="http://reference.wolfram.com/language/ref/OptionValue.html">OptionValue</a> selecting the basis of dimension six operators (Option: <span class="InlineCode">operBasis</span>) has its default value set to <span class="InlineCode">&quot;Warsaw&quot;</span>. We can also choose the <span class="InlineCode">&quot;SILH&quot;</span> operator basis. Details of these bases are listed in the guide &quot;<a href="http://reference.wolfram.com/language/CoDEx/guide/CoDExParafernalia.html#113489491">Operator Bases</a>&quot;.</p>
+ <p class="Caption"><a name="21462984"></a>Options for <span class="InlineCode"><a href="../ref/treeOutput.html">treeOutput</a></span>.</p>
+ <p class="Text"><a name="909726728"></a>The <a href="http://reference.wolfram.com/language/ref/OptionValue.html">OptionValue</a> selecting the basis of dimension six operators (Option: <span class="InlineCode">operBasis</span>) has its default value set to <span class="InlineCode">&quot;Warsaw&quot;</span>. We can also choose the <span class="InlineCode">&quot;SILH&quot;</span> operator basis. Details of these bases are listed in the guide &quot;<a href="../guide/CoDExParafernalia.html#113489491">Operator Bases</a>&quot;.</p>
  <div class="MCap"><a name="1187888845"></a>Tree level WCs calculation in SILH basis:</div>
  <div class="IO">
   <table class="InCell">
@@ -310,7 +310,7 @@
   </table>
  </div>
  <h3 class="Subsection"><a name="448550140"></a>Initializing the model for calculation up to 1 loop</h3>
- <p class="Text"><a name="60192737"></a>Unlike the tree level case, to calculate 1 loop level WCs, we need the transformation property of the heavy fields under the given gauge symmetry. More precisely, we must know the structure of Isospin and Color symmetry generators determined by the dimensionality of the heavy field<span class="special-character CloseCurlyQuote">&#8217;</span>s representations. These are defined by running the function <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/initializeLoop.html">initializeLoop</a></span> (click on the function name for options and further details).</p>
+ <p class="Text"><a name="60192737"></a>Unlike the tree level case, to calculate 1 loop level WCs, we need the transformation property of the heavy fields under the given gauge symmetry. More precisely, we must know the structure of Isospin and Color symmetry generators determined by the dimensionality of the heavy field<span class="special-character CloseCurlyQuote">&#8217;</span>s representations. These are defined by running the function <span class="InlineCode"><a href="../ref/initializeLoop.html">initializeLoop</a></span> (click on the function name for options and further details).</p>
  <p class="Text"><a name="539434543"></a>In the first argument, you provide a name of the model as a string. This will be used to uniquely define the symmetry generators. (here: <span class="InlineCode">&quot;ewrts&quot;</span>) </p>
  <p class="Text"><a name="25831215"></a>In the second argument, you provide list of heavy field definitions ('<span class="IF">fields</span>', in this case). The symmetry generators are defined using the information about the Isospin and Color charges for each heavy field from the list of field definitions.</p>
  <p class="Text"><a name="108086126"></a>We have provided their structure of representations up to fundamental and quadruplet for <span class="IF">SU<span class="openparenthesis">(</span>3<span class="closeparenthesis">)</span><sub>c</sub></span> and <span class="IF">SU<span class="openparenthesis">(</span>2<span class="closeparenthesis">)</span><sub>L</sub></span> gauge groups respectively. For more exotic BSM particle we have kept provision for one to define it. In that case, you have to define them yourself (you will be prompted to do so in such a case).</p>
@@ -325,7 +325,7 @@
          alt="Click for copyable input" />
     </div><div id="i_15_out" class="IFL"></div></td></tr>
  </table>
- <p class="Text"><a name="164090385"></a>Check the documentation page <a href="http://reference.wolfram.com/language/CoDEx/guide/CoDExParafernalia.html">CoDExParafernalia</a> for details.</p>
+ <p class="Text"><a name="164090385"></a>Check the documentation page <a href="../guide/CoDExParafernalia.html">CoDExParafernalia</a> for details.</p>
  <table class="OCell">
   <tr><td class="lab" /><td class="Echo"><div class="output-image">
      <img src="Files/HowToRun/O_5.png"
@@ -378,7 +378,7 @@
      </div></td></tr>
   </table>
  </div>
- <p class="Text"><a name="702454558"></a>All symmetry generators provided by CoDEx are listed in the section 'Symmetry Generators' of the guide '<a href="http://reference.wolfram.com/language/CoDEx/guide/CoDExParafernalia.html">CoDExParafernalia</a>'.</p>
+ <p class="Text"><a name="702454558"></a>All symmetry generators provided by CoDEx are listed in the section 'Symmetry Generators' of the guide '<a href="../guide/CoDExParafernalia.html">CoDExParafernalia</a>'.</p>
  <h3 class="Subsection"><a name="686478122"></a>Wilson Coefficients at 1 loop level</h3>
  <div class="MathTable DefinitionBox3Col">
   <a name="473501821"></a>
@@ -387,16 +387,16 @@
    <col width="20%" />
    <col width="45%" />
    <tr class="lineAbove" style=""><td><span class="TI">Option Name</span></td><td><span class="TI">Default Value</span></td><td><span class="TT"><span class="TI">Details</span></span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/monitor.html">monitor</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">Shows an animation while computing</span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/appearence.html">appearance</a></td><td>&quot;Percolate&quot;
+   <tr class="" style=""><td><a href="../ref/monitor.html">monitor</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">Shows an animation while computing</span></td></tr>
+   <tr class="" style=""><td><a href="../ref/appearence.html">appearance</a></td><td>&quot;Percolate&quot;
 <span class="openparenthesis">(</span>for Version <span class="special-character GreaterEqual">&#8805;</span>11.0<span class="closeparenthesis">)</span></td><td><span class="TT">Appearence of the animation.</span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/operBasis.html">operBasis</a></td><td>&quot;Warsaw&quot;</td><td><span class="TT">Choice of basis of the  Dim.-6 operators </span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/format.html">format</a></td><td>&quot;List&quot;</td><td><span class="TT">The output format.</span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/style.html">style</a></td><td><a href="http://reference.wolfram.com/language/ref/Large.html">Large</a></td><td><span class="TT">The fontsize of the output.</span></td></tr>
-   <tr class="" style=""><td>ibp</td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">Turns the 'Integration by Parts' option on. Detail available on the <a href="http://reference.wolfram.com/language/CoDEx/ref/loopOutput.html">loopOutput</a> page.</span></td></tr>
+   <tr class="" style=""><td><a href="../ref/operBasis.html">operBasis</a></td><td>&quot;Warsaw&quot;</td><td><span class="TT">Choice of basis of the  Dim.-6 operators </span></td></tr>
+   <tr class="" style=""><td><a href="../ref/format.html">format</a></td><td>&quot;List&quot;</td><td><span class="TT">The output format.</span></td></tr>
+   <tr class="" style=""><td><a href="../ref/style.html">style</a></td><td><a href="http://reference.wolfram.com/language/ref/Large.html">Large</a></td><td><span class="TT">The fontsize of the output.</span></td></tr>
+   <tr class="" style=""><td>ibp</td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">Turns the 'Integration by Parts' option on. Detail available on the <a href="../ref/loopOutput.html">loopOutput</a> page.</span></td></tr>
   </table>
  </div>
- <p class="Caption"><a name="161773327"></a>Options for <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/loopOutput.html">loopOutput</a></span>.</p>
+ <p class="Caption"><a name="161773327"></a>Options for <span class="InlineCode"><a href="../ref/loopOutput.html">loopOutput</a></span>.</p>
  <div class="MCap"><a name="1236403970"></a>Loop level WCs calculation:</div>
  <div class="IO">
   <table class="InCell">
@@ -417,10 +417,10 @@
      </div></td></tr>
   </table>
  </div>
- <p class="Text"><a name="255246218"></a>You can see that this takes the model name used by <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/initializeLoop.html">initializeLoop</a></span> function above (here: <span class="InlineCode">&quot;ewrts&quot;</span>) to correctly identify the symmetry generators, in addition to the Lagrangian and the list of heavy field definitions. This functionality lets you define multiple models, Lagrangians, and heavy field definitions in the same Notebook and run them without mixing the definitions.</p>
- <p class="Text"><a name="907663570"></a>The <a href="http://reference.wolfram.com/language/ref/OptionValue.html">OptionValue</a> selecting the basis of dimension six operators (Option: <span class="InlineCode">operBasis</span>) has its default value set to <span class="InlineCode">&quot;Warsaw&quot;</span>. We can also choose the <span class="InlineCode">&quot;SILH&quot;</span> operator basis. Details of these bases are listed in the guide &quot;<a href="http://reference.wolfram.com/language/CoDEx/guide/CoDExParafernalia.html#113489491">Operator Bases</a>&quot;.</p>
+ <p class="Text"><a name="255246218"></a>You can see that this takes the model name used by <span class="InlineCode"><a href="../ref/initializeLoop.html">initializeLoop</a></span> function above (here: <span class="InlineCode">&quot;ewrts&quot;</span>) to correctly identify the symmetry generators, in addition to the Lagrangian and the list of heavy field definitions. This functionality lets you define multiple models, Lagrangians, and heavy field definitions in the same Notebook and run them without mixing the definitions.</p>
+ <p class="Text"><a name="907663570"></a>The <a href="http://reference.wolfram.com/language/ref/OptionValue.html">OptionValue</a> selecting the basis of dimension six operators (Option: <span class="InlineCode">operBasis</span>) has its default value set to <span class="InlineCode">&quot;Warsaw&quot;</span>. We can also choose the <span class="InlineCode">&quot;SILH&quot;</span> operator basis. Details of these bases are listed in the guide &quot;<a href="../guide/CoDExParafernalia.html#113489491">Operator Bases</a>&quot;.</p>
  <h3 class="Subsection"><a name="338066066"></a>Using codexOutput: A Single function for everything</h3>
- <p class="Text"><a name="340648584"></a><span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/codexOutput.html">codexOutput</a></span> is a generic function for WCs calculation. Among other options, the tree level or the loop level result can be chosen by changing the option '<span class="InlineCode">outRange</span>'.</p>
+ <p class="Text"><a name="340648584"></a><span class="InlineCode"><a href="../ref/codexOutput.html">codexOutput</a></span> is a generic function for WCs calculation. Among other options, the tree level or the loop level result can be chosen by changing the option '<span class="InlineCode">outRange</span>'.</p>
  <div class="MathTable DefinitionBox3Col">
   <a name="5051314"></a>
   <table class="nogridboxdividers">
@@ -428,18 +428,18 @@
    <col width="20%" />
    <col width="45%" />
    <tr class="lineAbove" style=""><td><span class="TI">Option Name</span></td><td><span class="TI">Default Value</span></td><td><span class="TT"><span class="TI">Details</span></span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/monitor.html">monitor</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">Shows an animation while computing</span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/appearence.html">appearance</a></td><td>&quot;Percolate&quot;
+   <tr class="" style=""><td><a href="../ref/monitor.html">monitor</a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">Shows an animation while computing</span></td></tr>
+   <tr class="" style=""><td><a href="../ref/appearence.html">appearance</a></td><td>&quot;Percolate&quot;
 <span class="openparenthesis">(</span>for Version <span class="special-character GreaterEqual">&#8805;</span>11.0<span class="closeparenthesis">)</span></td><td><span class="TT">Appearence of the animation.</span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/operBasis.html">operBasis</a></td><td>&quot;Warsaw&quot;</td><td><span class="TT">Choice of basis of the  Dim.-6 operators </span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/format.html">format</a></td><td>&quot;List&quot;</td><td><span class="TT">The output format.</span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/model.html">model</a></td><td>&quot;&quot;</td><td><span class="TT">Takes the same input as <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/initializeLoop.html">initializeLoop</a></span><span class="specialcharacters">. If left blank<span class="comma">,</span> will give the tree-level.</span></span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/outRange.html">outRange</a></td><td>&quot;All&quot;</td><td><span class="TT">This determines the level at which output is evaluated. 'All' means the result calculates both tree and loop level results and combines them.</span></td></tr>
-   <tr class="" style=""><td><a href="http://reference.wolfram.com/language/CoDEx/ref/style.html">style</a></td><td><a href="http://reference.wolfram.com/language/ref/Large.html">Large</a></td><td><span class="TT">The fontsize of the output.</span></td></tr>
-   <tr class="" style=""><td>ibp</td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">Turns the 'Integration by Parts' option on. Detail available on the <a href="http://reference.wolfram.com/language/CoDEx/ref/loopOutput.html">loopOutput</a> page.</span></td></tr>
+   <tr class="" style=""><td><a href="../ref/operBasis.html">operBasis</a></td><td>&quot;Warsaw&quot;</td><td><span class="TT">Choice of basis of the  Dim.-6 operators </span></td></tr>
+   <tr class="" style=""><td><a href="../ref/format.html">format</a></td><td>&quot;List&quot;</td><td><span class="TT">The output format.</span></td></tr>
+   <tr class="" style=""><td><a href="../ref/model.html">model</a></td><td>&quot;&quot;</td><td><span class="TT">Takes the same input as <span class="InlineCode"><a href="../ref/initializeLoop.html">initializeLoop</a></span><span class="specialcharacters">. If left blank<span class="comma">,</span> will give the tree-level.</span></span></td></tr>
+   <tr class="" style=""><td><a href="../ref/outRange.html">outRange</a></td><td>&quot;All&quot;</td><td><span class="TT">This determines the level at which output is evaluated. 'All' means the result calculates both tree and loop level results and combines them.</span></td></tr>
+   <tr class="" style=""><td><a href="../ref/style.html">style</a></td><td><a href="http://reference.wolfram.com/language/ref/Large.html">Large</a></td><td><span class="TT">The fontsize of the output.</span></td></tr>
+   <tr class="" style=""><td>ibp</td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">Turns the 'Integration by Parts' option on. Detail available on the <a href="../ref/loopOutput.html">loopOutput</a> page.</span></td></tr>
   </table>
  </div>
- <p class="Caption"><a name="98144568"></a>Options for <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/codexOutput.html">codexOutput</a></span>.</p>
+ <p class="Caption"><a name="98144568"></a>Options for <span class="InlineCode"><a href="../ref/codexOutput.html">codexOutput</a></span>.</p>
  <ul class="Notes">
   <li><a name="154711198"></a>For tree level WCs:</li>
  </ul>
@@ -465,7 +465,7 @@
  <ul class="Notes">
   <li><a name="1057321256"></a>For loop level WCs:</li>
  </ul>
- <p class="Text"><a name="246676273"></a>To run this, we again need to run the function <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/initializeLoop.html">initializeLoop</a></span>. As we have done that above, here can safely run <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/codexOutput.html">codexOutput</a></span>. We also need to specify the name of the model that was used in <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/initializeLoop.html">initializeLoop</a></span>, as the OptionValue of the option '<span class="InlineCode">model</span>'. Failing to do this will give the tree level result, even if the option '<span class="InlineCode">outRange</span>' is set to <span class="InlineCode">&quot;Loop&quot; </span>/ <span class="InlineCode">&quot;All&quot;</span>.</p>
+ <p class="Text"><a name="246676273"></a>To run this, we again need to run the function <span class="InlineCode"><a href="../ref/initializeLoop.html">initializeLoop</a></span>. As we have done that above, here can safely run <span class="InlineCode"><a href="../ref/codexOutput.html">codexOutput</a></span>. We also need to specify the name of the model that was used in <span class="InlineCode"><a href="../ref/initializeLoop.html">initializeLoop</a></span>, as the OptionValue of the option '<span class="InlineCode">model</span>'. Failing to do this will give the tree level result, even if the option '<span class="InlineCode">outRange</span>' is set to <span class="InlineCode">&quot;Loop&quot; </span>/ <span class="InlineCode">&quot;All&quot;</span>.</p>
  <div class="IO">
   <table class="InCell">
    <tr><td class="lab" /><td class="Input"><div>
@@ -516,7 +516,7 @@
    <span class="MenuName">The OptionValue of the option '</span>
    <span class="InlineCode">model</span>
    <span class="MenuName">' should match with the model name defined in </span>
-   <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/initializeLoop.html">initializeLoop</a></span>
+   <span class="InlineCode"><a href="../ref/initializeLoop.html">initializeLoop</a></span>
    <span class="MenuName">. Otherwise errors will occur.</span>
   </li>
  </ul>
@@ -542,7 +542,7 @@
      </div></td></tr>
   </table>
  </div>
- <p class="Text"><a name="14215765"></a>Details on the output formatting, copying the result in Latex format, and the renormalization group evolution of these Wilson Coefficients can be found in these pages: <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/formPick.html">formPick</a></span>, <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/texTable.html">texTable</a></span> and <span class="InlineCode"><a href="http://reference.wolfram.com/language/CoDEx/ref/RGFlow.html">RGFlow</a></span>.</p>
+ <p class="Text"><a name="14215765"></a>Details on the output formatting, copying the result in Latex format, and the renormalization group evolution of these Wilson Coefficients can be found in these pages: <span class="InlineCode"><a href="../ref/formPick.html">formPick</a></span>, <span class="InlineCode"><a href="../ref/texTable.html">texTable</a></span> and <span class="InlineCode"><a href="../ref/RGFlow.html">RGFlow</a></span>.</p>
  <div class="expandWrap"
      id="RelatedGuides">
   <div class="expandOuter">
@@ -551,31 +551,31 @@
     <ul class="functionList">
      <li>
       <a name="380889192"></a>
-      <span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/treeOutput.html">treeOutput</a></span>
+      <span class="IF"><a class="package-symbol" href="../ref/treeOutput.html">treeOutput</a></span>
      </li>
      <li>
       <a name="35798883"></a>
-      <span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/loopOutput.html">loopOutput</a></span>
+      <span class="IF"><a class="package-symbol" href="../ref/loopOutput.html">loopOutput</a></span>
      </li>
      <li>
       <a name="429124607"></a>
-      <span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/initializeLoop.html">initializeLoop</a></span>
+      <span class="IF"><a class="package-symbol" href="../ref/initializeLoop.html">initializeLoop</a></span>
      </li>
      <li>
       <a name="234004127"></a>
-      <span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/codexOutput.html">codexOutput</a></span>
+      <span class="IF"><a class="package-symbol" href="../ref/codexOutput.html">codexOutput</a></span>
      </li>
      <li>
       <a name="38055115"></a>
-      <span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/formPick.html">formPick</a></span>
+      <span class="IF"><a class="package-symbol" href="../ref/formPick.html">formPick</a></span>
      </li>
      <li>
       <a name="167052594"></a>
-      <span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/texTable.html">texTable</a></span>
+      <span class="IF"><a class="package-symbol" href="../ref/texTable.html">texTable</a></span>
      </li>
      <li>
       <a name="171871532"></a>
-      <span class="IF"><a class="package-symbol" href="http://reference.wolfram.com/language/CoDEx/ref/RGFlow.html">RGFlow</a></span>
+      <span class="IF"><a class="package-symbol" href="../ref/RGFlow.html">RGFlow</a></span>
      </li>
     </ul>
    </div>
@@ -589,7 +589,7 @@
     <ul class="functionList">
      <li>
       <a name="21802628"></a>
-      <a href="http://reference.wolfram.com/language/CoDEx/tutorial/ModelExamples.html">ModelExamples</a>
+      <a href="../tutorial/ModelExamples.html">ModelExamples</a>
      </li>
     </ul>
    </div>
