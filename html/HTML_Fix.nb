@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     25397,        593]
-NotebookOptionsPosition[     22647,        541]
-NotebookOutlinePosition[     22990,        556]
-CellTagsIndexPosition[     22947,        553]
+NotebookDataLength[     32614,        748]
+NotebookOptionsPosition[     29408,        688]
+NotebookOutlinePosition[     29751,        703]
+CellTagsIndexPosition[     29708,        700]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -42,8 +42,9 @@ html\\\\\"\>"], "Output",
  CellChangeTimes->{3.7413894029891863`*^9, 3.742508216661827*^9, 
   3.742605842942318*^9, 3.742606509647219*^9, 3.7431578805481663`*^9, 
   3.743241668943062*^9, 3.7432733743334436`*^9, 3.7433407756447544`*^9, 
-  3.743340952428784*^9, 3.743341217805973*^9},
- CellLabel->"Out[1]=",ExpressionUUID->"d751db95-d90a-43fe-8421-be0a8c2973cf"]
+  3.743340952428784*^9, 3.743341217805973*^9, 3.7433726866046176`*^9, 
+  3.7433759558658195`*^9, 3.743376081770913*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"f38d524a-afbb-45b4-9e92-789f4808116e"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -57,7 +58,7 @@ Cell[BoxData[
   RowBox[{
    RowBox[{"packName", "=", "\"\<CoDEx\>\""}], ";"}]}]], "Input",
  CellChangeTimes->{{3.742606299195677*^9, 3.7426063308243256`*^9}},
- CellLabel->"In[3]:=",ExpressionUUID->"1f9143db-b686-442e-9266-33cf171670f0"],
+ CellLabel->"In[2]:=",ExpressionUUID->"1f9143db-b686-442e-9266-33cf171670f0"],
 
 Cell[CellGroupData[{
 
@@ -90,29 +91,31 @@ Cell[BoxData[
  CellChangeTimes->{{3.741389376447171*^9, 3.7413894124439807`*^9}},
  CellLabel->"In[3]:=",ExpressionUUID->"93f28d7f-a500-484d-bc38-13d28f3e1733"],
 
-Cell[BoxData["\<\"C:\\\\Users\\\\Sunando\\\\workspace-neon\\\\CoDExProj\\\\\
-build\\\\CoDEx-HTML\\\\html\\\\standard\"\>"], "Output",
+Cell[BoxData["\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\\
+html\\\\standard\"\>"], "Output",
  CellChangeTimes->{3.7413894324886913`*^9, 3.7425082199234138`*^9, 
   3.742605843096197*^9, 3.742606509708186*^9, 3.743157880683053*^9, 
-  3.74324166907901*^9, 3.743273374487355*^9, 3.7433409525796976`*^9},
- CellLabel->"Out[3]=",ExpressionUUID->"21d0b98c-8388-4f27-a95a-61baeddd56ea"],
+  3.74324166907901*^9, 3.743273374487355*^9, 3.7433409525796976`*^9, 
+  3.7433726867595215`*^9, 3.743375972581283*^9, 3.7433760819278183`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"8e7b630c-538c-4276-8932-b270b0da31bf"],
 
 Cell[BoxData[
  RowBox[{"{", 
-  RowBox[{"\<\"C:\\\\Users\\\\Sunando\\\\workspace-neon\\\\CoDExProj\\\\build\
-\\\\CoDEx-HTML\\\\html\\\\standard\\\\css\"\>", 
-   ",", "\<\"C:\\\\Users\\\\Sunando\\\\workspace-neon\\\\CoDExProj\\\\build\\\
-\\CoDEx-HTML\\\\html\\\\standard\\\\fonts\"\>", 
-   ",", "\<\"C:\\\\Users\\\\Sunando\\\\workspace-neon\\\\CoDExProj\\\\build\\\
-\\CoDEx-HTML\\\\html\\\\standard\\\\images\"\>", 
-   ",", "\<\"C:\\\\Users\\\\Sunando\\\\workspace-neon\\\\CoDExProj\\\\build\\\
-\\CoDEx-HTML\\\\html\\\\standard\\\\includes\"\>", 
-   ",", "\<\"C:\\\\Users\\\\Sunando\\\\workspace-neon\\\\CoDExProj\\\\build\\\
-\\CoDEx-HTML\\\\html\\\\standard\\\\javascript\"\>"}], "}"}]], "Output",
+  RowBox[{"\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\
+\\standard\\\\css\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+standard\\\\fonts\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+standard\\\\images\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+standard\\\\includes\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+standard\\\\javascript\"\>"}], "}"}]], "Output",
  CellChangeTimes->{3.7413894324886913`*^9, 3.7425082199234138`*^9, 
   3.742605843096197*^9, 3.742606509708186*^9, 3.743157880683053*^9, 
-  3.74324166907901*^9, 3.743273374487355*^9, 3.7433409525846996`*^9},
- CellLabel->"Out[4]=",ExpressionUUID->"fe9fc1f0-66cc-49df-b1ff-06668b869f9c"]
+  3.74324166907901*^9, 3.743273374487355*^9, 3.7433409525796976`*^9, 
+  3.7433726867595215`*^9, 3.743375972581283*^9, 3.743376081931817*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"05f30b05-dbab-40d5-89e1-c64072421923"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -140,7 +143,7 @@ Cell[BoxData[
       "}"}]}], "]"}]}]}]], "Input",
  CellChangeTimes->{{3.741389376447171*^9, 3.7413894124439807`*^9}, 
    3.741389523949295*^9},
- CellLabel->"In[4]:=",ExpressionUUID->"e9f290bc-2641-43c4-a78e-6920e593ad24"],
+ CellLabel->"In[6]:=",ExpressionUUID->"e9f290bc-2641-43c4-a78e-6920e593ad24"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -173,8 +176,9 @@ tutorial\\\\ModelExamples.html\"\>"}], "}"}]], "Output",
  CellChangeTimes->{3.74138952782507*^9, 3.7425082233563833`*^9, 
   3.742605844330489*^9, 3.7426065109045296`*^9, 3.7431578833345623`*^9, 
   3.743241672624988*^9, 3.7432733850283346`*^9, 3.7433408623959303`*^9, 
-  3.7433409635621834`*^9, 3.74334123166343*^9},
- CellLabel->"Out[4]=",ExpressionUUID->"ae7747c9-aaac-468a-a963-b3a37077a313"]
+  3.7433409635621834`*^9, 3.74334123166343*^9, 3.7433726964249864`*^9, 
+  3.7433759808775387`*^9, 3.74337608444238*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"9c7dfe88-d682-43b6-9525-1d4f4b6e76e3"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -259,8 +263,8 @@ Cell[BoxData[
       RowBox[{"css", ",", 
        RowBox[{
        "\"\</fonts/sourcesanspro/v8/fonts/\>\"", "\[Rule]", 
-        "\"\</fonts/sourcesanspro/v8/\>\""}]}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", "\n", 
+        "\"\</fonts/sourcesanspro/v8/\>\""}]}], "]"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
    RowBox[{"Export", "[", 
     RowBox[{"cssFontFile", ",", "css", ",", "\"\<Text\>\""}], 
     "]"}]}]}]], "Input",
@@ -269,19 +273,21 @@ Cell[BoxData[
    3.7425082747112155`*^9, 3.742508300951909*^9}},
  CellLabel->"In[8]:=",ExpressionUUID->"a4bbceb4-990a-4d09-bfae-1660fe5ddca6"],
 
-Cell[BoxData["\<\"C:\\\\Users\\\\Sunando\\\\workspace-neon\\\\CoDExProj\\\\\
-build\\\\CoDEx-HTML\\\\html\\\\css\\\\fonts.css\"\>"], "Output",
+Cell[BoxData["\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\\
+html\\\\css\\\\fonts.css\"\>"], "Output",
  CellChangeTimes->{{3.742508279336064*^9, 3.7425083033455343`*^9}, 
    3.7426058452409706`*^9, 3.742606518626012*^9, 3.743157898788736*^9, 
-   3.7432416733885546`*^9, 3.7432733857929244`*^9, 3.7433409646755376`*^9},
- CellLabel->"Out[8]=",ExpressionUUID->"39287390-fbf7-41ab-9a13-912020d7d58d"],
+   3.7432416733885546`*^9, 3.7432733857929244`*^9, 3.7433409646755376`*^9, 
+   3.743372697190555*^9, 3.7433759816600904`*^9, 3.743376085220908*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"817761d5-2c45-4c87-8aae-f1fbd4015033"],
 
-Cell[BoxData["\<\"C:\\\\Users\\\\Sunando\\\\workspace-neon\\\\CoDExProj\\\\\
-build\\\\CoDEx-HTML\\\\html\\\\css\\\\fonts.css\"\>"], "Output",
+Cell[BoxData["\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\\
+html\\\\css\\\\fonts.css\"\>"], "Output",
  CellChangeTimes->{{3.742508279336064*^9, 3.7425083033455343`*^9}, 
    3.7426058452409706`*^9, 3.742606518626012*^9, 3.743157898788736*^9, 
-   3.7432416733885546`*^9, 3.7432733857929244`*^9, 3.7433409647015276`*^9},
- CellLabel->"Out[11]=",ExpressionUUID->"1691ac49-236e-4bbc-aa45-5e0583284152"]
+   3.7432416733885546`*^9, 3.7432733857929244`*^9, 3.7433409646755376`*^9, 
+   3.743372697190555*^9, 3.7433759816600904`*^9, 3.743376085231902*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"ad240c13-38ab-4a9e-a44e-eff859c7ed94"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -319,21 +325,21 @@ Cell[BoxData[
   3.742508307815778*^9}},
  CellLabel->"In[12]:=",ExpressionUUID->"39db6a30-10e7-4cea-a34d-210f10b22857"],
 
-Cell[BoxData["\<\"C:\\\\Users\\\\Sunando\\\\workspace-neon\\\\CoDExProj\\\\\
-build\\\\CoDEx-HTML\\\\html\\\\javascript\\\\faster-page-load.js\"\>"], \
-"Output",
+Cell[BoxData["\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\\
+html\\\\javascript\\\\faster-page-load.js\"\>"], "Output",
  CellChangeTimes->{3.74250831040829*^9, 3.742605845267956*^9, 
   3.7426065186500297`*^9, 3.7431579012513337`*^9, 3.743241673427528*^9, 
-  3.7432733858238797`*^9, 3.7433409647154903`*^9},
- CellLabel->"Out[12]=",ExpressionUUID->"338990d7-e158-49e2-a616-e8e7593bdd6f"],
+  3.7432733858238797`*^9, 3.7433409647154903`*^9, 3.7433726972315025`*^9, 
+  3.7433759817090583`*^9, 3.743376085242896*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"f313aba4-63b7-4c14-a3a6-8bf23bf14234"],
 
-Cell[BoxData["\<\"C:\\\\Users\\\\Sunando\\\\workspace-neon\\\\CoDExProj\\\\\
-build\\\\CoDEx-HTML\\\\html\\\\javascript\\\\faster-page-load.js\"\>"], \
-"Output",
+Cell[BoxData["\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\\
+html\\\\javascript\\\\faster-page-load.js\"\>"], "Output",
  CellChangeTimes->{3.74250831040829*^9, 3.742605845267956*^9, 
   3.7426065186500297`*^9, 3.7431579012513337`*^9, 3.743241673427528*^9, 
-  3.7432733858238797`*^9, 3.743340964751498*^9},
- CellLabel->"Out[15]=",ExpressionUUID->"221baa5c-960d-4cc0-bc2e-60afd2262722"]
+  3.7432733858238797`*^9, 3.7433409647154903`*^9, 3.7433726972315025`*^9, 
+  3.7433759817090583`*^9, 3.7433760852788763`*^9},
+ CellLabel->"Out[15]=",ExpressionUUID->"440b4a04-9d3a-4844-9b15-5a485e9ea8e3"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -383,15 +389,17 @@ YAL0NWGgEwYlfWCFuvNajX8o9UzPyNYIOa/TeiPYVuTyId3v4ABBnUIw==\>\"", "]"}], ",",
 Cell[BoxData["True"], "Output",
  CellChangeTimes->{3.742508324113549*^9, 3.7426058452919583`*^9, 
   3.742606518672014*^9, 3.743157904212612*^9, 3.743241673454485*^9, 
-  3.7432733858708925`*^9, 3.7433409647654905`*^9},
- CellLabel->"Out[17]=",ExpressionUUID->"afc0662e-caf0-480d-ade2-eda1cc540e12"],
+  3.7432733858708925`*^9, 3.7433409647654905`*^9, 3.743372697274477*^9, 
+  3.7433759817290583`*^9, 3.7433760852939034`*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"1db0163d-438b-49c1-a6ae-4a634412e1aa"],
 
-Cell[BoxData["\<\"C:\\\\Users\\\\Sunando\\\\workspace-neon\\\\CoDExProj\\\\\
-build\\\\CoDEx-HTML\\\\html\\\\javascript\\\\sub-pages.js\"\>"], "Output",
+Cell[BoxData["\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\\
+html\\\\javascript\\\\sub-pages.js\"\>"], "Output",
  CellChangeTimes->{3.742508324113549*^9, 3.7426058452919583`*^9, 
   3.742606518672014*^9, 3.743157904212612*^9, 3.743241673454485*^9, 
-  3.7432733858708925`*^9, 3.743340964769483*^9},
- CellLabel->"Out[19]=",ExpressionUUID->"ee6aa4ca-6d7c-4ccf-9807-77ba1a5d579c"]
+  3.7432733858708925`*^9, 3.7433409647654905`*^9, 3.743372697274477*^9, 
+  3.7433759817290583`*^9, 3.743376085297865*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"33a8956d-0076-43d0-8e5e-57b7db8a4793"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -418,8 +426,8 @@ Cell[BoxData[
        "$htmlDirectory", ",", "\"\<javascript\>\"", ",", 
         "\"\<clipboard.js\>\""}], "}"}], "]"}]}], ";"}], "\n", 
    RowBox[{"RenameFile", "[", 
-    RowBox[{"clipboardJs", ",", "clipboardJsNew"}], "]"}], 
-   "\[IndentingNewLine]", "\n", 
+    RowBox[{"clipboardJs", ",", "clipboardJsNew"}], "]"}], "\n", 
+   "\[IndentingNewLine]", 
    RowBox[{"clipboardCss", "=", 
     RowBox[{"FileNameJoin", "[", 
      RowBox[{"{", 
@@ -445,26 +453,29 @@ Cell[BoxData[
   3.742508321098809*^9}},
  CellLabel->"In[20]:=",ExpressionUUID->"6948d2f8-15bb-4563-953e-e7c102ea965b"],
 
-Cell[BoxData["\<\"C:\\\\Users\\\\Sunando\\\\workspace-neon\\\\CoDExProj\\\\\
-build\\\\CoDEx-HTML\\\\html\\\\javascript\\\\clipboard.js\"\>"], "Output",
+Cell[BoxData["\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\\
+html\\\\javascript\\\\clipboard.js\"\>"], "Output",
  CellChangeTimes->{3.7425083352961125`*^9, 3.742605845307933*^9, 
   3.742606518689006*^9, 3.743157908664071*^9, 3.743241673471475*^9, 
-  3.7432733858888702`*^9, 3.7433409647824516`*^9},
- CellLabel->"Out[22]=",ExpressionUUID->"05a91603-77ad-43c2-bce6-d04d977f9b98"],
+  3.7432733858888702`*^9, 3.7433409647824516`*^9, 3.7433726972924943`*^9, 
+  3.74337598175204*^9, 3.7433760853098574`*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"307b26b8-4709-4e75-a758-f07c8252ff24"],
 
-Cell[BoxData["\<\"C:\\\\Users\\\\Sunando\\\\workspace-neon\\\\CoDExProj\\\\\
-build\\\\CoDEx-HTML\\\\html\\\\css\\\\clipboard.css\"\>"], "Output",
+Cell[BoxData["\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\\
+html\\\\css\\\\clipboard.css\"\>"], "Output",
  CellChangeTimes->{3.7425083352961125`*^9, 3.742605845307933*^9, 
   3.742606518689006*^9, 3.743157908664071*^9, 3.743241673471475*^9, 
-  3.7432733858888702`*^9, 3.743340964786479*^9},
- CellLabel->"Out[23]=",ExpressionUUID->"9ec5991a-6f4d-4941-a01b-cbec14e052d6"],
+  3.7432733858888702`*^9, 3.7433409647824516`*^9, 3.7433726972924943`*^9, 
+  3.74337598175204*^9, 3.743376085313885*^9},
+ CellLabel->"Out[23]=",ExpressionUUID->"a58285a4-9a8d-4725-85f9-117edaed6a18"],
 
-Cell[BoxData["\<\"C:\\\\Users\\\\Sunando\\\\workspace-neon\\\\CoDExProj\\\\\
-build\\\\CoDEx-HTML\\\\html\\\\css\\\\clipboard.css\"\>"], "Output",
+Cell[BoxData["\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\\
+html\\\\css\\\\clipboard.css\"\>"], "Output",
  CellChangeTimes->{3.7425083352961125`*^9, 3.742605845307933*^9, 
   3.742606518689006*^9, 3.743157908664071*^9, 3.743241673471475*^9, 
-  3.7432733858888702`*^9, 3.7433409648204546`*^9},
- CellLabel->"Out[26]=",ExpressionUUID->"eadcc9f9-bc65-4188-b1f2-ef2dbc819c64"]
+  3.7432733858888702`*^9, 3.7433409647824516`*^9, 3.7433726972924943`*^9, 
+  3.74337598175204*^9, 3.743376085324849*^9},
+ CellLabel->"Out[26]=",ExpressionUUID->"da34df0c-a170-4cb8-ba28-d5c9db9b4f60"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -502,7 +513,7 @@ Cell[BoxData[
   3.7426060944214897`*^9}, {3.74260629104234*^9, 3.7426062922646685`*^9}, {
   3.7426063717326527`*^9, 3.742606371992504*^9}, {3.743341083080491*^9, 
   3.7433410853558617`*^9}, {3.743341130743524*^9, 3.74334115992779*^9}},
- CellLabel->"In[5]:=",ExpressionUUID->"1ffb0bb4-ea11-41e0-9fb9-e9fefa3da8c1"],
+ CellLabel->"In[27]:=",ExpressionUUID->"1ffb0bb4-ea11-41e0-9fb9-e9fefa3da8c1"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -535,8 +546,144 @@ tutorial\\\\ModelExamples.html\"\>"}], "}"}]], "Output",
  CellChangeTimes->{3.7425102185439825`*^9, 3.7426058454038754`*^9, 
   3.742606518755969*^9, 3.743157913495365*^9, 3.743241673558428*^9, 
   3.743273385959827*^9, 3.7433409648784266`*^9, 3.7433411682225027`*^9, 
-  3.7433412377214932`*^9},
- CellLabel->"Out[5]=",ExpressionUUID->"684e626b-3048-4c1a-aa8e-9f865c644566"]
+  3.7433412377214932`*^9, 3.7433726979581146`*^9, 3.743375982417652*^9, 
+  3.7433760859514904`*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"2d78ee74-6bba-45ee-bed1-7af2c48169a6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"6.", "Fix", " ", "wolfram", " ", "links"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"path", "=", "#"}], ",", "file"}], "}"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"file", "=", 
+        RowBox[{"Import", "[", 
+         RowBox[{"path", ",", "\"\<Source\>\""}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{"path", ",", 
+         RowBox[{"StringReplace", "[", 
+          RowBox[{"file", ",", 
+           RowBox[{
+            RowBox[{
+            "\"\<http://reference.wolfram.com/language/\>\"", "<>", 
+             "packName"}], "\[Rule]", "\"\<..\>\""}]}], "]"}], ",", 
+         "\"\<Text\>\""}], "]"}]}]}], "\[IndentingNewLine]", "]"}], "&"}], "/@",
+    "htmlFiles"}]}]], "Input",
+ CellChangeTimes->{{3.742510077164939*^9, 3.742510201425785*^9}, {
+  3.742510251192292*^9, 3.742510267926675*^9}, {3.742606035523183*^9, 
+  3.7426060944214897`*^9}, {3.74260629104234*^9, 3.7426062922646685`*^9}, {
+  3.7426063717326527`*^9, 3.742606371992504*^9}, {3.743341083080491*^9, 
+  3.7433410853558617`*^9}, {3.743341130743524*^9, 3.74334115992779*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"6d89e4f4-b8b7-4d05-8493-2b7e1c311ff6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\
+\\guide\\\\CoDExParafernalia.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\codexOutput.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\defineHeavyFields.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\formPick.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\initializeLoop.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\loopOutput.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\RGFlow.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\texTable.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\treeOutput.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+tutorial\\\\CoDExOverview.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+tutorial\\\\HowToInstall.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+tutorial\\\\HowToRun.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+tutorial\\\\ModelExamples.html\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.7425102185439825`*^9, 3.7426058454038754`*^9, 
+  3.742606518755969*^9, 3.743157913495365*^9, 3.743241673558428*^9, 
+  3.743273385959827*^9, 3.7433409648784266`*^9, 3.7433411682225027`*^9, 
+  3.7433412377214932`*^9, 3.7433726979581146`*^9, 3.74337598310326*^9, 
+  3.7433760866171103`*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"1fa17b83-0783-4c35-8d5b-7617ae8bc9fe"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"path", "=", "#"}], ",", "file"}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"file", "=", 
+       RowBox[{"Import", "[", 
+        RowBox[{"path", ",", "\"\<Source\>\""}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Export", "[", 
+       RowBox[{"path", ",", 
+        RowBox[{"StringReplace", "[", 
+         RowBox[{"file", ",", 
+          RowBox[{
+           RowBox[{"\"\</language/\>\"", "<>", "packName"}], "\[Rule]", 
+           "\"\<..\>\""}]}], "]"}], ",", "\"\<Text\>\""}], "]"}]}]}], 
+    "\[IndentingNewLine]", "]"}], "&"}], "/@", "htmlFiles"}]], "Input",
+ CellChangeTimes->{
+  3.743375162249169*^9, {3.7433752033217416`*^9, 3.7433752093313065`*^9}, {
+   3.7433756890924797`*^9, 3.7433757126030345`*^9}, {3.7433758898046284`*^9, 
+   3.7433758988524647`*^9}, {3.743375931346879*^9, 3.743375936708808*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"cb17c907-0717-4141-978a-21be3540858a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\
+\\guide\\\\CoDExParafernalia.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\codexOutput.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\defineHeavyFields.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\formPick.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\initializeLoop.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\loopOutput.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\RGFlow.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\texTable.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+ref\\\\treeOutput.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+tutorial\\\\CoDExOverview.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+tutorial\\\\HowToInstall.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+tutorial\\\\HowToRun.html\"\>", 
+   ",", "\<\"D:\\\\Drive\\\\research\\\\CoDEx\\\\Webpages\\\\CoDEx\\\\html\\\\\
+tutorial\\\\ModelExamples.html\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.743376019526434*^9, 3.7433760872537704`*^9},
+ CellLabel->"Out[29]=",ExpressionUUID->"e59a87a4-61e8-4772-b7e6-a799406b4495"]
 }, Open  ]]
 },
 WindowSize->{775, 872},
@@ -557,43 +704,51 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 609, 15, 48, "Input",ExpressionUUID->"2f8e73b7-85ea-4afe-b5cf-2baaf11a5ff5"],
-Cell[1192, 39, 437, 6, 32, "Output",ExpressionUUID->"d751db95-d90a-43fe-8421-be0a8c2973cf"]
+Cell[1192, 39, 510, 7, 32, "Output",ExpressionUUID->"f38d524a-afbb-45b4-9e92-789f4808116e"]
 }, Open  ]],
-Cell[1644, 48, 481, 11, 48, "Input",ExpressionUUID->"1f9143db-b686-442e-9266-33cf171670f0"],
+Cell[1717, 49, 481, 11, 48, "Input",ExpressionUUID->"1f9143db-b686-442e-9266-33cf171670f0"],
 Cell[CellGroupData[{
-Cell[2150, 63, 1002, 27, 86, "Input",ExpressionUUID->"93f28d7f-a500-484d-bc38-13d28f3e1733"],
-Cell[3155, 92, 418, 5, 32, "Output",ExpressionUUID->"21d0b98c-8388-4f27-a95a-61baeddd56ea"],
-Cell[3576, 99, 981, 15, 109, "Output",ExpressionUUID->"fe9fc1f0-66cc-49df-b1ff-06668b869f9c"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[4594, 119, 916, 23, 86, "Input",ExpressionUUID->"e9f290bc-2641-43c4-a78e-6920e593ad24"],
-Cell[5513, 144, 1855, 32, 294, "Output",ExpressionUUID->"ae7747c9-aaac-468a-a963-b3a37077a313"]
-}, Open  ]],
-Cell[7383, 179, 2284, 57, 333, "Input",ExpressionUUID->"d54eed09-a93b-43cd-be6a-b1e87df88d08"],
-Cell[CellGroupData[{
-Cell[9692, 240, 1128, 29, 124, "Input",ExpressionUUID->"a4bbceb4-990a-4d09-bfae-1660fe5ddca6"],
-Cell[10823, 271, 435, 5, 32, "Output",ExpressionUUID->"39287390-fbf7-41ab-9a13-912020d7d58d"],
-Cell[11261, 278, 436, 5, 32, "Output",ExpressionUUID->"1691ac49-236e-4bbc-aa45-5e0583284152"]
+Cell[2223, 64, 1002, 27, 86, "Input",ExpressionUUID->"93f28d7f-a500-484d-bc38-13d28f3e1733"],
+Cell[3228, 93, 468, 6, 32, "Output",ExpressionUUID->"8e7b630c-538c-4276-8932-b270b0da31bf"],
+Cell[3699, 101, 937, 16, 109, "Output",ExpressionUUID->"05f30b05-dbab-40d5-89e1-c64072421923"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11734, 288, 1189, 31, 124, "Input",ExpressionUUID->"39db6a30-10e7-4cea-a34d-210f10b22857"],
-Cell[12926, 321, 426, 6, 52, "Output",ExpressionUUID->"338990d7-e158-49e2-a616-e8e7593bdd6f"],
-Cell[13355, 329, 424, 6, 52, "Output",ExpressionUUID->"221baa5c-960d-4cc0-bc2e-60afd2262722"]
+Cell[4673, 122, 916, 23, 86, "Input",ExpressionUUID->"e9f290bc-2641-43c4-a78e-6920e593ad24"],
+Cell[5592, 147, 1927, 33, 261, "Output",ExpressionUUID->"9c7dfe88-d682-43b6-9525-1d4f4b6e76e3"]
+}, Open  ]],
+Cell[7534, 183, 2284, 57, 333, "Input",ExpressionUUID->"d54eed09-a93b-43cd-be6a-b1e87df88d08"],
+Cell[CellGroupData[{
+Cell[9843, 244, 1128, 29, 124, "Input",ExpressionUUID->"a4bbceb4-990a-4d09-bfae-1660fe5ddca6"],
+Cell[10974, 275, 484, 6, 32, "Output",ExpressionUUID->"817761d5-2c45-4c87-8aae-f1fbd4015033"],
+Cell[11461, 283, 485, 6, 32, "Output",ExpressionUUID->"ad240c13-38ab-4a9e-a44e-eff859c7ed94"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13816, 340, 1820, 40, 371, "Input",ExpressionUUID->"cb2c6679-18f7-454d-b457-d0d15a19c931"],
-Cell[15639, 382, 296, 4, 32, "Output",ExpressionUUID->"afc0662e-caf0-480d-ade2-eda1cc540e12"],
-Cell[15938, 388, 414, 5, 32, "Output",ExpressionUUID->"ee6aa4ca-6d7c-4ccf-9807-77ba1a5d579c"]
+Cell[11983, 294, 1189, 31, 124, "Input",ExpressionUUID->"39db6a30-10e7-4cea-a34d-210f10b22857"],
+Cell[13175, 327, 474, 6, 32, "Output",ExpressionUUID->"f313aba4-63b7-4c14-a3a6-8bf23bf14234"],
+Cell[13652, 335, 476, 6, 32, "Output",ExpressionUUID->"440b4a04-9d3a-4844-9b15-5a485e9ea8e3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16389, 398, 1766, 47, 200, "Input",ExpressionUUID->"6948d2f8-15bb-4563-953e-e7c102ea965b"],
-Cell[18158, 447, 416, 5, 32, "Output",ExpressionUUID->"05a91603-77ad-43c2-bce6-d04d977f9b98"],
-Cell[18577, 454, 408, 5, 32, "Output",ExpressionUUID->"9ec5991a-6f4d-4941-a01b-cbec14e052d6"],
-Cell[18988, 461, 410, 5, 32, "Output",ExpressionUUID->"eadcc9f9-bc65-4188-b1f2-ef2dbc819c64"]
+Cell[14165, 346, 1820, 40, 371, "Input",ExpressionUUID->"cb2c6679-18f7-454d-b457-d0d15a19c931"],
+Cell[15988, 388, 369, 5, 32, "Output",ExpressionUUID->"1db0163d-438b-49c1-a6ae-4a634412e1aa"],
+Cell[16360, 395, 464, 6, 32, "Output",ExpressionUUID->"33a8956d-0076-43d0-8e5e-57b7db8a4793"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19435, 471, 1360, 33, 124, "Input",ExpressionUUID->"1ffb0bb4-ea11-41e0-9fb9-e9fefa3da8c1"],
-Cell[20798, 506, 1833, 32, 294, "Output",ExpressionUUID->"684e626b-3048-4c1a-aa8e-9f865c644566"]
+Cell[16861, 406, 1766, 47, 200, "Input",ExpressionUUID->"6948d2f8-15bb-4563-953e-e7c102ea965b"],
+Cell[18630, 455, 465, 6, 32, "Output",ExpressionUUID->"307b26b8-4709-4e75-a758-f07c8252ff24"],
+Cell[19098, 463, 457, 6, 32, "Output",ExpressionUUID->"a58285a4-9a8d-4725-85f9-117edaed6a18"],
+Cell[19558, 471, 457, 6, 32, "Output",ExpressionUUID->"da34df0c-a170-4cb8-ba28-d5c9db9b4f60"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20052, 482, 1361, 33, 124, "Input",ExpressionUUID->"1ffb0bb4-ea11-41e0-9fb9-e9fefa3da8c1"],
+Cell[21416, 517, 1907, 33, 261, "Output",ExpressionUUID->"2d78ee74-6bba-45ee-bed1-7af2c48169a6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23360, 555, 1361, 33, 124, "Input",ExpressionUUID->"6d89e4f4-b8b7-4d05-8493-2b7e1c311ff6"],
+Cell[24724, 590, 1906, 33, 261, "Output",ExpressionUUID->"1fa17b83-0783-4c35-8d5b-7617ae8bc9fe"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26667, 628, 1059, 26, 86, "Input",ExpressionUUID->"cb17c907-0717-4141-978a-21be3540858a"],
+Cell[27729, 656, 1663, 29, 294, "Output",ExpressionUUID->"e59a87a4-61e8-4772-b7e6-a799406b4495"]
 }, Open  ]]
 }
 ]
